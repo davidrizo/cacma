@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1Zt4I7E4E4QRtEssCLOnpOqkyY1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php_backend/api" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/john_petch" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/greco/expolio" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/ana_galvan" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/assets/images" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/core/services" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/features/grecoh/components" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/features/grecoh" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server (frontend)">
+    <configuration name="E2E Tests (frontend)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/frontend/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application (frontend)" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server (frontend)" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.build (2)" />
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="" />
+      <created>1585644973211</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585644973211</updated>
+      <workItem from="1585644980652" duration="11166000" />
+      <workItem from="1585666430433" duration="727000" />
+      <workItem from="1585824651182" duration="31601000" />
+      <workItem from="1586516481585" duration="37905000" />
+      <workItem from="1588612867565" duration="4946000" />
+    </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1585650413460</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585650413460</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Continued...">
+      <created>1585664088844</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585664088844</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Continued...">
+      <created>1585665367651</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585665367651</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Continued...">
+      <created>1585854022446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585854022446</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Continued...">
+      <created>1585937270090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585937270090</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Continued...">
+      <created>1585938876814</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585938876814</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Continued...">
+      <created>1585940220934</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585940220934</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Continued... (add bootstrap)">
+      <created>1586366029679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586366029679</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Continued...">
+      <created>1587036195940</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587036195940</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Continued...">
+      <created>1587036300176</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587036300176</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Continued...">
+      <created>1587401478420</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587401478420</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Production ready">
+      <created>1587404957597</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587404957597</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Production ready">
+      <created>1588614191434</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588614191434</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Production ready">
+      <created>1588615419075</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588615419075</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Production ready">
+      <created>1588615820065</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1588615820065</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Production ready">
+      <created>1588615902519</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1588615902519</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Production ready">
+      <created>1588672695588</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1588672695588</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Production ready">
+      <created>1588672713590</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1588672713590</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Production ready">
+      <created>1588672721192</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1588672721192</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/frontend" />
+    </ignored-roots>
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Continued... (add bootstrap)" />
+    <MESSAGE value="Continued..." />
+    <MESSAGE value="Production ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Production ready" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="151" y="301" key="#CLI_Interpreters" timestamp="1585654432634">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="151" y="301" key="#CLI_Interpreters/0.0.2560.1440@0.0.2560.1440" timestamp="1585654432634" />
+    <state x="302" y="210" key="#PHP" timestamp="1585654434107">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="302" y="210" key="#PHP/0.0.2560.1440@0.0.2560.1440" timestamp="1585654434107" />
+    <state x="780" y="304" key="#Project_Structure" timestamp="1585645025539">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="780" y="304" key="#Project_Structure/0.0.2560.1440@0.0.2560.1440" timestamp="1585645025539" />
+    <state x="151" y="302" key="#Test_Frameworks" timestamp="1585653549913">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="151" y="302" key="#Test_Frameworks/0.0.2560.1440@0.0.2560.1440" timestamp="1585653549913" />
+    <state x="372" y="515" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585651879921">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="372" y="515" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1585651879921" />
+    <state x="1049" y="377" key="#com.intellij.ide.util.MemberChooser" timestamp="1587399812827">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1049" y="377" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1587399812827" />
+    <state x="279" y="286" key="#php_backend" timestamp="1585652236407">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="279" y="286" key="#php_backend/0.0.2560.1440@0.0.2560.1440" timestamp="1585652236407" />
+    <state x="77" y="274" key="CommitChangelistDialog2" timestamp="1588672721046">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="77" y="255" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404957405" />
+    <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1588672721046" />
+    <state width="2560" height="313" key="GridCell.Tab.0.bottom" timestamp="1588672137032">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="470" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587392188737" />
+    <state width="2560" height="157" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
+    <state width="2560" height="313" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1588672137032" />
+    <state width="2508" height="256" key="GridCell.Tab.0.bottom/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198061" />
+    <state width="2560" height="313" key="GridCell.Tab.0.center" timestamp="1588672137030">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="470" key="GridCell.Tab.0.center/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587392188735" />
+    <state width="2560" height="157" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
+    <state width="2560" height="313" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1588672137030" />
+    <state width="2508" height="256" key="GridCell.Tab.0.center/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198059" />
+    <state width="2560" height="313" key="GridCell.Tab.0.left" timestamp="1588672137029">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="470" key="GridCell.Tab.0.left/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587392188735" />
+    <state width="2560" height="157" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
+    <state width="2560" height="313" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1588672137029" />
+    <state width="2508" height="256" key="GridCell.Tab.0.left/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198057" />
+    <state width="2560" height="313" key="GridCell.Tab.0.right" timestamp="1588672137031">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="2560" height="470" key="GridCell.Tab.0.right/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587392188737" />
+    <state width="2560" height="157" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
+    <state width="2560" height="313" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1588672137031" />
+    <state width="2508" height="256" key="GridCell.Tab.0.right/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198060" />
+    <state x="824" y="506" key="NewPhpClassDialog" timestamp="1585935068243">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="824" y="506" key="NewPhpClassDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1585935068243" />
+    <state x="461" y="637" key="NewPhpFileDialog" timestamp="1585935073330">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="461" y="637" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1585935073330" />
+    <state x="56" y="290" key="SettingsEditor" timestamp="1588615357075">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="56" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1585665574183" />
+    <state x="56" y="290" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1588615357075" />
+    <state width="625" height="500" key="SwitcherDM" timestamp="1587401244897">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1587401244897" />
+    <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1588672737285">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="163" y="382" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404958868" />
+    <state x="163" y="399" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1588672737285" />
+    <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586365928725">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1586365928725" />
+    <state x="903" y="514" key="com.intellij.ide.util.TipDialog" timestamp="1586630096566">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="903" y="514" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1586630096566" />
+    <state x="893" y="433" width="774" height="574" key="find.popup" timestamp="1587404445205">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="893" y="433" width="774" height="574" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587404445205" />
+    <state x="953" y="488" key="git4idea.merge.GitPullDialog" timestamp="1588615369020">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="953" y="488" key="git4idea.merge.GitPullDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1588615369020" />
+    <state x="479" y="258" key="new project wizard" timestamp="1585651847459">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="479" y="258" key="new project wizard/0.0.2560.1440@0.0.2560.1440" timestamp="1585651847459" />
+    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate" timestamp="1587396700850">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1587396700850" />
+    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417@0.23.2560.1417" timestamp="1585908182745" />
+    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926188367" />
+    <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup" timestamp="1587390370513">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587390370513" />
+    <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587029999460" />
+  </component>
+</project>

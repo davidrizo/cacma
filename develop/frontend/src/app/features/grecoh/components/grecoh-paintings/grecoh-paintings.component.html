@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h1>Experimento sobre armonía de color</h1>
+      <h3>Selecciona una de las obras</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div id="cards">
+        <div class="card border-dark" *ngFor="let painting of paintings$ | async; trackBy: trackByPainting" >
+          <div class="card-header">
+            {{painting.painter}}</div>
+          <div class="card-body">
+            <h5 class="card-title">
+              {{painting.title}}
+            </h5>
+            <p class="card-text">
+              <img [src]="getGrayscaleImage(painting)" alt="Grayscale image of {{painting.title}}" class="img-thumbnail"/>
+            </p>
+            <a class="btn btn-primary" [routerLink]="['../painting',painting.id]">Comienza</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let painting of paintings$ | async; trackBy: trackByPainting" >
+      <div class="picsum-img-wrapper">
+        <img [src]="getGrayscaleImage(painting)" alt="Grayscale image of {{painting.title}}" class="img-fluid"/>
+        <div class="carousel-caption">
+          <h3><a [routerLink]="['../painting',painting.id]">{{painting.title}}</a></h3>
+          <p>{{painting.painter}}</p>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>-->
+</div>

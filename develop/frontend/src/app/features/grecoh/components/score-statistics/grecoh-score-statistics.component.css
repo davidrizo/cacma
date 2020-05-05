@@ -1,0 +1,21 @@
+.carousel-caption {
+  position: relative !important;
+  text-align: center;
+  left: auto;
+  right: auto;
+}
+
+.versionImageStatistics {
+  max-width: 80vw;
+  max-height: 50vh;
+}
+
+.scoreStatistic {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+
+}
+
+.scoreSomment {
+  text-align: justify !important;
+}

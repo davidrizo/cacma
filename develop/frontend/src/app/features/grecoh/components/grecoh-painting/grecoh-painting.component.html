@@ -1,0 +1,68 @@
+<div class="container-fluid">
+  <div *ngIf="painting$ | async as painting; else loading">
+    <div class="row" *ngIf="scores; else loading">
+      <div class="col-12 d-flex">
+        <div class="mx-auto">
+          <h5>{{painting.title}}</h5>
+
+          <p *ngIf="isAllScoresAnswered()">
+            <button class="btn-primary" (click)="sendScores()">Envía resultados</button>
+          </p>
+          <p>Valora TODAS las opciones</p>
+
+          <ul ngbNav #nav="ngbNav" class="nav-pills">
+            <li [ngbNavItem]="score.painting_version_id" *ngFor="let score of scores; trackBy: trackByPaintingVersionFn; let index = index;">
+              <a class="paintingVersionButton" ngbNavLink [style]="{'border-bottom-color': '#' + score.paintingVersion.color_hexa}">
+                {{score.paintingVersion.color_hexa}}
+              </a>
+              <ng-template ngbNavContent>
+                <div class="d-flex">
+                  <div class="mx-auto">
+                    <img [src]="getVersionImage(score.paintingVersion)" alt="Colored painting" class="versionImage">
+                  </div>
+                </div>
+
+                <div class="version_score">
+                  <p>
+                    Valoración:
+                    <ngb-rating
+                      [max]="5"
+                      [(rate)]="score.value"
+                    >
+                  </ngb-rating>
+                  <p>
+                    Comentarios sobre la valoración (opcional):
+                    <textarea [(ngModel)]=score.comments></textarea>
+                  </p>
+                </div>
+              </ng-template>
+            </li>
+          </ul>
+          <div [ngbNavOutlet]="nav" class="mt-2"></div>
+        </div>
+
+        <!--<ngb-carousel>
+          <ng-template ngbSlide *ngFor="let paintingVersion of paintingVersions$ | async; trackBy: trackByPaintingVersion" >
+            <div class="picsum-img-wrapper">
+              <img [src]="getVersionImage(paintingVersion)" alt="Colored painting" class="img-fluid"/>
+              <div class="carousel-caption">
+                <h3>{{paintingVersion.color_hexa}}</h3>
+              </div>
+              <ngb-rating
+                [max]="5"
+                [rate]="getScore(paintingVersion)"
+                (rateChange)="setScore(paintingVersion, $event)"
+              ></ngb-rating>
+            </div>
+          </ng-template>
+        </ngb-carousel>-->
+      </div>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <div class="jumbotron">
+      Loading ...
+    </div>
+  </ng-template>
+</div>

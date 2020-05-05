@@ -1,0 +1,42 @@
+<div class="container" id="home">
+  <div class="row">
+    <div class="col-12 col-md-8 logos">
+      <img src="assets/images/iseacv.jpg" alt="Logo ISEA.CV" class="img-fluid">
+    </div>
+    <div class="col-6 col-md-2 logos">
+      <img src="assets/images/easda_descriptor_fondocolor_castellano.jpg" alt="Logo EASDA" class="img-fluid">
+    </div>
+    <div class="col-6 col-md-2 logos">
+      <img src="assets/images/csma.jpg" alt="Logo CSMA" class="img-fluid">
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <h1 class="display-3">CACMA</h1>
+    <p class="lead">Computational Analysis and Creation of Music and Arts</p>
+    <p>Grupo de investigación del <a href="http://www.iseacv.gva.es/es">ISEA.CV</a></p>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <ng-template [ngIf]="auth.loggedIn" [ngIfElse]="loggedOut">
+        <p *ngIf="auth.userProfile$ | async as profile">
+          {{getName(profile)}}, bienvenido/a de nuevo
+        </p>
+        <h3>Experimentos</h3>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" routerLink="grecoh/home" role="button">Armonía de color</a>&nbsp;
+          <a class="btn btn-primary btn-lg" href="http://easda.es/investigacion/pesovisual" role="button">Peso visual</a>
+        </p>
+      </ng-template>
+
+      <ng-template #loggedOut>
+        <div>
+          <p>Necesitas autenticarte para acceder a los experimentos <button class="btn-primary" (click)="auth.login()">Login</button></p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
+
+

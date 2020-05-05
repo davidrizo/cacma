@@ -1,0 +1,12 @@
+#cards {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  aoverflow: auto;
+}
+
+#cards .card {
+  max-width: 30vw;
+  margin: 5px;
+}

@@ -1,0 +1,15 @@
+.paintingVersionButton {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+}
+
+.versionImage {
+  max-width: 80vw;
+  max-height: 50vh;
+}
+
+.version_score {
+  margin-top: 5px;
+  text-align: center;
+}
+
