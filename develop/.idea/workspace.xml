@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../deploy_angular.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../deploy_angular.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +160,7 @@
       <workItem from="1585666430433" duration="727000" />
       <workItem from="1585824651182" duration="31601000" />
       <workItem from="1586516481585" duration="37905000" />
-      <workItem from="1588612867565" duration="7320000" />
+      <workItem from="1588612867565" duration="7916000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
