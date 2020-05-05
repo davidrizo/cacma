@@ -8,7 +8,7 @@ ng build --aot --output-hashing=all --prod --output-path ../../docs --base-href 
 cd -
 cp docs/index.html docs/404.html
 git add docs/*
-git commit -m "Production release"
+git commit -a -m "Production release"
 git push
 
 
