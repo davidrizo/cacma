@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {ProfileComponent} from './core/components/profile/profile.component';
 import {AuthGuard} from './shared/auth/services/auth.guard';
-import {GrecohComponent} from './features/grecoh/components/grecoh/grecoh.component';
 import {HomeComponent} from './core/components/home/home.component';
 
 const routes = [
