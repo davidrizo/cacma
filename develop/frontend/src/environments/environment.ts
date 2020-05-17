@@ -8,8 +8,8 @@ export const environment = {
   production: false,
   apiEndpoint: 'http://localhost:63342/CACMA/php_backend/api',
   client_id: 'fsGZbuPGwZcxOMN61PNYeon1yyO3Cp9Z', // auth0 client ID
-  // home: 'http://localhost:3000'
-  home: 'https://davidrizo.github.io/cacma' //TODO
+  home: 'http://localhost:3000'
+  // home: 'https://davidrizo.github.io/cacma' //TODO
 };
 
 /*

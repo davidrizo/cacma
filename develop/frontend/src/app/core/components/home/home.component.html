@@ -1,0 +1,104 @@
+<app-nav-bar></app-nav-bar>
+
+<section id="hero" class="d-flex align-items-center">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h1>CACMA: Computational Analysis and Creation of Music and Arts</h1>
+        <h2>Grupo de investigación del <a href="http://www.iseacv.gva.es/es">ISEA.CV</a></h2>
+        <div class="d-flex">
+          <a routerLink="grecoh/home" class="btn-get-started scrollto">Experimento activo: GreCoH</a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img">
+        <img src="assets/img/munsell_colores_notas.jpg" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+
+</section><!-- End Hero -->
+
+<main id="main">
+
+  <!-- ======= Featured Services Section ======= -->
+  <section id="featured-services" class="featured-services">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="icon-box">
+            <div class="icon"><i class="icofont-image"></i></div>
+            <h4 class="title"><a routerLink="grecoh/home" >GreCoH</a></h4>
+            <p class="description">Experimento actualmente activo sobre armonía de color</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="icofont-paint-brush"></i></div>
+            <h4 class="title"><a href="">Logos</a></h4>
+            <p class="description">Generación automática de colores equilibrados en imágenes (<em>no disponible</em>) </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="icofont-golden-ratio"></i></div>
+            <h4 class="title"><a href="http://easda.es/investigacion/pesovisual" target="_blank">Pesos visuales</a></h4>
+            <p class="description">Experimentos pasados realizados sobre equilibros y pesos visuales</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Featured Services Section -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="assets/img/ha.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content">
+          <h3>¿Quiénes somos?</h3>
+          <p class="font-italic">
+            El grupo interdisciplinar de investigación lo componemos profesores de la Escuela de Arte y Superior de Diseño de Alicante (<a href="http://www.easda.es">easda</a>) y del Conservatorio Superior de Música Óscar Esplá de Alicante (<a href="http://csmalicante.com">CSMA</a>), ambos inscritos en el Instituto Superior de Enseñanzas Artísticas de la Comunidad Valenciana (<a href="http://www.iseacv.es">ISEA.CV</a>)
+          </p>
+          <ul>
+            <li><i class="icofont-music"></i> Manuel Mas Devesa (CSMA)</li>
+            <li><i class="icofont-paint"></i> Mario Rodríguez Ruiz (easda)</li>
+            <li><i class="icofont-computer"></i> David Rizo Valero (easda)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+</main><!-- End #main -->
+
+<app-footer></app-footer>
+<!--
+  <div class="row">
+    <div class="col">
+      <ng-template [ngIf]="auth.loggedIn" [ngIfElse]="loggedOut">
+        <p *ngIf="auth.userProfile$ | async as profile">
+          {{getName(profile)}}, bienvenido/a de nuevo
+        </p>
+        <h3>Experimentos</h3>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" routerLink="grecoh/home" role="button">Armonía de color</a>&nbsp;
+          <a class="btn btn-primary btn-lg" href="http://easda.es/investigacion/pesovisual" role="button">Peso visual</a>
+        </p>
+      </ng-template>
+
+      <ng-template #loggedOut>
+        <div>
+          <p>Necesitas autenticarte para acceder a los experimentos <button class="btn-primary" (click)="auth.login()">Login</button></p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+-->
+

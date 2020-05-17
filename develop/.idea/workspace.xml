@@ -2,8 +2,355 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/ejes_equilibrio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/grecoh/greco_getsemani_andujar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/ha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/logos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/munsell_colores_notas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-details-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-details-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/portfolio/portfolio-details-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/boxicons/css/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/counterup/counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/icofont/fonts/icofont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/icofont/fonts/icofont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/icofont/icofont.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/jquery.easing/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/owl.carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/venobox/venobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/venobox/venobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/venobox/venobox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/venobox/venobox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/vendor/waypoints/jquery.waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/forms/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/forms/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/grecoh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/grecoh_cuadros.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/grecoh_versiones.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla adaptada/web.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/hero-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-details-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-details-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/portfolio/portfolio-details-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/team/team-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/team/team-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/team/team-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/testimonials/testimonials-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/testimonials/testimonials-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/testimonials/testimonials-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/testimonials/testimonials-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/img/testimonials/testimonials-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/boxicons/css/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/counterup/counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/icofont/fonts/icofont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/icofont/fonts/icofont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/icofont/icofont.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/jquery.easing/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/owl.carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/venobox/venobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/venobox/venobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/venobox/venobox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/venobox/venobox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/assets/vendor/waypoints/jquery.waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/forms/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/forms/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estática/plantilla original/eNno/portfolio-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/auth/auth.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/footer/footer.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/footer/footer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/footer/footer.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/footer/footer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/layout.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/ejes_equilibrio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/grecoh/greco.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/grecoh/greco_getsemani_andujar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/ha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/iseacv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/logos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/munsell_colores_notas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-details-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-details-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/img/portfolio/portfolio-details-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/boxicons/css/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/counterup/counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/icofont/fonts/icofont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/icofont/fonts/icofont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/icofont/icofont.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/jquery.easing/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/owl.carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/venobox/venobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/venobox/venobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/venobox/venobox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/venobox/venobox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/vendor/waypoints/jquery.waypoints.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/nav-bar/nav-bar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/nav-bar/nav-bar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/nav-bar/nav-bar.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/nav-bar/nav-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/services/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/auth/services/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/services/auth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/auth/services/auth.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/auth/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/home/components/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/home/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/home/components/home/home.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/home/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/home/home-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/home/home.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/images/csma.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/images/easda_descriptor_fondocolor_castellano.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/images/iseacv.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/estática/plantilla adaptada/assets/img/iseacv.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/bootswatch-darkly.bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/get_painting.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/get_painting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/5-es2015.21abfeddd8917c7ecac4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/5-es5.21abfeddd8917c7ecac4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/6-es2015.5fb001d18b3e0f93d52f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/6-es5.5fb001d18b3e0f93d52f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/7-es2015.e98e6e3da26e5b00ce89.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/7-es5.e98e6e3da26e5b00ce89.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/images/csma.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/images/easda_descriptor_fondocolor_castellano.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/images/iseacv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/33b7e4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/6ff48c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fa6027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fecbdc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fef31f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/75a399.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/d13f37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/d4f5d8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/f3726e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/fed206.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/596d78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/5b9288.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/a23f25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/b99000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/d7a177.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/goya/asmodea/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/7397a9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/76a03d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/7a8fc1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/db5257.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/dcb147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/de6d58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/getsemani/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/0eb2ab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/177bc8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/2b1635.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/c5cd08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/e6213c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/fbdc05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/main-es2015.f513ea752287c8620e45.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/main-es5.f513ea752287c8620e45.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/polyfills-es2015.ecb5f92d271da1a4dfad.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/polyfills-es5.ddc99b45d2f637412615.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/runtime-es2015.9d15dfda99ad587da841.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/runtime-es5.9d15dfda99ad587da841.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/styles.b3dea3ca25128f743883.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,9 +358,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -26,16 +371,16 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/assets" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -50,18 +395,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/app/shared/auth/services" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/shared/layout/components" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/core/components" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/features/layout/components" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/assets" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/images" />
       <recent name="$PROJECT_DIR$/php_backend/api" />
       <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/john_petch" />
       <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella" />
-      <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/greco/expolio" />
-      <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/ana_galvan" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/assets/images" />
-      <recent name="$PROJECT_DIR$/frontend/src/app/core/services" />
-      <recent name="$PROJECT_DIR$/frontend/src/app/features/grecoh/components" />
-      <recent name="$PROJECT_DIR$/frontend/src/app/features/grecoh" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server (frontend)">
@@ -160,7 +506,14 @@
       <workItem from="1585666430433" duration="727000" />
       <workItem from="1585824651182" duration="31601000" />
       <workItem from="1586516481585" duration="37905000" />
-      <workItem from="1588612867565" duration="7916000" />
+      <workItem from="1588612867565" duration="8708000" />
+      <workItem from="1588786627901" duration="363000" />
+      <workItem from="1589359155232" duration="9475000" />
+      <workItem from="1589392819691" duration="119000" />
+      <workItem from="1589393025033" duration="16000" />
+      <workItem from="1589393053692" duration="111000" />
+      <workItem from="1589471282944" duration="38011000" />
+      <workItem from="1589732156659" duration="5014000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -299,7 +652,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -313,14 +666,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="Production ready" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="151" y="301" key="#CLI_Interpreters" timestamp="1585654432634">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="151" y="319" key="#CLI_Interpreters" timestamp="1589392740838">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="151" y="301" key="#CLI_Interpreters/0.0.2560.1440@0.0.2560.1440" timestamp="1585654432634" />
-    <state x="302" y="210" key="#PHP" timestamp="1585654434107">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="151" y="319" key="#CLI_Interpreters/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392740838" />
+    <state x="909" y="300" key="#PHP" timestamp="1589392762866">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="302" y="210" key="#PHP/0.0.2560.1440@0.0.2560.1440" timestamp="1585654434107" />
+    <state x="909" y="300" key="#PHP/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392762866" />
     <state x="780" y="304" key="#Project_Structure" timestamp="1585645025539">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -337,6 +692,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1049" y="377" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1587399812827" />
+    <state x="968" y="468" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1589392774183">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="968" y="468" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392774183" />
     <state x="279" y="286" key="#php_backend" timestamp="1585652236407">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -346,33 +705,37 @@
     </state>
     <state x="77" y="255" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404957405" />
     <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1588672721046" />
-    <state width="2560" height="313" key="GridCell.Tab.0.bottom" timestamp="1588701043985">
+    <state width="1098" height="433" key="GridCell.Tab.0.bottom" timestamp="1589736620586">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="470" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587392188737" />
+    <state width="1280" height="316" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466143" />
     <state width="2560" height="157" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
-    <state width="2560" height="313" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1588701043985" />
+    <state width="1098" height="541" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563533326" />
+    <state width="1098" height="433" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1589736620586" />
     <state width="2508" height="256" key="GridCell.Tab.0.bottom/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198061" />
-    <state width="2560" height="313" key="GridCell.Tab.0.center" timestamp="1588701043984">
+    <state width="1098" height="433" key="GridCell.Tab.0.center" timestamp="1589736620585">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="470" key="GridCell.Tab.0.center/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587392188735" />
+    <state width="1280" height="316" key="GridCell.Tab.0.center/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466141" />
     <state width="2560" height="157" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
-    <state width="2560" height="313" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1588701043984" />
+    <state width="1098" height="541" key="GridCell.Tab.0.center/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563533325" />
+    <state width="1098" height="433" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1589736620585" />
     <state width="2508" height="256" key="GridCell.Tab.0.center/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198059" />
-    <state width="2560" height="313" key="GridCell.Tab.0.left" timestamp="1588701043984">
+    <state width="1098" height="433" key="GridCell.Tab.0.left" timestamp="1589736620584">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="470" key="GridCell.Tab.0.left/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587392188735" />
+    <state width="1280" height="316" key="GridCell.Tab.0.left/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466139" />
     <state width="2560" height="157" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
-    <state width="2560" height="313" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1588701043984" />
+    <state width="1098" height="541" key="GridCell.Tab.0.left/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563533325" />
+    <state width="1098" height="433" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1589736620584" />
     <state width="2508" height="256" key="GridCell.Tab.0.left/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198057" />
-    <state width="2560" height="313" key="GridCell.Tab.0.right" timestamp="1588701043985">
+    <state width="1098" height="433" key="GridCell.Tab.0.right" timestamp="1589736620585">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2560" height="470" key="GridCell.Tab.0.right/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587392188737" />
+    <state width="1280" height="316" key="GridCell.Tab.0.right/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466142" />
     <state width="2560" height="157" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
-    <state width="2560" height="313" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1588701043985" />
+    <state width="1098" height="541" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563533326" />
+    <state width="1098" height="433" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1589736620585" />
     <state width="2508" height="256" key="GridCell.Tab.0.right/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198060" />
     <state x="824" y="506" key="NewPhpClassDialog" timestamp="1585935068243">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -387,10 +750,12 @@
     </state>
     <state x="56" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1585665574183" />
     <state x="56" y="290" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1588615357075" />
-    <state width="625" height="500" key="SwitcherDM" timestamp="1587401244897">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="625" height="539" key="SwitcherDM" timestamp="1589737688427">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1587401244897" />
+    <state width="625" height="514" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589566346245" />
+    <state width="625" height="539" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589737688427" />
     <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1588672737285">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -400,10 +765,12 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1586365928725" />
-    <state x="903" y="514" key="com.intellij.ide.util.TipDialog" timestamp="1586630096566">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="903" y="529" key="com.intellij.ide.util.TipDialog" timestamp="1589392960510">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="903" y="514" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1586630096566" />
+    <state x="903" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392960510" />
+    <state x="903" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1588786643854" />
     <state x="893" y="433" width="774" height="574" key="find.popup" timestamp="1587404445205">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -416,16 +783,20 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="479" y="258" key="new project wizard/0.0.2560.1440@0.0.2560.1440" timestamp="1585651847459" />
-    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate" timestamp="1587396700850">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate" timestamp="1589735831141">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
+    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589471884519" />
     <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1587396700850" />
-    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417@0.23.2560.1417" timestamp="1585908182745" />
+    <state x="1797" y="668" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563242548" />
+    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417@0.23.2560.1417" timestamp="1589735831141" />
     <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926188367" />
-    <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup" timestamp="1587390370513">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup" timestamp="1589642927394">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587390370513" />
     <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587029999460" />
+    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589560194395" />
+    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1589642927394" />
   </component>
 </project>

@@ -1,15 +1,160 @@
-.paintingVersionButton {
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
+.nav-tabs {
+  display: flex;
+  justify-content: center;
 }
 
-.versionImage {
-  max-width: 80vw;
-  max-height: 50vh;
+#painting * {
+  background-color: transparent;
 }
 
-.version_score {
-  margin-top: 5px;
+#painting {
+  color: white;
+  background-color: #282828;
+  height: 100vh;
+}
+
+#painting > div {
+  background-color: black;
+}
+
+#painting header {
+  padding-top: 1vh;
+  max-height: 7vh;
+}
+
+#painting h1 {
+  font-size: 2.5vh;
+}
+
+#painting h2 {
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+#painting h3 {
+  font-size: 1.5vh;
+  font-weight: normal;
+}
+
+#painting main section {
+  background-color: white;
+  max-height: 93vh;
+}
+
+#painting main {
+  margin-bottom: 1vh;
+}
+
+#painting #close * {
+  text-align: right;
+}
+#painting #close .icon {
+  font-size: 4vh;
+  margin-top: -2.5vh;
+}
+
+#tabsOpciones {
+  font-size: 2vw;
+  background-color: lightgray;
+}
+
+#painting section {
+  padding: 0;
+}
+
+#painting .imgOpcion {
+  display : flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content : space-around;
+}
+#painting .imgOpcion img {
+  flex:1 1 auto;
+  display:flex;
+  flex-direction :column;
+  justify-content : center;
+  align-items : center;
+
+  max-height: 85vh;
+  max-width: 100%;
+}
+
+.botonesPainting {
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   text-align: center;
+}
+
+.opcionesRating {
+  width: 3em;
+  height: 5rem;
+  display: flex !important;
+  flex-direction: column-reverse;
+  color: yellow;
+  align-items: center;
+  justify-content: center;
+  outline-width: 0;
+  font-size: 1rem;
+}
+
+.botonesPainting .btnComment {
+  padding-top: 3rem;
+}
+.botonesPainting .btnComment a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+#versionesEnviar {
+  position: fixed;
+  bottom: 3vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#versionesEnviar .btn-primary{
+  border-color: white;
+  background-color: #14c871;
+}
+
+@media (max-width: 575px) {
+  #painting h1 {
+    font-size: 14px;
+  }
+  #painting h2 {
+    font-size: 12px;
+  }
+  #painting h3 {
+    font-size: 10px;
+  }
+}
+
+@media (max-height: 600px) {
+  #painting header {
+    max-height: 10vh;
+  }
+
+  #painting main section {
+    max-height: 89vh;
+  }
+
+  #painting .imgOpcion img {
+    max-height: 70vh;
+  }
+}
+
+
+@media (max-height: 320px) {
+  #painting header {
+    max-height: 15vh;
+  }
+
+  #painting main section {
+    max-height: 84vh;
+  }
 }
 

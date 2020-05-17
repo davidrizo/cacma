@@ -13,10 +13,11 @@ import {
   selectPostScoresResult,
   selectSelectedPainting
 } from '../../store/selectors/grecoh.selector';
-import {AuthService} from '../../../../core/services/auth.service';
+import {AuthService} from '../../../../shared/auth/services/auth.service';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 
 import {UserPaintingVersionScores} from '../../model/user-painting-version-scores';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-grecoh-painting',
@@ -28,14 +29,18 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
   painting$: Observable<Painting>;
   paintingVersionsSubscription: Subscription;
   scores: PaintingVersionScore[];
+  activePaintingVersionId: number;
   authSubscription: Subscription;
   insertionSubscription: Subscription;
   userEMail: string;
   serverErrorSubscription: Subscription;
+  comentariosVersionSeleccionada: string;
+
 
   constructor(private router: Router, private route: ActivatedRoute, private store: Store<GrecohState>,
               private showErrorService: ShowErrorService,
-              private authService: AuthService) {
+              private authService: AuthService,
+              private modalService: NgbModal) {
   }
 
   ngOnInit() {
@@ -55,6 +60,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
             painting_version_id: paintingVersion.id
           });
         });
+        this.activePaintingVersionId = this.scores[0].painting_version_id;
       }
     });
 
@@ -161,13 +167,17 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
   }*/
 
   isAllScoresAnswered() {
-    let cont = 0;
-    this.scores.forEach(score => {
-      if (score.value) {
-        cont++;
-      }
-    });
-    return cont >= this.scores.length;
+    if (this.scores) {
+      let cont = 0;
+      this.scores.forEach(score => {
+        if (score.value) {
+          cont++;
+        }
+      });
+      return cont >= this.scores.length;
+    } else {
+      return false;
+    }
   }
 
   sendScores() {
@@ -195,4 +205,53 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
     };
   }
 
-}
+  findCurrentScore(): PaintingVersionScore {
+    if (!this.scores) {
+      return undefined;
+    } else {
+      return this.scores.find(sc => sc.painting_version_id === this.activePaintingVersionId);
+    }
+  }
+
+
+  getRate(): number {
+    const score = this.findCurrentScore();
+    if (!score) {
+      return 0;
+    } else {
+      return score.value;
+    }
+  }
+
+
+  onRateChange($event: number) {
+    const score = this.findCurrentScore();
+    if (!score) {
+      console.log('Cannot find painting_version_id: ' + this.activePaintingVersionId);
+    } else {
+      score.value = $event;
+    }
+  }
+
+  getComemnts(): string {
+    const score = this.findCurrentScore();
+    if (!score) {
+      return '';
+    } else {
+      return score.comments;
+    }
+  }
+
+  showComments(content, ) {
+    this.comentariosVersionSeleccionada = this.getComemnts();
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+      const score = this.findCurrentScore();
+      if (!score) {
+        console.log('Cannot find painting_version_id: ' + this.activePaintingVersionId);
+      } else {
+        score.comments = this.comentariosVersionSeleccionada;
+      }
+    }, (reason) => {
+      // cancelled
+    });
+  }}

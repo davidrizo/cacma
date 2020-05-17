@@ -19,6 +19,9 @@ import {
   NgbNavModule,
   NgbRatingModule,
 } from '@ng-bootstrap/ng-bootstrap';
+import {BarRatingModule} from 'ngx-bar-rating';
+import {LayoutModule} from '../../shared/layout/layout.module';
+import {AuthModule} from '../../shared/auth/auth.module';
 
 
 @NgModule({
@@ -34,6 +37,9 @@ import {
     NgbCarouselModule,
     NgbNavModule,
     FormsModule,
+    BarRatingModule,
+    LayoutModule
+    // AuthModule No se debe importar para evitar que el AuthService se instancie dos veces
   ],
   exports: [
   ],

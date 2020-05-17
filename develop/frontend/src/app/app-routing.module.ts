@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {ProfileComponent} from './core/components/profile/profile.component';
-import {AuthGuard} from './core/services/auth.guard';
+import {AuthGuard} from './shared/auth/services/auth.guard';
+import {GrecohComponent} from './features/grecoh/components/grecoh/grecoh.component';
+import {HomeComponent} from './core/components/home/home.component';
 
 const routes = [
   {
@@ -11,8 +13,7 @@ const routes = [
   },
   {
     path: 'grecoh',
-    loadChildren: () => import('./features/grecoh/grecoh.module').then(m => m.GrecohModule),
-    canActivate: [AuthGuard]
+    loadChildren: () => import('./features/grecoh/grecoh.module').then(m => m.GrecohModule)
   },
   {
     path: 'logos',
@@ -20,8 +21,7 @@ const routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: '',
-    loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)
+    path: '', component: HomeComponent
   },
 ];
 

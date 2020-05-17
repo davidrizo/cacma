@@ -1,68 +1,77 @@
-<div class="container-fluid">
-  <div *ngIf="painting$ | async as painting; else loading">
-    <div class="row" *ngIf="scores; else loading">
-      <div class="col-12 d-flex">
-        <div class="mx-auto">
-          <h5>{{painting.title}}</h5>
-
-          <p *ngIf="isAllScoresAnswered()">
-            <button class="btn-primary" (click)="sendScores()">Envía resultados</button>
-          </p>
-          <p>Valora TODAS las opciones</p>
-
-          <ul ngbNav #nav="ngbNav" class="nav-pills">
+<main class="d-flex" id="painting" *ngIf="painting$ | async as painting; else loading">
+    <div class="container align-self-center">
+      <header class="row">
+        <div class="col-8 col-md-8 offset-1 pl-0">
+          <h2>{{painting.title}}</h2>
+          <h3>{{painting.painter}}</h3>
+        </div>
+        <div class="col-2" id="close">
+          <h1>GreCoH</h1>
+          <div class="icon"><a routerLink="/grecoh/paintings"><i class="icofont-close"></i></a></div>
+        </div>
+      </header>
+      <main class="row">
+        <section class="col-9 col-md-10 offset-1">
+          <ul id="tabsOpciones" ngbNav [(activeId)]="activePaintingVersionId" #nav="ngbNav" class="nav-tabs">
             <li [ngbNavItem]="score.painting_version_id" *ngFor="let score of scores; trackBy: trackByPaintingVersionFn; let index = index;">
+              <ng-template ngbNavContent>
+                <div class="imgOpcion">
+                  <img [src]="getVersionImage(score.paintingVersion)" alt="Colored painting">
+                </div>
+              </ng-template>
               <a class="paintingVersionButton" ngbNavLink [style]="{'border-bottom-color': '#' + score.paintingVersion.color_hexa}">
                 {{score.paintingVersion.color_hexa}}
               </a>
-              <ng-template ngbNavContent>
-                <div class="d-flex">
-                  <div class="mx-auto">
-                    <img [src]="getVersionImage(score.paintingVersion)" alt="Colored painting" class="versionImage">
-                  </div>
-                </div>
-
-                <div class="version_score">
-                  <p>
-                    Valoración:
-                    <ngb-rating
-                      [max]="5"
-                      [(rate)]="score.value"
-                    >
-                  </ngb-rating>
-                  <p>
-                    Comentarios sobre la valoración (opcional):
-                    <textarea [(ngModel)]=score.comments></textarea>
-                  </p>
-                </div>
-              </ng-template>
             </li>
           </ul>
           <div [ngbNavOutlet]="nav" class="mt-2"></div>
+        </section>
+        <div class="col-1" class="botonesPainting">
+          <ngb-rating class="opcionesRating"
+                      [max]="5"
+                      [rate]="getRate()"
+                      (rateChange)="onRateChange($event)"
+          >
+          </ngb-rating>
+          <div class="icon" class="btnComment"><a (click)="showComments(modalComments)"><i class="icofont-comment"></i></a></div>
         </div>
+      </main>
 
-        <!--<ngb-carousel>
-          <ng-template ngbSlide *ngFor="let paintingVersion of paintingVersions$ | async; trackBy: trackByPaintingVersion" >
-            <div class="picsum-img-wrapper">
-              <img [src]="getVersionImage(paintingVersion)" alt="Colored painting" class="img-fluid"/>
-              <div class="carousel-caption">
-                <h3>{{paintingVersion.color_hexa}}</h3>
-              </div>
-              <ngb-rating
-                [max]="5"
-                [rate]="getScore(paintingVersion)"
-                (rateChange)="setScore(paintingVersion, $event)"
-              ></ngb-rating>
-            </div>
-          </ng-template>
-        </ngb-carousel>-->
-      </div>
     </div>
+</main>
+
+
+<ng-template #loading>
+  <div class="jumbotron">
+    Cargando ...
   </div>
+</ng-template>
 
-  <ng-template #loading>
-    <div class="jumbotron">
-      Loading ...
-    </div>
-  </ng-template>
+<div id="versionesEnviar" *ngIf="isAllScoresAnswered()">
+  <button class="btn-primary" (click)="sendScores()">Envía valoración</button>
+  <!--<div class="icon"><a (click)="sendScores()"><i class="icofont-send-mail"></i></a></div>-->
 </div>
+
+<ng-template #modalComments let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Comenta tu valoración de la composición</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <div class="input-group">
+          <textarea id="comentario" class="form-control" name="comentario" cols="40" rows="4" [(ngModel)]='comentariosVersionSeleccionada'></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Guarda</button>
+  </div>
+</ng-template>
