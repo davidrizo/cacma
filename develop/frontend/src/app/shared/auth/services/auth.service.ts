@@ -81,8 +81,8 @@ export class AuthService {
       // Call method to log in
       const origin = window.location.origin;
       client.loginWithRedirect({
-        redirect_uri: environment.home, // `${window.location.origin}`, // drizo
-        // redirect_uri: `${window.location.origin}`, // drizo
+        // redirect_uri: environment.home, // `${window.location.origin}`, // drizo
+        redirect_uri: `${window.location.origin}`, // drizo
         appState: { target: redirectPath }
       });
     });
