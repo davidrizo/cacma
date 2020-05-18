@@ -4,135 +4,8 @@
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/5-es2015.db9f44d5d7d2cab57937.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/5-es5.db9f44d5d7d2cab57937.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/ejes_equilibrio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/grecoh/greco.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/grecoh/greco_getsemani_andujar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/ha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/iseacv.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/logos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/munsell_colores_notas.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-details-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-details-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-details-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/33b7e4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/6ff48c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fa6027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fecbdc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fef31f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/grayscale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/75a399.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/d13f37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/d4f5d8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/f3726e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/fed206.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/grayscale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/596d78.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/5b9288.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/a23f25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/b99000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/d7a177.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/grayscale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/goya/asmodea/grayscale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/7397a9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/76a03d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/7a8fc1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/db5257.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/dcb147.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/de6d58.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/grayscale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/getsemani/grayscale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/0eb2ab.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/177bc8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/2b1635.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/c5cd08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/e6213c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/fbdc05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/grayscale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/animations.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/boxicons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/boxicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/transformations.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/counterup/counterup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/icofont/fonts/icofont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/icofont/fonts/icofont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/icofont/icofont.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/isotope-layout/isotope.pkgd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/isotope-layout/isotope.pkgd.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/jquery.easing/jquery.easing.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/jquery/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.carousel.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.default.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.green.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.video.play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/owl.carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/php-email-form/validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/waypoints/jquery.waypoints.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/icofont.9c33516aab48c61e3081.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/icofont.dad3accba068281878f1.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/main-es2015.50956823cbc996df6dc9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/main-es5.50956823cbc996df6dc9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/polyfills-es2015.8393a6e4790325c92087.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/polyfills-es5.7392f70c9ea027367d69.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/runtime-es2015.a82cacce18d7ee1e2d03.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/runtime-es5.a82cacce18d7ee1e2d03.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/scripts.ae64e1bfba96e43a2b13.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/styles.73dbb3d0ef0baa546c99.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +168,7 @@
       <workItem from="1589393025033" duration="16000" />
       <workItem from="1589393053692" duration="111000" />
       <workItem from="1589471282944" duration="38011000" />
-      <workItem from="1589732156659" duration="31488000" />
+      <workItem from="1589732156659" duration="31801000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -549,11 +422,11 @@
     </state>
     <state x="56" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1585665574183" />
     <state x="56" y="290" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1588615357075" />
-    <state width="625" height="539" key="SwitcherDM" timestamp="1589821069743">
+    <state width="625" height="539" key="SwitcherDM" timestamp="1589821343545">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1587401244897" />
-    <state width="625" height="539" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589821069743" />
+    <state width="625" height="539" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589821343545" />
     <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589811518514" />
     <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1589805258742">
       <screen x="0" y="23" width="2560" height="1417" />

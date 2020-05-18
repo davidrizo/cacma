@@ -1,6 +1,10 @@
 #paintings {
   background: #fff;
-  padding-top: 5vmax;
+  padding-top: 10vh;
+}
+
+#paintings h2 {
+  margin-bottom: 0;
 }
 
 #images {
