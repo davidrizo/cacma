@@ -67,7 +67,6 @@
   }
 
   #tabsOpciones .texto {
-    color: #1b1e21;
     font-size: 0.6rem;
   }
 
@@ -93,17 +92,17 @@
 
 
 .botonesPainting {
-  margin-bottom: 10vh;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .opcionesRating {
   width: 3em;
-  height: 5rem;
+  height: 8em;
   display: flex !important;
   flex-direction: column-reverse;
   color: yellow;
@@ -119,7 +118,6 @@
   font-size: 1rem;
 }
 .botonesPainting .btnComment {
-  padding-bottom: 3rem;
 }
 .botonesPainting .btnComment a {
   color: white;
@@ -127,7 +125,6 @@
 }
 
 .botonesPainting .pendingRate {
-  padding-top: 3rem;
 }
 
 .botonesPainting .pendingRate a {
@@ -143,7 +140,7 @@
   font-size: 1.5rem;
 }
 
-#versionesEnviar .btn-primary{
+#versionesEnviar .btn-primary {
   border-color: white;
   background-color: #14c871;
 }
