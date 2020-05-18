@@ -120,7 +120,8 @@ export class AuthService {
       // Call method to log out
       client.logout({
         client_id: environment.auth.CLIENT_ID,
-        returnTo: window.location.origin
+        // returnTo: window.location.origin
+        returnTo: environment.home
       });
     });
   }
