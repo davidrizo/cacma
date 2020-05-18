@@ -2,18 +2,19 @@
   <div class="container">
     <header class="row" class="d-flex align-items-start">
       <div class="col-8 offset-1 pl-0">
-        <h2>{{painting.title}}</h2>
-        <h3>{{painting.painter}}</h3>
+        <!--<h2>{{painting.title}}</h2>
+        <h3>{{painting.painter}}</h3>-->
+        <p>Valora todas las composiciones</p>
       </div>
       <div class="col-2" id="close">
-        <a routerLink="/grecoh/paintings"><span id="cierra">Cierra</span><i class="icofont-close"></i></a>
+        <p><a routerLink="/grecoh/paintings"><span id="cierra">Cierra</span><i class="icofont-close"></i></a></p>
       </div>
     </header>
 
     <main class="row">
       <section class="col-9 col-sm-10 offset-1">
         <ul id="tabsOpciones" ngbNav [(activeId)]="activePaintingVersionId" #nav="ngbNav" class="nav-tabs d-flex align-items-center">
-          <li class="texto nav-link">Composiciones</li>
+          <!--<li class="texto nav-link">Composiciones</li>-->
           <li [ngbNavItem]="score.painting_version_id" *ngFor="let score of scores; trackBy: trackByPaintingVersionFn; let index = index;">
             <ng-template ngbNavContent>
               <div class="imgOpcion">
@@ -30,7 +31,7 @@
 
       <div class="col-1 botonesPainting">
         <div class="icon" class="btnComment" ngbTooltip="Pulsa para escribir un comentario sobre la valoración"><a (click)="showComments(modalComments)"><i class="icofont-comment"></i></a></div>
-        <ngb-rating class="opcionesRating" ngbTooltip="Valora con al menos una estrella"
+        <ngb-rating class="opcionesRating"
                     [max]="5"
                     [rate]="getRate()"
                     (rateChange)="onRateChange($event)"
