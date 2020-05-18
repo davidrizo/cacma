@@ -1,0 +1,19 @@
+#header {
+  background: #fff;
+}
+
+#header .logo img {
+  height: 5vmax;
+}
+
+.navbar-toggler-icon {
+  font-size: 1.5vmax;
+}
+
+#header {
+  padding-top: 2vh;
+}
+
+
+
+

@@ -1,21 +1,4 @@
-<!-- ======= Header ======= -->
 <header id="header" class="fixed-top" *ngIf="auth.auth0Client$ | async">
-  <!--<div class="container d-flex align-items-center">
-
-    <a routerLink="/" class="logo mr-auto"><img src="assets/img/iseacv.jpg" alt="" class="img-fluid"></a>
-
-    <nav class="nav-menu d-none d-lg-block">
-      <ul>
-        <li><a class="active" routerLink="grecoh/home">GreCoH</a></li>
-        <li><a href="http://easda.es/investigacion/pesovisual"  target="_blank">Pesos visuales</a></li>
-        <li><a routerLink="/" fragment="about" (click)="onQuienesSomosAnchorClick()">Quiénes somos</a></li>
-      </ul>
-    </nav>
-
-    <a *ngIf="!auth.loggedIn" (click)="auth.login()" class="get-started-btn">Login</a>
-    <a *ngIf="auth.loggedIn" (click)="auth.logout()" class="get-started-btn">Logout</a>
-  </div>-->
-
   <nav class="container navbar navbar-expand-lg navbar-light d-flex align-items-center">
     <a class="logo mr-auto" routerLink="/" ><img src="assets/img/iseacv.jpg" alt="" class="img-fluid"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">

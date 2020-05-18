@@ -2,7 +2,142 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/5-es2015.db9f44d5d7d2cab57937.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/5-es5.db9f44d5d7d2cab57937.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/ejes_equilibrio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/grecoh/greco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/grecoh/greco_getsemani_andujar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/ha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/iseacv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/logos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/munsell_colores_notas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-details-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-details-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-details-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/33b7e4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/6ff48c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fa6027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fecbdc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fef31f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/75a399.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/d13f37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/d4f5d8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/f3726e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/fed206.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/596d78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/5b9288.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/a23f25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/b99000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/d7a177.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/goya/asmodea/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/7397a9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/76a03d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/7a8fc1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/db5257.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/dcb147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/de6d58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/getsemani/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/0eb2ab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/177bc8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/2b1635.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/c5cd08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/e6213c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/fbdc05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/animations.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/boxicons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/boxicons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/transformations.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/counterup/counterup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/icofont/fonts/icofont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/icofont/fonts/icofont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/icofont/icofont.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/isotope-layout/isotope.pkgd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/isotope-layout/isotope.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/jquery.easing/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/jquery/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.green.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/php-email-form/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/waypoints/jquery.waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/icofont.9c33516aab48c61e3081.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/icofont.dad3accba068281878f1.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/main-es2015.d6e6306f5390ba42e7fc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/main-es5.d6e6306f5390ba42e7fc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/polyfills-es2015.8393a6e4790325c92087.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/polyfills-es5.7392f70c9ea027367d69.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/runtime-es2015.a82cacce18d7ee1e2d03.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/runtime-es5.a82cacce18d7ee1e2d03.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/scripts.ae64e1bfba96e43a2b13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/styles.6c5f00316eda4b6f5232.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +300,7 @@
       <workItem from="1589393025033" duration="16000" />
       <workItem from="1589393053692" duration="111000" />
       <workItem from="1589471282944" duration="38011000" />
-      <workItem from="1589732156659" duration="21341000" />
+      <workItem from="1589732156659" duration="27470000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -307,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589793347715</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Funciona con 0auth tanto en desarrollo como en producción y Angular 9">
+      <created>1589805255183</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1589805255183</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +465,8 @@
     <MESSAGE value="Continued..." />
     <MESSAGE value="Production ready" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="Funciona con 0auth tanto en desarrollo como en producción y Angular 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funciona con 0auth tanto en desarrollo como en producción y Angular 9" />
   </component>
   <component name="WindowStateProjectService">
     <state x="151" y="319" key="#CLI_Interpreters" timestamp="1589392740838">
@@ -360,43 +503,43 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="279" y="286" key="#php_backend/0.0.2560.1440@0.0.2560.1440" timestamp="1585652236407" />
-    <state x="77" y="274" key="CommitChangelistDialog2" timestamp="1589793347364">
+    <state x="77" y="274" key="CommitChangelistDialog2" timestamp="1589805279872">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="77" y="255" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404957405" />
     <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589793347364" />
-    <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1588672721046" />
-    <state width="1098" height="415" key="GridCell.Tab.0.bottom" timestamp="1589799892337">
+    <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1589805279872" />
+    <state width="1098" height="415" key="GridCell.Tab.0.bottom" timestamp="1589811130114">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466143" />
     <state width="2560" height="157" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
     <state width="1098" height="341" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752642" />
-    <state width="1098" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1589799892337" />
+    <state width="1098" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1589811130114" />
     <state width="2508" height="256" key="GridCell.Tab.0.bottom/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198061" />
-    <state width="1098" height="415" key="GridCell.Tab.0.center" timestamp="1589799892336">
+    <state width="1098" height="415" key="GridCell.Tab.0.center" timestamp="1589811130113">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.center/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466141" />
     <state width="2560" height="157" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
     <state width="1098" height="341" key="GridCell.Tab.0.center/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752641" />
-    <state width="1098" height="415" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1589799892336" />
+    <state width="1098" height="415" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1589811130113" />
     <state width="2508" height="256" key="GridCell.Tab.0.center/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198059" />
-    <state width="1098" height="415" key="GridCell.Tab.0.left" timestamp="1589799892334">
+    <state width="1098" height="415" key="GridCell.Tab.0.left" timestamp="1589811130113">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.left/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466139" />
     <state width="2560" height="157" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
     <state width="1098" height="341" key="GridCell.Tab.0.left/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752640" />
-    <state width="1098" height="415" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1589799892334" />
+    <state width="1098" height="415" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1589811130113" />
     <state width="2508" height="256" key="GridCell.Tab.0.left/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198057" />
-    <state width="1098" height="415" key="GridCell.Tab.0.right" timestamp="1589799892336">
+    <state width="1098" height="415" key="GridCell.Tab.0.right" timestamp="1589811130113">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.right/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466142" />
     <state width="2560" height="157" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
     <state width="1098" height="341" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752642" />
-    <state width="1098" height="415" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1589799892336" />
+    <state width="1098" height="415" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1589811130113" />
     <state width="2508" height="256" key="GridCell.Tab.0.right/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198060" />
     <state x="824" y="506" key="NewPhpClassDialog" timestamp="1585935068243">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -411,17 +554,17 @@
     </state>
     <state x="56" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1585665574183" />
     <state x="56" y="290" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1588615357075" />
-    <state width="625" height="564" key="SwitcherDM" timestamp="1589804873393">
+    <state width="625" height="564" key="SwitcherDM" timestamp="1589811518514">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1587401244897" />
     <state width="625" height="539" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589792631243" />
-    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589804873393" />
-    <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1588672737285">
+    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589811518514" />
+    <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1589805258742">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="163" y="382" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404958868" />
-    <state x="163" y="399" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1588672737285" />
+    <state x="163" y="399" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1589805258742" />
     <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586365928725">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -453,12 +596,12 @@
     <state x="1797" y="668" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563242548" />
     <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417@0.23.2560.1417" timestamp="1589789241408" />
     <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926188367" />
-    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup" timestamp="1589642927394">
+    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup" timestamp="1589814865607">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587390370513" />
     <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587029999460" />
-    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589560194395" />
+    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589814865607" />
     <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1589642927394" />
   </component>
 </project>

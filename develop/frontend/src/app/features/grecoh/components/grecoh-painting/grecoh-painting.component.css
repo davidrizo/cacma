@@ -58,6 +58,10 @@
   background-color: lightgray;
 }
 
+#tabsOpciones .texto{
+  color: #1b1e21;
+  font-size: 1rem;
+}
 #painting section {
   padding: 0;
 }

@@ -1,0 +1,66 @@
+#home {
+  background: #fff;
+  padding-top: 10vmax;
+}
+
+#home h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #3e4450;
+}
+
+#home h2 {
+  color: #858ea1;
+  margin: 10px 0  30px 0;
+  font-size: 24px;
+}
+
+#home .btnExperimentoActivo {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 10px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #16df7e;
+  box-shadow: 0 8px 28px rgba(22, 223, 126, 0.45);
+}
+
+#home .btnExperimentoActivo:hover {
+  background: #206bfb;
+  box-shadow: 0 8px 28px rgba(32, 107, 251, 0.45);
+}
+
+#home .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 991px) {
+  #home .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
