@@ -134,6 +134,11 @@ h2 {
   z-index: 2;
 }
 
+/* Si no, en móvil pone un cuadro azul alrededor de los elementos seleccionados */
+*:focus {
+  outline: none;
+}
+
 @media (max-width: 575px) {
   .section-title h2 {
     font-size: 28px;
