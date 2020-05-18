@@ -17,8 +17,8 @@
   font-size: 24px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #grecoh {
-    padding-top: 0vh;
+    padding-top: 10vmax;
   }
 }
