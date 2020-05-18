@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
 
@@ -15,12 +14,11 @@ import {LoggerModule, NgxLoggerLevel} from 'ngx-logger';
 import {ToastrModule} from 'ngx-toastr';
 import {NgbCollapseModule} from '@ng-bootstrap/ng-bootstrap';
 import {HomeComponent} from './core/components/home/home.component';
-import {FooterComponent} from './shared/layout/components/footer/footer.component';
-import {NavBarComponent} from './shared/layout/components/nav-bar/nav-bar.component';
 import {ProfileComponent} from './core/components/profile/profile.component';
 import {LayoutModule} from './shared/layout/layout.module';
 import {GrecohModule} from './features/grecoh/grecoh.module';
 import {CallbackComponent} from './core/components/callback/callback.component';
+import {AuthService} from './auth/auth.service';
 
 // the second parameter 'es-ES' is optional
 registerLocaleData(localeEs, 'es-ES');
@@ -31,7 +29,6 @@ registerLocaleData(localeEs, 'es-ES');
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     RouterModule,
     AppRoutingModule,
     HttpClientModule,

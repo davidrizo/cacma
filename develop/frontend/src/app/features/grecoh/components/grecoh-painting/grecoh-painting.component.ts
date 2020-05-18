@@ -13,7 +13,7 @@ import {
   selectPostScoresResult,
   selectSelectedPainting
 } from '../../store/selectors/grecoh.selector';
-import {AuthService} from '../../../../core/services/auth.service';
+import {AuthService} from '../../../../auth/auth.service';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 
 import {UserPaintingVersionScores} from '../../model/user-painting-version-scores';
@@ -213,7 +213,6 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
     }
   }
 
-
   getRate(): number {
     const score = this.findCurrentScore();
     if (!score) {
@@ -222,7 +221,6 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
       return score.value;
     }
   }
-
 
   onRateChange($event: number) {
     const score = this.findCurrentScore();
@@ -254,4 +252,6 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
     }, (reason) => {
       // cancelled
     });
-  }}
+  }
+
+}

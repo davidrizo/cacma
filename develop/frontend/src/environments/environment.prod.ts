@@ -2,6 +2,11 @@ export const environment = {
   production: true,
   // important not to finish the URL with slash
   apiEndpoint: 'https://cacma.000webhostapp.com/api',
-  client_id: 'rgueuEzyc9LAVIhNjCLTKeYG4O53dTvE', // auth0 client ID
-  home: 'https://davidrizo.github.io/cacma'
+  // home: 'https://davidrizo.github.io/cacma'
+  auth: {
+    CLIENT_ID: 'rgueuEzyc9LAVIhNjCLTKeYG4O53dTvE',
+    CLIENT_DOMAIN: 'easda-research.eu.auth0.com', // e.g., 'you.auth0.com'
+    REDIRECT: 'https://davidrizo.github.io/cacma/callback',
+    LOGOUT_URL: 'https://davidrizo.github.io/cacma'
+  }
 };

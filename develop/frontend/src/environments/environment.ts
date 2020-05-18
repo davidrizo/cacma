@@ -7,9 +7,14 @@
 export const environment = {
   production: false,
   apiEndpoint: 'http://localhost:63342/CACMA/php_backend/api',
-  client_id: 'fsGZbuPGwZcxOMN61PNYeon1yyO3Cp9Z', // auth0 client ID
-  home: 'http://localhost:3000'
-  // home: 'https://davidrizo.github.io/cacma' //TODO
+  // home: 'http://localhost:3000'
+  // home: 'https://davidrizo.github.io/cacma' //
+  auth: {
+    CLIENT_ID: 'fsGZbuPGwZcxOMN61PNYeon1yyO3Cp9Z',
+    CLIENT_DOMAIN: 'easda-research.eu.auth0.com', // e.g., 'you.auth0.com'
+    REDIRECT: 'http://localhost:3000/callback',
+    LOGOUT_URL: 'http://localhost:3000'
+  }
 };
 
 /*

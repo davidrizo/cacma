@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService} from '../../services/auth.service';
+import {AuthService} from '../../../auth/auth.service';
 
 @Component({
   selector: 'app-callback',
@@ -8,9 +8,10 @@ import {AuthService} from '../../services/auth.service';
 })
 export class CallbackComponent implements OnInit {
 
-  constructor(private authService: AuthService) { }
+  constructor(private auth: AuthService) { }
 
   ngOnInit(): void {
-  ///  this.authService.handleAuthCallback();
+    //this.auth.handleAuthCallback();
+    console.log('REDIRECCIONANDO con ' + this,this.auth.loggedIn);
   }
 }

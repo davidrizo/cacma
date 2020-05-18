@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="">
+    <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
+      <change afterPath="$PROJECT_DIR$/0auth-samples" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/auth/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/callback/callback.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/callback/callback.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/callback/callback.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/callback/callback.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/services/auth.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/services/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/layout/layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/layout.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +71,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/app/auth" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/core/components" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/core/services" />
       <recent name="$PROJECT_DIR$/frontend/src/app/shared/auth/services" />
       <recent name="$PROJECT_DIR$/frontend/src/app/shared/layout/components" />
-      <recent name="$PROJECT_DIR$/frontend/src/app/core/components" />
-      <recent name="$PROJECT_DIR$/frontend/src/app/features/layout/components" />
-      <recent name="$PROJECT_DIR$/frontend/src/assets/images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
@@ -169,7 +188,7 @@
       <workItem from="1589393025033" duration="16000" />
       <workItem from="1589393053692" duration="111000" />
       <workItem from="1589471282944" duration="38011000" />
-      <workItem from="1589732156659" duration="7575000" />
+      <workItem from="1589732156659" duration="18937000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -304,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588672721192</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="...">
+      <created>1589793347715</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1589793347715</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +345,8 @@
     <MESSAGE value="Continued... (add bootstrap)" />
     <MESSAGE value="Continued..." />
     <MESSAGE value="Production ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="Production ready" />
+    <MESSAGE value="..." />
+    <option name="LAST_COMMIT_MESSAGE" value="..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="151" y="319" key="#CLI_Interpreters" timestamp="1589392740838">
@@ -356,42 +383,43 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="279" y="286" key="#php_backend/0.0.2560.1440@0.0.2560.1440" timestamp="1585652236407" />
-    <state x="77" y="274" key="CommitChangelistDialog2" timestamp="1588672721046">
+    <state x="77" y="274" key="CommitChangelistDialog2" timestamp="1589793347364">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="77" y="255" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404957405" />
+    <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589793347364" />
     <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1588672721046" />
-    <state width="1098" height="433" key="GridCell.Tab.0.bottom" timestamp="1589741146648">
+    <state width="1098" height="415" key="GridCell.Tab.0.bottom" timestamp="1589799892337">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466143" />
     <state width="2560" height="157" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
-    <state width="1098" height="541" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563533326" />
-    <state width="1098" height="433" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1589741146648" />
+    <state width="1098" height="341" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752642" />
+    <state width="1098" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1589799892337" />
     <state width="2508" height="256" key="GridCell.Tab.0.bottom/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198061" />
-    <state width="1098" height="433" key="GridCell.Tab.0.center" timestamp="1589741146647">
+    <state width="1098" height="415" key="GridCell.Tab.0.center" timestamp="1589799892336">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.center/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466141" />
     <state width="2560" height="157" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
-    <state width="1098" height="541" key="GridCell.Tab.0.center/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563533325" />
-    <state width="1098" height="433" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1589741146647" />
+    <state width="1098" height="341" key="GridCell.Tab.0.center/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752641" />
+    <state width="1098" height="415" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1589799892336" />
     <state width="2508" height="256" key="GridCell.Tab.0.center/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198059" />
-    <state width="1098" height="433" key="GridCell.Tab.0.left" timestamp="1589741146647">
+    <state width="1098" height="415" key="GridCell.Tab.0.left" timestamp="1589799892334">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.left/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466139" />
     <state width="2560" height="157" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
-    <state width="1098" height="541" key="GridCell.Tab.0.left/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563533325" />
-    <state width="1098" height="433" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1589741146647" />
+    <state width="1098" height="341" key="GridCell.Tab.0.left/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752640" />
+    <state width="1098" height="415" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1589799892334" />
     <state width="2508" height="256" key="GridCell.Tab.0.left/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198057" />
-    <state width="1098" height="433" key="GridCell.Tab.0.right" timestamp="1589741146648">
+    <state width="1098" height="415" key="GridCell.Tab.0.right" timestamp="1589799892336">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.right/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466142" />
     <state width="2560" height="157" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
-    <state width="1098" height="541" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563533326" />
-    <state width="1098" height="433" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1589741146648" />
+    <state width="1098" height="341" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752642" />
+    <state width="1098" height="415" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1589799892336" />
     <state width="2508" height="256" key="GridCell.Tab.0.right/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198060" />
     <state x="824" y="506" key="NewPhpClassDialog" timestamp="1585935068243">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -406,12 +434,12 @@
     </state>
     <state x="56" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1585665574183" />
     <state x="56" y="290" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1588615357075" />
-    <state width="625" height="539" key="SwitcherDM" timestamp="1589741187026">
+    <state width="625" height="564" key="SwitcherDM" timestamp="1589800150317">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1587401244897" />
-    <state width="625" height="514" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589566346245" />
-    <state width="625" height="539" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589741187026" />
+    <state width="625" height="539" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589792631243" />
+    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589800150317" />
     <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1588672737285">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -427,10 +455,11 @@
     <state x="903" y="514" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1586630096566" />
     <state x="903" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392960510" />
     <state x="903" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1588786643854" />
-    <state x="893" y="433" width="774" height="574" key="find.popup" timestamp="1587404445205">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="893" y="449" width="774" height="574" key="find.popup" timestamp="1589798211871">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="893" y="433" width="774" height="574" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587404445205" />
+    <state x="893" y="449" width="774" height="574" key="find.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1589798211871" />
     <state x="953" y="488" key="git4idea.merge.GitPullDialog" timestamp="1588615369020">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -439,13 +468,13 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="479" y="258" key="new project wizard/0.0.2560.1440@0.0.2560.1440" timestamp="1585651847459" />
-    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate" timestamp="1589735831141">
+    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate" timestamp="1589789241408">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589471884519" />
     <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1587396700850" />
     <state x="1797" y="668" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563242548" />
-    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417@0.23.2560.1417" timestamp="1589735831141" />
+    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417@0.23.2560.1417" timestamp="1589789241408" />
     <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926188367" />
     <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup" timestamp="1589642927394">
       <screen x="0" y="23" width="2560" height="1417" />

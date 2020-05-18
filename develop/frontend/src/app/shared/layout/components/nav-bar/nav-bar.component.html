@@ -1,5 +1,5 @@
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top">
+<header id="header" class="fixed-top" *ngIf="auth.auth0Client$ | async">
   <!--<div class="container d-flex align-items-center">
 
     <a routerLink="/" class="logo mr-auto"><img src="assets/img/iseacv.jpg" alt="" class="img-fluid"></a>

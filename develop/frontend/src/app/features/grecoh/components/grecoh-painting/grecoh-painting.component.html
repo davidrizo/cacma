@@ -27,13 +27,16 @@
           <div [ngbNavOutlet]="nav" class="mt-2"></div>
         </section>
         <div class="col-1" class="botonesPainting">
-          <ngb-rating class="opcionesRating"
+          <div class="icon" class="btnComment" ngbTooltip="Pulsa para escribir un comentario sobre la valoración"><a (click)="showComments(modalComments)"><i class="icofont-comment"></i></a></div>
+          <ngb-rating class="opcionesRating" ngbTooltip="Valora con al menos una estrella"
                       [max]="5"
                       [rate]="getRate()"
                       (rateChange)="onRateChange($event)"
           >
           </ngb-rating>
-          <div class="icon" class="btnComment"><a (click)="showComments(modalComments)"><i class="icofont-comment"></i></a></div>
+          <div>
+            <div *ngIf="!getRate()" class="icon" class="pendingRate"><a><i class="icofont-exclamation-tringle" ngbTooltip="Valora con al menos una estrella"></i></a></div>
+          </div>
         </div>
       </main>
 
