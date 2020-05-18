@@ -2,7 +2,8 @@
 cd develop/frontend
 #hashing to force cache clean
 
-ng build --aot --output-hashing=all --prod --output-path ../../docs --base-href /cacma/ --deploy-url https://davidrizo.github.io/cacma/
+ng build --prod --output-path ../../docs --base-href /cacma/ 
+#--deploy-url https://davidrizo.github.io/cacma/
 #node_modules/@angular/cli/bin/ng build --output-hashing=all --aot --prod --base-href /investigacion/cacma/ --deploy-url /investigacion/cacma/
 
 cd -
