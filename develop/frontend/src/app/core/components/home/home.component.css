@@ -39,7 +39,7 @@
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   #home .animated {
     -webkit-animation: none;
     animation: none;
