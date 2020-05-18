@@ -7,7 +7,7 @@
 export const environment = {
   production: false,
   apiEndpoint: 'http://localhost:63342/CACMA/php_backend/api',
-  // home: 'http://localhost:3000'
+  home: 'http://localhost:3000',
   // home: 'https://davidrizo.github.io/cacma' //
   auth: {
     CLIENT_ID: 'fsGZbuPGwZcxOMN61PNYeon1yyO3Cp9Z',
