@@ -1,28 +1,23 @@
 <app-nav-bar></app-nav-bar>
 
-<main id="main">
-  <section class="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <span>GreCoH</span>
-        <h2>GreCoH</h2>
-        <p>Selecciona una de las siguientes obras para comenzar</p>
-      </div>
+<section id="paintings" class="container">
+    <div class="section-title">
+      <span>GreCoH</span>
+      <h2>GreCoH</h2>
+      <p>Selecciona una de las siguientes obras para comenzar</p>
+    </div>
 
-      <div id="images">
-        <div *ngFor="let painting of paintings$ | async; trackBy: trackByPainting">
-          <div class="image">
-            <img [src]="getGrayscaleImage(painting)" alt="Grayscale image of {{painting.title}}"/>
-            <div class="image-info">
-              <h4>{{painting.painter}}</h4>
-              <p>{{painting.title}}</p>
-              <p><a [routerLink]="['../painting',painting.id]" class="details-link">Comienza</a></p>
-            </div>
+    <div id="images">
+      <div *ngFor="let painting of paintings$ | async; trackBy: trackByPainting">
+        <div class="image">
+          <img [src]="getGrayscaleImage(painting)" alt="Grayscale image of {{painting.title}}"/>
+          <div class="image-info">
+            <h4>{{painting.painter}}</h4>
+            <p>{{painting.title}}</p>
+            <p><a [routerLink]="['../painting',painting.id]" class="details-link">Comienza</a></p>
           </div>
         </div>
       </div>
-
     </div>
-  </section><!-- End Portfolio Section -->
-</main>
+</section>
 <app-footer></app-footer>

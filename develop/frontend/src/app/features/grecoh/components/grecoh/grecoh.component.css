@@ -1,6 +1,6 @@
 #grecoh {
   background: #fff;
-  padding-top: 5vmax;
+  padding-top: 10vh;
 }
 
 #grecoh h1 {
@@ -18,7 +18,5 @@
 }
 
 @media (max-width: 991px) {
-  #grecoh {
-    padding-top: 10vmax;
-  }
+
 }

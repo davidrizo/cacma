@@ -1,3 +1,8 @@
+#paintings {
+  background: #fff;
+  padding-top: 5vmax;
+}
+
 #images {
   /* Prevent vertical gaps */
   line-height: 0;
