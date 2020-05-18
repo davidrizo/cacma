@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/nav-bar/nav-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/layout/components/footer/footer.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/3rdpartylicenses.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/404.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/5-es2015.db9f44d5d7d2cab57937.js" beforeDir="false" />
@@ -130,14 +125,14 @@
       <change beforePath="$PROJECT_DIR$/../docs/icofont.9c33516aab48c61e3081.woff2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/icofont.dad3accba068281878f1.woff" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/main-es2015.d6e6306f5390ba42e7fc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/main-es5.d6e6306f5390ba42e7fc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/main-es2015.ca631599792f9677bc6f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/main-es5.ca631599792f9677bc6f.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/polyfills-es2015.8393a6e4790325c92087.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/polyfills-es5.7392f70c9ea027367d69.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/runtime-es2015.a82cacce18d7ee1e2d03.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/runtime-es5.a82cacce18d7ee1e2d03.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/scripts.ae64e1bfba96e43a2b13.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/styles.6c5f00316eda4b6f5232.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/styles.ac0ade4155f4685956c8.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +295,7 @@
       <workItem from="1589393025033" duration="16000" />
       <workItem from="1589393053692" duration="111000" />
       <workItem from="1589471282944" duration="38011000" />
-      <workItem from="1589732156659" duration="27470000" />
+      <workItem from="1589732156659" duration="29013000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -509,36 +504,36 @@
     <state x="77" y="255" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404957405" />
     <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589793347364" />
     <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1589805279872" />
-    <state width="1098" height="415" key="GridCell.Tab.0.bottom" timestamp="1589811130114">
+    <state width="848" height="415" key="GridCell.Tab.0.bottom" timestamp="1589817271902">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466143" />
     <state width="2560" height="157" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
-    <state width="1098" height="341" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752642" />
+    <state width="848" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589817271902" />
     <state width="1098" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1589811130114" />
     <state width="2508" height="256" key="GridCell.Tab.0.bottom/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198061" />
-    <state width="1098" height="415" key="GridCell.Tab.0.center" timestamp="1589811130113">
+    <state width="848" height="415" key="GridCell.Tab.0.center" timestamp="1589817271901">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.center/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466141" />
     <state width="2560" height="157" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
-    <state width="1098" height="341" key="GridCell.Tab.0.center/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752641" />
+    <state width="848" height="415" key="GridCell.Tab.0.center/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589817271901" />
     <state width="1098" height="415" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1589811130113" />
     <state width="2508" height="256" key="GridCell.Tab.0.center/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198059" />
-    <state width="1098" height="415" key="GridCell.Tab.0.left" timestamp="1589811130113">
+    <state width="848" height="415" key="GridCell.Tab.0.left" timestamp="1589817271900">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.left/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466139" />
     <state width="2560" height="157" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
-    <state width="1098" height="341" key="GridCell.Tab.0.left/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752640" />
+    <state width="848" height="415" key="GridCell.Tab.0.left/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589817271900" />
     <state width="1098" height="415" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1589811130113" />
     <state width="2508" height="256" key="GridCell.Tab.0.left/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198057" />
-    <state width="1098" height="415" key="GridCell.Tab.0.right" timestamp="1589811130113">
+    <state width="848" height="415" key="GridCell.Tab.0.right" timestamp="1589817271901">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.right/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466142" />
     <state width="2560" height="157" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
-    <state width="1098" height="341" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589794752642" />
+    <state width="848" height="415" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589817271901" />
     <state width="1098" height="415" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1589811130113" />
     <state width="2508" height="256" key="GridCell.Tab.0.right/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198060" />
     <state x="824" y="506" key="NewPhpClassDialog" timestamp="1585935068243">
