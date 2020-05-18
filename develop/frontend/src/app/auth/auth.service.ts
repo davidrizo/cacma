@@ -121,7 +121,7 @@ export class AuthService {
       client.logout({
         client_id: environment.auth.CLIENT_ID,
         // returnTo: window.location.origin
-        returnTo: environment.home
+       // returnTo: environment.home
       });
     });
   }
