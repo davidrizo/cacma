@@ -1,19 +1,18 @@
-<div class="d-flex" id="painting" *ngIf="painting$ | async as painting; else loading">
-    <div class="container align-self-center">
-      <header class="row">
+<div class="d-flex align-content-center align-items-center" id="painting" *ngIf="painting$ | async as painting; else loading">
+    <div class="container">
+      <header class="row d-flex align-content-center align-items-center">
         <div class="col-8 offset-1 pl-0">
           <h2>{{painting.title}}</h2>
-          <h3>{{painting.painter}}</h3>
+          <h3 class="d-none d-sm-block">{{painting.painter}}</h3>
         </div>
-        <div class="col-2" id="close">
-          <h1>GreCoH</h1>
-          <div class="icon"><a routerLink="/grecoh/paintings"><i class="icofont-close"></i></a></div>
+        <div class="col-2 d-flex align-content-center align-items-center" id="close">
+          Cierra <a routerLink="/grecoh/paintings"><i class="icofont-close"></i></a>
         </div>
       </header>
-      <!--<main class="row">
+      <main class="row">
         <section class="col-9 col-md-10 offset-1">
           <ul id="tabsOpciones" ngbNav [(activeId)]="activePaintingVersionId" #nav="ngbNav" class="nav-tabs">
-            <li class="texto nav-link">Valora todas las opciones</li>
+            <!--<li class="texto nav-link">Valora todas las opciones</li>
             <li [ngbNavItem]="score.painting_version_id" *ngFor="let score of scores; trackBy: trackByPaintingVersionFn; let index = index;">
               <ng-template ngbNavContent>
                 <div class="imgOpcion">
@@ -23,12 +22,12 @@
               <a class="paintingVersionButton" ngbNavLink [style]="{'border-bottom-color': '#' + score.paintingVersion.color_hexa}">
                 {{index + 1}}º
               </a>
-            </li>
+            </li>-->
           </ul>
-          <div [ngbNavOutlet]="nav" class="mt-2"></div>
+          <!--<div [ngbNavOutlet]="nav" class="mt-2"></div>-->
         </section>
         <div class="col-1" class="botonesPainting">
-          <div class="icon" class="btnComment" ngbTooltip="Pulsa para escribir un comentario sobre la valoración"><a (click)="showComments(modalComments)"><i class="icofont-comment"></i></a></div>
+          <!--<div class="icon" class="btnComment" ngbTooltip="Pulsa para escribir un comentario sobre la valoración"><a (click)="showComments(modalComments)"><i class="icofont-comment"></i></a></div>
           <ngb-rating class="opcionesRating" ngbTooltip="Valora con al menos una estrella"
                       [max]="5"
                       [rate]="getRate()"
@@ -37,9 +36,9 @@
           </ngb-rating>
           <div>
             <div *ngIf="!getRate()" class="icon" class="pendingRate"><a><i class="icofont-exclamation-tringle" ngbTooltip="Valora con al menos una estrella"></i></a></div>
-          </div>
+          </div>-->
         </div>
-      </main>-->
+      </main>
     </div>
 </div>
 

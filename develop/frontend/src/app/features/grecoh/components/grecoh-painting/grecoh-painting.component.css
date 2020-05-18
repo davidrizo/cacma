@@ -5,7 +5,6 @@
 #painting {
   color: white;
   background-color: #282828;
-  height: 100vh;
 }
 
 #painting > div {
@@ -13,17 +12,31 @@
 }
 
 #painting header {
-  height: 100%;
+  max-height: 10vh;
   padding: 10px;
 }
 
+#painting main {
+  max-height: 90vh;
+}
 
-@media (max-width: 991px) {
-  #painting h1 {
-    margin: 0;
-    font-size: 14px;
+#painting #tabsOpciones {
+
+}
+
+#painting h2, h3 {
+  margin: 1rem;
+}
+#painting #close {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  #painting #close {
+    font-size: 24px;
   }
-
+}
+@media (max-width: 768px) {
   #painting h2 {
     margin: 0.2rem;
     font-size: 12px;
@@ -32,5 +45,6 @@
   #painting h3 {
     margin: 0.2rem;
     font-size: 10px;
+    line-height: 8px;
   }
 }
