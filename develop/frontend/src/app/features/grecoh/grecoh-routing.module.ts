@@ -5,7 +5,7 @@ import {GrecohAdminComponent} from './components/grecoh-admin/grecoh-admin.compo
 import {GrecohPaintingsComponent} from './components/grecoh-paintings/grecoh-paintings.component';
 import {GrecohPaintingComponent} from './components/grecoh-painting/grecoh-painting.component';
 import {GrecohScoreStatisticsComponent} from './components/score-statistics/grecoh-score-statistics.component';
-import {AuthGuard} from '../../shared/auth/services/auth.guard';
+import {AuthGuard} from '../../core/services/auth.guard';
 
 
 const routes: Routes = [

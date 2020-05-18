@@ -38,7 +38,6 @@ import {RouterModule} from '@angular/router';
     FormsModule,
     LayoutModule,
     RouterModule
-    // AuthModule No se debe importar para evitar que el AuthService se instancie dos veces
   ],
   exports: [
   ],

@@ -3,7 +3,7 @@ import {ActivatedRoute, ParamMap} from '@angular/router';
 import {Store} from '@ngrx/store';
 import {GrecohState} from '../../store/state/grecoh.state';
 import {ShowErrorService} from '../../../../core/services/show-error.service';
-import {AuthService} from '../../../../shared/auth/services/auth.service';
+import {AuthService} from '../../../../core/services/auth.service';
 import {GetPainting, GetPaintingStatistics, GetPaintingVersions, GetPaintingVersionScores} from '../../store/actions/grecoh.actions';
 import {
   selectPaintingStatistics,

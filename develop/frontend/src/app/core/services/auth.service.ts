@@ -4,7 +4,6 @@ import Auth0Client from '@auth0/auth0-spa-js/dist/typings/Auth0Client';
 import { from, of, Observable, BehaviorSubject, combineLatest, throwError } from 'rxjs';
 import { tap, catchError, concatMap, shareReplay } from 'rxjs/operators';
 import { Router } from '@angular/router';
-import {environment} from '../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +13,7 @@ export class AuthService {
   auth0Client$ = (from(
     createAuth0Client({
       domain: 'easda-research.eu.auth0.com',
-      client_id: environment.client_id,
+      client_id: 'fsGZbuPGwZcxOMN61PNYeon1yyO3Cp9Z',
       redirect_uri: `${window.location.origin}`
     })
   ) as Observable<Auth0Client>).pipe(
@@ -39,7 +38,6 @@ export class AuthService {
   loggedIn: boolean = null;
 
   constructor(private router: Router) {
-    console.log('Intancio AUTH');
     // On initial load, check authentication state with authorization server
     // Set up local auth streams if user is already authenticated
     this.localAuthSetup();
@@ -79,10 +77,8 @@ export class AuthService {
     // Ensure Auth0 client instance exists
     this.auth0Client$.subscribe((client: Auth0Client) => {
       // Call method to log in
-      const origin = window.location.origin;
       client.loginWithRedirect({
-        // redirect_uri: environment.home, // `${window.location.origin}`, // drizo
-        redirect_uri: `${window.location.origin}`, // drizo
+        redirect_uri: `${window.location.origin}`,
         appState: { target: redirectPath }
       });
     });
@@ -121,9 +117,10 @@ export class AuthService {
     this.auth0Client$.subscribe((client: Auth0Client) => {
       // Call method to log out
       client.logout({
-        client_id: environment.client_id,
-        returnTo: `${window.location.origin}`
+        client_id: 'fsGZbuPGwZcxOMN61PNYeon1yyO3Cp9Z',
+        returnTo: window.location.origin
       });
     });
   }
+
 }

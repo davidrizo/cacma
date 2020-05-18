@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {ProfileComponent} from './core/components/profile/profile.component';
-import {AuthGuard} from './shared/auth/services/auth.guard';
+import {AuthGuard} from './core/services/auth.guard';
 import {HomeComponent} from './core/components/home/home.component';
+import {CallbackComponent} from './core/components/callback/callback.component';
 
 const routes = [
   {
     path: 'profile',
     component: ProfileComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'callback',
+    component: CallbackComponent
   },
   {
     path: 'grecoh',

@@ -13,7 +13,7 @@ import {
   selectPostScoresResult,
   selectSelectedPainting
 } from '../../store/selectors/grecoh.selector';
-import {AuthService} from '../../../../shared/auth/services/auth.service';
+import {AuthService} from '../../../../core/services/auth.service';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 
 import {UserPaintingVersionScores} from '../../model/user-painting-version-scores';

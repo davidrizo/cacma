@@ -19,15 +19,15 @@ import {FooterComponent} from './shared/layout/components/footer/footer.componen
 import {NavBarComponent} from './shared/layout/components/nav-bar/nav-bar.component';
 import {ProfileComponent} from './core/components/profile/profile.component';
 import {LayoutModule} from './shared/layout/layout.module';
-import {AuthModule} from './shared/auth/auth.module';
 import {GrecohModule} from './features/grecoh/grecoh.module';
+import {CallbackComponent} from './core/components/callback/callback.component';
 
 // the second parameter 'es-ES' is optional
 registerLocaleData(localeEs, 'es-ES');
 
 @NgModule({
   declarations: [
-    AppComponent, HomeComponent, ProfileComponent
+    AppComponent, HomeComponent, ProfileComponent, CallbackComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +43,6 @@ registerLocaleData(localeEs, 'es-ES');
     EffectsModule.forRoot([]),
     NgbCollapseModule,
     LayoutModule,
-    AuthModule,
     GrecohModule
   ],
   exports: [
