@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/components/callback/callback.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/components/callback/callback.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +167,7 @@
       <workItem from="1589393025033" duration="16000" />
       <workItem from="1589393053692" duration="111000" />
       <workItem from="1589471282944" duration="38011000" />
-      <workItem from="1589732156659" duration="19527000" />
+      <workItem from="1589732156659" duration="20477000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -432,11 +434,11 @@
     <state x="903" y="514" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1586630096566" />
     <state x="903" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392960510" />
     <state x="903" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1588786643854" />
-    <state x="893" y="449" width="774" height="574" key="find.popup" timestamp="1589798211871">
+    <state x="893" y="449" width="774" height="574" key="find.popup" timestamp="1589804135423">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="893" y="433" width="774" height="574" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587404445205" />
-    <state x="893" y="449" width="774" height="574" key="find.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1589798211871" />
+    <state x="893" y="449" width="774" height="574" key="find.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1589804135423" />
     <state x="953" y="488" key="git4idea.merge.GitPullDialog" timestamp="1588615369020">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

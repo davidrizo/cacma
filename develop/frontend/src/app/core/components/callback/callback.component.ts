@@ -11,7 +11,7 @@ export class CallbackComponent implements OnInit {
   constructor(private auth: AuthService) { }
 
   ngOnInit(): void {
-    //this.auth.handleAuthCallback();
+    debugger;
     console.log('REDIRECCIONANDO con ' + this,this.auth.loggedIn);
   }
 }
