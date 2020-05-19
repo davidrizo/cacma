@@ -31,6 +31,7 @@ export class GrecohService {
 
   postPaintingVersionsScores$(userPaintingVersionScores: UserPaintingVersionScores): Observable<boolean> {
     const url = 'insert_painting_version_scores.php';
+    console.log(JSON.stringify(userPaintingVersionScores));
     return this.apiRestClientService.post$<boolean>(url, userPaintingVersionScores);
   }
 

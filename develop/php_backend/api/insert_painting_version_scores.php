@@ -25,13 +25,14 @@ foreach ($data->scores as &$score) {
 
     $sql = "replace INTO `grecoh_user_painting_version_score` (`email`, `painting_version_id`, `score`, `comments`) VALUES ('$email', '$painting_version_id', '$score_value', '$comments')";
 
-    error_log($sql);
+    // error_log($sql);
     if ($result = mysqli_query($con,$sql)) {
-        echo true;
+        http_response_code(200);
+        //echo true;
     } else {
-        //http_response_code(500);
-        error_log('Error with SQL:  ' . $sql);
-        echo false;
+        http_response_code(500);
+        //error_log('Error with SQL:  ' . $sql);
+        //echo false;
     }
 }
 
