@@ -6,6 +6,7 @@ import {PaintingVersion} from '../model/painting-version';
 import {PaintingStatistics} from '../model/painting-statistics';
 import {UserPaintingVersionScores} from '../model/user-painting-version-scores';
 import {PaintingVersionScore} from '../model/painting-version-score';
+import {APIRestServerError} from '../../../core/model/restapi/apirest-server-error';
 
 
 @Injectable()
@@ -29,10 +30,10 @@ export class GrecohService {
     return this.apiRestClientService.get$<PaintingVersion[]>(url);
   }
 
-  postPaintingVersionsScores$(userPaintingVersionScores: UserPaintingVersionScores): Observable<boolean> {
+  postPaintingVersionsScores$(userPaintingVersionScores: UserPaintingVersionScores): Observable<APIRestServerError> {
     const url = 'insert_painting_version_scores.php';
     console.log(JSON.stringify(userPaintingVersionScores));
-    return this.apiRestClientService.post$<boolean>(url, userPaintingVersionScores);
+    return this.apiRestClientService.post$<APIRestServerError>(url, userPaintingVersionScores);
   }
 
   getPaintingStatistics$(paintingId: number): Observable<PaintingStatistics[]> {

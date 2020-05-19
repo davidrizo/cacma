@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/ngx-toastr/toastr.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/assets/vendor/icofont/icofont.min.css",
               "src/styles.css"

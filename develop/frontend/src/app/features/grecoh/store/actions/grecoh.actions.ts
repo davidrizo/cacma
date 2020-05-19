@@ -70,7 +70,7 @@ export class PostPaintingVersionsScores implements Action {
 
 export class PostPaintingVersionsScoresSuccess implements Action {
   public readonly type = GrecohActionTypes.PostPaintingVersionsScoresSuccess;
-  constructor(public success: boolean) {}
+  constructor(public success: APIRestServerError) {}
 }
 
 export class GetPaintingStatistics implements Action {

@@ -18,6 +18,7 @@ import {Painting} from '../../model/painting';
 import {PaintingVersion} from '../../model/painting-version';
 import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
+import {APIRestServerError} from '../../../../core/model/restapi/apirest-server-error';
 
 @Injectable()
 export class GrecohEffects {
@@ -58,7 +59,7 @@ export class GrecohEffects {
     ofType<PostPaintingVersionsScores>(GrecohActionTypes.PostPaintingVersionsScores),
     switchMap((action: PostPaintingVersionsScores) =>
       this.grecohService.postPaintingVersionsScores$(action.userPaintingVersionScores).pipe(
-        switchMap((result: boolean) => of(new PostPaintingVersionsScoresSuccess(result))),
+        switchMap((result: APIRestServerError) => of(new PostPaintingVersionsScoresSuccess(result))),
         catchError(err => of(new GrecohServerError(err)))
       )));
 

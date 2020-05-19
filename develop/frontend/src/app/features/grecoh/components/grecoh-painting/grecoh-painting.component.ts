@@ -18,6 +18,7 @@ import {PaintingVersionScore} from '../../model/painting-version-score';
 
 import {UserPaintingVersionScores} from '../../model/user-painting-version-scores';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-grecoh-painting',
@@ -44,6 +45,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.paintingID = +this.route.snapshot.paramMap.get('id'); // + converts the string to number
       this.store.dispatch(new GetPainting(this.paintingID));
@@ -66,7 +68,6 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
 
     this.serverErrorSubscription = this.store.select(selectGrecohServerError).subscribe(next => {
       if (next) {
-        debugger;
         this.showErrorService.warning(next);
         this.store.dispatch(new ResetGrecohServerError());
       }
@@ -81,8 +82,12 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
     // when receive a successful post redirect
     this.insertionSubscription = this.store.select(selectPostScoresResult).subscribe(next => {
       if (next) {
-        console.log('Redirecciono con painting ID=' + this.paintingID);
-        this.router.navigate(['/grecoh/statistics', this.paintingID]);
+        if (next.status === 200) {
+          console.log('Redirecciono con painting ID=' + this.paintingID);
+          this.router.navigate(['/grecoh/statistics', this.paintingID]);
+        } else {
+          this.showErrorService.warning(next);
+        }
       }
     });
   }

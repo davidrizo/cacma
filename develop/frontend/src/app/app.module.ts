@@ -18,7 +18,7 @@ import {ProfileComponent} from './core/components/profile/profile.component';
 import {LayoutModule} from './shared/layout/layout.module';
 import {GrecohModule} from './features/grecoh/grecoh.module';
 import {CallbackComponent} from './core/components/callback/callback.component';
-import {AuthService} from './auth/auth.service';
+import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 // the second parameter 'es-ES' is optional
 registerLocaleData(localeEs, 'es-ES');
@@ -32,6 +32,8 @@ registerLocaleData(localeEs, 'es-ES');
     RouterModule,
     AppRoutingModule,
     HttpClientModule,
+    // BrowserAnimationsModule, // ya no es necesario para ToastrModule - se usa npm install @angular/animations --save
+    NoopAnimationsModule, // ya no es necesario para ToastrModule - se usa npm install @angular/animations --save
     ToastrModule.forRoot(), // ToastrModule added
     LoggerModule.forRoot({level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR}),
     StoreModule.forRoot({

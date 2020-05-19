@@ -29,7 +29,7 @@ foreach ($data->scores as &$score) {
 
     if ($first) {
         $first = false;
-        $sql = $sql . ' values ';
+        $sql = $sql . ' ñvalues ';
     } else {
         $sql = $sql . ', ';
     }
@@ -41,11 +41,9 @@ foreach ($data->scores as &$score) {
 if ($result = mysqli_query($con,$sql)) {
     response(200,"Scores successfully inserted", NULL);
     // http_response_code(200);
-    echo true;
 } else {
     // error_log('Error with SQL:  ' . $sql);
-    response(200,"Error inserting scores",NULL);
-    echo false;
+    response(500,"Error inserting scores",NULL);
 }
 
 
@@ -54,8 +52,8 @@ function response($status,$status_message,$data)
     header("HTTP/1.1 ".$status);
 
     $response['status']=$status;
-    $response['status_message']=$status_message;
-    $response['data']=$data;
+    $response['message']=$status_message;
+    $response['detailedMessage']=$data;
 
     $json_response = json_encode($response);
     error_log($json_response);

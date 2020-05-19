@@ -11,7 +11,7 @@ export interface GrecohState {
   apiRestServerError: APIRestServerError;
   paintingStatistics: PaintingStatistics[];
   paintingVersionScores: PaintingVersionScore[];
-  postScoresResult: boolean;
+  postScoresResult: APIRestServerError;
 }
 
 export const initialSemanticRepresentationState: GrecohState = {
