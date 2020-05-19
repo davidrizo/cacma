@@ -16,6 +16,7 @@ import {Observable, Subscription} from 'rxjs';
 import {PaintingVersion} from '../../model/painting-version';
 import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-score-statistics',
@@ -25,13 +26,12 @@ import {PaintingVersionScore} from '../../model/painting-version-score';
 export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
   paintingID: number;
   painting$: Observable<Painting>;
-  paintingVersions$: Observable<PaintingVersion[]>;
   paintingStatistics$: Observable<PaintingStatistics[]>;
   // key = painting_version_id
-  paintingVersionsScores: Map<number, PaintingVersionScore[]> = new Map<number, PaintingVersionScore[]>();
-
-  paintingVersionScoresSubscription: Subscription;
-  constructor(private route: ActivatedRoute, private store: Store<GrecohState>, private showErrorService: ShowErrorService) { }
+  paintingVersions: Map<number, PaintingVersion> = new Map<number, PaintingVersion>();
+  paintingVersionScores$: Observable<PaintingVersionScore[]>;
+  paintingVersionsSubscription: Subscription;
+  constructor(private route: ActivatedRoute, private store: Store<GrecohState>, private showErrorService: ShowErrorService, private modalService: NgbModal) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
@@ -42,28 +42,45 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
     });
 
     this.painting$ = this.store.select(selectSelectedPainting);
-    this.paintingVersions$ = this.store.select(selectPaintingVersions);
     this.paintingStatistics$ = this.store.select(selectPaintingStatistics);
 
-    this.paintingVersionScoresSubscription = this.store.select(selectPaintingVersionScores).subscribe(next => {
-      if (next) {
-        if (next.length > 0) {
-          const paintingVersionID = next[0].painting_version_id;
-          this.paintingVersionsScores.set(paintingVersionID, next);
-        }
+    this.paintingVersionsSubscription = this.store.select(selectPaintingVersions).subscribe(next => {
+      if (next && next.length > 0) {
+        next.forEach(version => {
+          this.paintingVersions.set(version.id, version);
+        });
       }
     });
+
+    this.paintingVersionScores$ = this.store.select(selectPaintingVersionScores);
   }
 
-  trackByPaintingVersion(index, item: PaintingVersion) {
+  /*trackByPaintingVersion(index, item: PaintingVersion) {
     return item.id; // unique id corresponding to the item
+  }*/
+
+  trackByPaintingStatistics(index, item: PaintingStatistics) {
+    return item.painting_version_id; // unique id corresponding to the item
   }
 
-  getVersionImage(item: PaintingVersion): string {
+  trackByPaintingScore(index, item: PaintingVersionScore) {
+    return item.painting_version_id; // unique id corresponding to the item
+  }
+
+  /*getVersionImage(item: PaintingVersion): string {
     return `assets/paintings/${item.painter_slug}/${item.slug}/${item.color_hexa}.jpg`;
+  }*/
+
+  getVersionImage(item: PaintingStatistics): string {
+    const version = this.paintingVersions.get(item.painting_version_id);
+    if (version) {
+      return `assets/paintings/${version.painter_slug}/${version.slug}/${version.color_hexa}.jpg`;
+    } else {
+      return '';
+    }
   }
 
-  getAverage(statistics: PaintingStatistics[], paintingVersion: PaintingVersion): number {
+  /*getAverage(statistics: PaintingStatistics[], paintingVersion: PaintingVersion): number {
     const scoreValues = statistics.find(item => item.painting_version_id === paintingVersion.id);
     if (scoreValues) {
       return scoreValues.average;
@@ -81,17 +98,25 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
       // TODO error
       return -1;
     }
-  }
+  }*/
 
-  retrieveScores(paintingVersion: PaintingVersion) {
-    this.store.dispatch(new GetPaintingVersionScores(paintingVersion.id));
+  showComments(statistics: PaintingStatistics, contenidoDialogoModal) {
+    this.store.dispatch(new GetPaintingVersionScores(statistics.painting_version_id));
+
+    this.modalService.open(contenidoDialogoModal, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+    }, (reason) => {
+    });
   }
 
   ngOnDestroy(): void {
-    this.paintingVersionScoresSubscription.unsubscribe();
+    this.paintingVersionsSubscription.unsubscribe();
   }
 
-  getScores(paintingVersion: PaintingVersion): PaintingVersionScore[] {
-    return this.paintingVersionsScores.get(paintingVersion.id);
+  getComments(score: PaintingVersionScore): string {
+    if (score.comments && score.comments.length > 2) {
+      return score.comments;
+    } else {
+      return 'Sin comentarios';
+    }
   }
 }

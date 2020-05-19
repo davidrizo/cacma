@@ -1,65 +1,68 @@
-<div class="container-fluid">
-  <div class="jumbotron-fluid" *ngIf="painting$ | async as painting; else loading">
-    <h4>{{painting.title}}</h4>
-    <p>Resultados globales</p>
-  </div>
-  <ng-template #loading>
-    <div class="jumbotron">
-      Loading ...
-    </div>
-  </ng-template>
+<app-nav-bar></app-nav-bar>
 
-  <!-- interval = 0 means no autoplay -->
-  <ngb-carousel class="text-center" [interval]="0" *ngIf="paintingStatistics$ | async as paintingStatistics; else loading">
-    <ng-template ngbSlide *ngFor="let paintingVersion of paintingVersions$ | async; trackBy: trackByPaintingVersion">
-      <div class="picsum-img-wrapper">
-        <img [src]="getVersionImage(paintingVersion)" alt="Colored painting" class="versionImageStatistics"/>
-        <div class="carousel-caption">
-          <!--<h3>{{paintingVersion.color_hexa}}</h3>-->
+<section id="statistics" class="container" *ngIf="painting$ | async as painting; else loading">
+  <div class="section-title">
+    <span>GreCoH</span>
+    <h2>Resultados globales de <strong>{{painting.title}}</strong></h2>
+  </div>
+
+  <div class="row" id="images" *ngIf="paintingStatistics$ | async as paintingStatistics; else loading">
+      <div class="col-6 col-sm-4" *ngFor="let paintingStatisticsItem of paintingStatistics; trackBy: trackByPaintingStatistics">
+        <div class="card">
+          <img class="card-img-top" [src]="getVersionImage(paintingStatisticsItem)" alt="Colored composition of {{painting.title}}"/>
+          <div class="card-body">
+
+            <!--<ng-template #t let-fill="fill">
+              <span class="star" [class.full]="fill === 100">
+              <span class="half" [style.width.%]="fill">&#9733;</span>
+            </span>
+            </ng-template>-->
+            <!--[starTemplate]="t"-->
+
           <ngb-rating
             [max]="5"
-            [rate]="getAverage(paintingStatistics, paintingVersion)"
+            [(rate)]="paintingStatisticsItem.average"
             [readonly]="true"
           ></ngb-rating>
-          <pre class="scoreStatistic" [style]="{'border-bottom-color': '#' + paintingVersion.color_hexa}">Valoración media: {{getAverage(paintingStatistics, paintingVersion)}}</pre>
+          <div class="medias">
+            <pre>Media: {{paintingStatisticsItem.average | number:'1.1-2' }}</pre>
+            <pre>Dispersión: {{paintingStatisticsItem.standard_deviation | number:'1.1-2' }}</pre>
+          </div>
+          <p><a (click)="showComments(paintingStatisticsItem, modalComentarios)" class="details-link">Comentarios</a></p>
 
-          <!--<ng-template #templateStdDev let-fill="fill">
-            <span class="star" [class.full]="fill === 100">
-            <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
-            </span>
-          </ng-template>
-
-          <ngb-rating
-            [max]="5"
-            [starTemplate]="templateStdDev"
-            [rate]="getStandardDeviation(paintingStatistics, paintingVersion)"
-            [readonly]="true"
-          ></ngb-rating>-->
-          <pre>Discordancia entre valoraciones: {{getStandardDeviation(paintingStatistics, paintingVersion)}}</pre>
-
-          <div id="comments" *ngIf="getScores(paintingVersion); else buttonRetrieveScores">
-            <div class="card" *ngFor="let score of paintingVersionsScores.get(paintingVersion.id)">
-              <div class="card-title">
-                <ngb-rating
-                  [max]="5"
-                  [(rate)]="score.value"
-                >
-                </ngb-rating>
-              </div>
-              <div class="card-text scoreSomment">
-                {{score.comments}}
+          <ng-template #modalComentarios let-modal>
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-basic-title">Comentarios de otros usuarios</h4>
+              <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cerrar')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card" *ngFor="let score of paintingVersionScores$ | async; trackBy: trackByPaintingScore">
+                <div class="card-title">
+                  <ngb-rating
+                    [max]="5"
+                    [(rate)]="score.value"
+                    [readonly]="true"
+                  >
+                  </ngb-rating>
+                </div>
+                <div class="card-text scoreSomment">
+                  {{getComments(score)}}
+                </div>
               </div>
             </div>
-          </div>
-
-          <ng-template #buttonRetrieveScores>
-            <button type="button" class="btn btn-primary" (click)="retrieveScores(paintingVersion)">
-              Muestra todas puntuaciones y comentarios
-            </button>
           </ng-template>
-        </div>
-      </div>
-    </ng-template>
-  </ngb-carousel>
-</div>
+        </div> <!-- card-body -->
+      </div> <!-- card -->
+    </div> <!-- col -->
+  </div> <!-- row -->
+</section>
 
+<app-footer></app-footer>
+
+<ng-template #loading>
+  <div class="jumbotron">
+    Cargando ...
+  </div>
+</ng-template>

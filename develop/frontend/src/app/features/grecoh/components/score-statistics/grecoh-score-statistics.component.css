@@ -1,0 +1,34 @@
+#statistics {
+  background: #fff;
+  padding-top: 10vh;
+}
+
+#statistics h2 {
+  margin-bottom: 0;
+}
+
+#statistics .medias {
+  padding-top: 10px;
+}
+
+#statistics .medias pre {
+  margin-bottom: 0.5rem;
+}
+
+/*.star {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  color: lightgray;
+}
+.full {
+  color: red;
+}
+
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: blue;
+}*/
+

@@ -182,7 +182,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
 
   sendScores() {
     // avoid sending the PaintingVersion
-    /*const sc: PaintingVersionScore[] = [];
+    const sc: PaintingVersionScore[] = [];
     this.scores.forEach(score => {
       sc.push({
         painting_version_id: score.painting_version_id,
@@ -196,8 +196,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
       scores: sc,
       email: this.userEMail
     };
-    this.store.dispatch(new PostPaintingVersionsScores(userPaintingVersionScore));*/
-    alert('RESULTADOS PENDIENTES DE REMAQUETAR');
+    this.store.dispatch(new PostPaintingVersionsScores(userPaintingVersionScore));
   }
 
   getBorderStyle(colorHexa: string) {

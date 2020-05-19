@@ -43,7 +43,9 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
     case GrecohActionTypes.GetPaintingStatisticsSuccess: {
       const newState = {...state,
         apiRestServerError: null};
-      newState.paintingStatistics = action.paintingStatistics;
+      // sort descending by average
+      // slice because the redux store array is inmutable
+      newState.paintingStatistics = action.paintingStatistics.slice().sort((a, b): number => b.average - a.average);
       return newState;
     }
     case GrecohActionTypes.GetPaintingVersionScoresSuccess: {
