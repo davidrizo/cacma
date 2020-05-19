@@ -15,6 +15,15 @@
   margin-bottom: 0.5rem;
 }
 
+.scoreComments .card {
+  margin-bottom: 10px;
+}
+
+.scoreComments {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 /*.star {
   position: relative;
   display: inline-block;

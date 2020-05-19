@@ -18,7 +18,7 @@ if ($result = mysqli_query($con,$sql)) {
     while($row = mysqli_fetch_assoc($result))
     {
         $scores[$cr]['painting_version_id'] = $painting_version_id;
-        $scores[$cr]['score'] = $row['score'];
+        $scores[$cr]['value'] = $row['score'];
         $scores[$cr]['email'] = $row['email'];
         $scores[$cr]['comments'] = $row['comments'];
         $cr++;

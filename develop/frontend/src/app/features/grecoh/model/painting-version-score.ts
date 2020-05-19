@@ -5,4 +5,5 @@ export interface PaintingVersionScore {
   painting_version_id: number;
   value?: number;
   comments?: string;
+  email?: string;
 }

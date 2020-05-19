@@ -3,7 +3,6 @@ import {ActivatedRoute, ParamMap} from '@angular/router';
 import {Store} from '@ngrx/store';
 import {GrecohState} from '../../store/state/grecoh.state';
 import {ShowErrorService} from '../../../../core/services/show-error.service';
-import {AuthService} from '../../../../auth/auth.service';
 import {GetPainting, GetPaintingStatistics, GetPaintingVersions, GetPaintingVersionScores} from '../../store/actions/grecoh.actions';
 import {
   selectPaintingStatistics,
@@ -31,7 +30,8 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
   paintingVersions: Map<number, PaintingVersion> = new Map<number, PaintingVersion>();
   paintingVersionScores$: Observable<PaintingVersionScore[]>;
   paintingVersionsSubscription: Subscription;
-  constructor(private route: ActivatedRoute, private store: Store<GrecohState>, private showErrorService: ShowErrorService, private modalService: NgbModal) { }
+  constructor(private route: ActivatedRoute, private store: Store<GrecohState>,
+              private showErrorService: ShowErrorService, private modalService: NgbModal) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {

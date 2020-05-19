@@ -18,12 +18,14 @@ foreach ($data->scores as &$score) {
         $comments = '';
     }
 
+    // error_log($score->value . ' --> ' . $score->comments . ' --> ' . $comments);
 
     /*$sql = "INSERT INTO `grecoh_user_painting_version_score` (`email`, `painting_version_id`, `score`) VALUES ('$email', '$painting_version_id', '$score_value')
     ON DUPLICATE KEY score = '$score_value'";*/
 
-    $sql = "INSERT IGNORE INTO `grecoh_user_painting_version_score` (`email`, `painting_version_id`, `score`, `comments`) VALUES ('$email', '$painting_version_id', '$score_value', '$comments')";
+    $sql = "replace INTO `grecoh_user_painting_version_score` (`email`, `painting_version_id`, `score`, `comments`) VALUES ('$email', '$painting_version_id', '$score_value', '$comments')";
 
+    error_log($sql);
     if ($result = mysqli_query($con,$sql)) {
         echo true;
     } else {

@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/reducers/grecoh.reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/reducers/grecoh.reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/model/painting-version-score.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/model/painting-version-score.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/insert_painting_version_scores.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/insert_painting_version_scores.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/list_painting_version_scores.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/list_painting_version_scores.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +173,7 @@
       <workItem from="1589393025033" duration="16000" />
       <workItem from="1589393053692" duration="111000" />
       <workItem from="1589471282944" duration="38011000" />
-      <workItem from="1589732156659" duration="46360000" />
+      <workItem from="1589732156659" duration="48442000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -427,12 +427,12 @@
     </state>
     <state x="56" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1585665574183" />
     <state x="56" y="290" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1588615357075" />
-    <state width="625" height="564" key="SwitcherDM" timestamp="1589881329121">
+    <state width="625" height="564" key="SwitcherDM" timestamp="1589888229547">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1587401244897" />
     <state width="625" height="564" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589881329121" />
-    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589811518514" />
+    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589888229547" />
     <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1589805258742">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
