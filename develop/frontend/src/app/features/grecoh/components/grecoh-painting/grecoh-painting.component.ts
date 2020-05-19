@@ -66,6 +66,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
 
     this.serverErrorSubscription = this.store.select(selectGrecohServerError).subscribe(next => {
       if (next) {
+        debugger;
         this.showErrorService.warning(next);
         this.store.dispatch(new ResetGrecohServerError());
       }

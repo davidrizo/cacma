@@ -66,7 +66,7 @@ export class ApiRestClientService {
     this.logger.debug('RestClientService#post ' + url);
 
     return this.httpClient.post<T>(url, body).pipe(
-      timeout(1000), // para evitar errores con el servidor
+      // timeout(1000), // para evitar errores con el servidor
       catchError(err => throwError(this.createAPIServerError(err))) // required to return an observable
     );
   }

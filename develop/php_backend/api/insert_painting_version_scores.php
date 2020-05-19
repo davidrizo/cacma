@@ -9,6 +9,10 @@ $data = json_decode($input);
 $painting_id=$data->painting_id;
 $email=$data->email;
 
+$sql = "replace INTO `grecoh_user_painting_version_score` (`email`, `painting_version_id`, `score`, `comments`)";
+
+$first = true;
+
 foreach ($data->scores as &$score) {
     $painting_version_id = $score->painting_version_id;
     $score_value = $score->value;
@@ -23,16 +27,37 @@ foreach ($data->scores as &$score) {
     /*$sql = "INSERT INTO `grecoh_user_painting_version_score` (`email`, `painting_version_id`, `score`) VALUES ('$email', '$painting_version_id', '$score_value')
     ON DUPLICATE KEY score = '$score_value'";*/
 
-    $sql = "replace INTO `grecoh_user_painting_version_score` (`email`, `painting_version_id`, `score`, `comments`) VALUES ('$email', '$painting_version_id', '$score_value', '$comments')";
-
-    // error_log($sql);
-    if ($result = mysqli_query($con,$sql)) {
-        http_response_code(200);
-        echo true;
+    if ($first) {
+        $first = false;
+        $sql = $sql . ' values ';
     } else {
-        http_response_code(500);
-        error_log('Error with SQL:  ' . $sql);
-        echo false;
+        $sql = $sql . ', ';
     }
+
+    $sql = $sql . "('$email', '$painting_version_id', '$score_value', '$comments')";
 }
 
+// error_log($sql);
+if ($result = mysqli_query($con,$sql)) {
+    response(200,"Scores successfully inserted", NULL);
+    // http_response_code(200);
+    echo true;
+} else {
+    // error_log('Error with SQL:  ' . $sql);
+    response(200,"Error inserting scores",NULL);
+    echo false;
+}
+
+
+function response($status,$status_message,$data)
+{
+    header("HTTP/1.1 ".$status);
+
+    $response['status']=$status;
+    $response['status_message']=$status_message;
+    $response['data']=$data;
+
+    $json_response = json_encode($response);
+    error_log($json_response);
+    echo $json_response;
+}
