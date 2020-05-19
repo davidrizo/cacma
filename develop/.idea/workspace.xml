@@ -4,6 +4,8 @@
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/core/services/api-rest-client.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/services/api-rest-client.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/apirest.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/apirest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/insert_painting_version_scores.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/insert_painting_version_scores.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +168,7 @@
       <workItem from="1589393025033" duration="16000" />
       <workItem from="1589393053692" duration="111000" />
       <workItem from="1589471282944" duration="38011000" />
-      <workItem from="1589732156659" duration="57560000" />
+      <workItem from="1589732156659" duration="58961000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -357,10 +359,11 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="372" y="515" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1585651879921" />
-    <state x="1049" y="377" key="#com.intellij.ide.util.MemberChooser" timestamp="1587399812827">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="1049" y="394" key="#com.intellij.ide.util.MemberChooser" timestamp="1589913760860">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1049" y="377" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1587399812827" />
+    <state x="1049" y="394" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1589913760860" />
     <state x="968" y="468" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1589392774183">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -422,12 +425,12 @@
     </state>
     <state x="56" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1585665574183" />
     <state x="56" y="290" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1588615357075" />
-    <state width="625" height="564" key="SwitcherDM" timestamp="1589911605514">
+    <state width="625" height="564" key="SwitcherDM" timestamp="1589913513660">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1587401244897" />
     <state width="625" height="564" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589900643423" />
-    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589911605514" />
+    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589913513660" />
     <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1589805258742">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
