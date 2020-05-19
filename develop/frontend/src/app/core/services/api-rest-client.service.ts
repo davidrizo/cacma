@@ -17,14 +17,23 @@ export class ApiRestClientService {
               private logger: NGXLogger) { }
 
   private createAPIServerError(err: HttpErrorResponse): APIRestServerError {
-    debugger;
-    const serverError: APIRestServerError = {
-      url: err.url,
-      message: err.error.error,
-      detailedMessage: err.error.message,
-      status: err.error.status
-    };
-    return serverError;
+    if (err.error) {
+      const serverError: APIRestServerError = {
+        url: err.url,
+        message: err.error.error,
+        detailedMessage: err.error.message,
+        status: err.error.status
+      };
+      return serverError;
+    } else {
+      const serverError: APIRestServerError = {
+        url: null,
+        message: null,
+        detailedMessage: JSON.stringify(err),
+        status: null
+      };
+      return serverError;
+    }
   }
 
   public getList$<T>(endpoint: string): Observable<T[]> {
