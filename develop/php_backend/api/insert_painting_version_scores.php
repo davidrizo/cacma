@@ -1,5 +1,5 @@
 <?php
-
+require 'apirest.php';
 require 'connect.php';
 
 $input=file_get_contents('php://input');
@@ -29,7 +29,7 @@ foreach ($data->scores as &$score) {
 
     if ($first) {
         $first = false;
-        $sql = $sql . ' ñvalues ';
+        $sql = $sql . ' values ';
     } else {
         $sql = $sql . ', ';
     }
@@ -43,7 +43,7 @@ if ($result = mysqli_query($con,$sql)) {
     // http_response_code(200);
 } else {
     // error_log('Error with SQL:  ' . $sql);
-    response(500,"Error inserting scores",NULL);
+    response(500,"Error inserting scores",mysqli_error($con));
 }
 
 
@@ -56,6 +56,6 @@ function response($status,$status_message,$data)
     $response['detailedMessage']=$data;
 
     $json_response = json_encode($response);
-    error_log($json_response);
+    // error_log($json_response);
     echo $json_response;
 }

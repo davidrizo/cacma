@@ -1,4 +1,5 @@
 <?php
+require 'apirest.php';
 require 'connect.php';
 require 'utils.php';
 

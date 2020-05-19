@@ -1,5 +1,5 @@
 <?php
-
+require 'apirest.php';
 require 'connect.php';
 
 $sql = "SELECT id, title FROM grecoh_painting where id = '{$id}'";

@@ -1,12 +1,5 @@
 <?php
 
-// allow API REST
-//TODO restringirlo....
-// in order to work easily in IntelliJ: https://i.imgur.com/L7shNSf.png
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: PUT, GET, POST, DELETE");
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-
 // db credentials
 define('DB_HOST', 'localhost:8889');
 define('DB_USER', 'root');

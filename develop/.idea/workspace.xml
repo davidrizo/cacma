@@ -2,18 +2,143 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
+      <change afterPath="$PROJECT_DIR$/php_backend/api/apirest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh/grecoh.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/services/grecoh.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/services/grecoh.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/actions/grecoh.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/actions/grecoh.actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/effects/grecoh-effects.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/effects/grecoh-effects.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/state/grecoh.state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/state/grecoh.state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/core/services/api-rest-client.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/core/services/api-rest-client.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/get_painting.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/get_painting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/get_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/get_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php_backend/api/insert_painting_version_scores.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/insert_painting_version_scores.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/list_painting_version_scores.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/list_painting_version_scores.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/list_painting_version_statistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/list_painting_version_statistics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/list_painting_versions.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/list_painting_versions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/api/list_paintings.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/list_paintings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/5-es2015.8c37cf1cc1b5c4d38504.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/5-es5.8c37cf1cc1b5c4d38504.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/ejes_equilibrio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/grecoh/greco.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/grecoh/greco_getsemani_andujar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/ha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/iseacv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/logos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/munsell_colores_notas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-details-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-details-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/img/portfolio/portfolio-details-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/33b7e4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/6ff48c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fa6027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fecbdc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/fef31f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/ana_galvan/palmera_fest/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/75a399.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/d13f37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/d4f5d8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/f3726e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/fed206.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/cezanne/naturaleza_jarro_fruta_mesa/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/596d78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/5b9288.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/a23f25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/b99000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/d7a177.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/goya/asmodea/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/7397a9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/76a03d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/7a8fc1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/db5257.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/dcb147.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/de6d58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/expolio/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/greco/getsemani/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/0eb2ab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/177bc8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/2b1635.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/c5cd08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/e6213c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/fbdc05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/paintings/john_petch/omd_punishment_of_luxury/grayscale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/animations.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/boxicons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/boxicons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/css/transformations.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/boxicons/fonts/boxicons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/counterup/counterup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/icofont/fonts/icofont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/icofont/fonts/icofont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/icofont/icofont.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/isotope-layout/isotope.pkgd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/isotope-layout/isotope.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/jquery.easing/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/jquery/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.theme.green.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/assets/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/owl.carousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/php-email-form/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/venobox/venobox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/assets/vendor/waypoints/jquery.waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/icofont.9c33516aab48c61e3081.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/icofont.dad3accba068281878f1.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/main-es2015.1d9d8208185c208e2d80.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/main-es5.1d9d8208185c208e2d80.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/polyfills-es2015.8393a6e4790325c92087.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/polyfills-es5.7392f70c9ea027367d69.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/runtime-es2015.d2ad72705a6c0f7ab1bd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/runtime-es5.d2ad72705a6c0f7ab1bd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/scripts.ae64e1bfba96e43a2b13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/styles.fcc2130fa6ae07b01deb.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +301,7 @@
       <workItem from="1589393025033" duration="16000" />
       <workItem from="1589393053692" duration="111000" />
       <workItem from="1589471282944" duration="38011000" />
-      <workItem from="1589732156659" duration="55128000" />
+      <workItem from="1589732156659" duration="57226000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -417,25 +542,27 @@
     <state width="2127" height="415" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589900662158" />
     <state width="2127" height="415" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1589908812364" />
     <state width="2508" height="256" key="GridCell.Tab.0.right/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198060" />
-    <state x="824" y="506" key="NewPhpClassDialog" timestamp="1585935068243">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="824" y="521" key="NewPhpClassDialog" timestamp="1589911003066">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="824" y="506" key="NewPhpClassDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1585935068243" />
-    <state x="461" y="637" key="NewPhpFileDialog" timestamp="1585935073330">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="824" y="521" key="NewPhpClassDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1589911003066" />
+    <state x="461" y="650" key="NewPhpFileDialog" timestamp="1589911012635">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="461" y="637" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1585935073330" />
+    <state x="461" y="650" key="NewPhpFileDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1589911012635" />
     <state x="56" y="290" key="SettingsEditor" timestamp="1588615357075">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="56" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1585665574183" />
     <state x="56" y="290" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1588615357075" />
-    <state width="625" height="564" key="SwitcherDM" timestamp="1589909011336">
+    <state width="625" height="564" key="SwitcherDM" timestamp="1589911605514">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1587401244897" />
     <state width="625" height="564" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589900643423" />
-    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589909011336" />
+    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1589911605514" />
     <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1589805258742">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
