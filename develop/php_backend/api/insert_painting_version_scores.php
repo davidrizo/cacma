@@ -28,11 +28,11 @@ foreach ($data->scores as &$score) {
     // error_log($sql);
     if ($result = mysqli_query($con,$sql)) {
         http_response_code(200);
-        //echo true;
+        echo true;
     } else {
         http_response_code(500);
-        //error_log('Error with SQL:  ' . $sql);
-        //echo false;
+        error_log('Error with SQL:  ' . $sql);
+        echo false;
     }
 }
 

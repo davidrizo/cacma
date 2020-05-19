@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Observable, of, throwError} from 'rxjs';
-import {catchError, map} from 'rxjs/operators';
+import {catchError, map, timeout} from 'rxjs/operators';
 import {environment} from '../../../environments/environment';
 import {NGXLogger} from 'ngx-logger';
 import {APIRestServerError} from '../model/restapi/apirest-server-error';
@@ -66,6 +66,7 @@ export class ApiRestClientService {
     this.logger.debug('RestClientService#post ' + url);
 
     return this.httpClient.post<T>(url, body).pipe(
+      timeout(1000), // para evitar errores con el servidor
       catchError(err => throwError(this.createAPIServerError(err))) // required to return an observable
     );
   }
