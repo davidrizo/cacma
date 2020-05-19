@@ -74,21 +74,7 @@ export class ApiRestClientService {
 
     this.logger.debug('RestClientService#post ' + url);
 
-    const headers = new HttpHeaders();
-    const utcOffset = -(new Date().getTimezoneOffset());
-    headers.append('Content-Type', 'application/json');
-    headers.append('utc-offset', utcOffset.toString());
-    headers.append('platform', 'WEB');
-    headers.append('app-version', '1.00');
-    headers.append('version', '1.0');
-    headers.append('accept', 'application/json');
-    headers.append('Access-Control-Allow-Origin', '*');
-    headers.append('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-    headers.append('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-
-
-    return this.httpClient.post<T>(url, body, { headers }).pipe(
-      timeout(1000), // para evitar errores con el servidor
+    return this.httpClient.post<T>(url, body).pipe(
       catchError(err => throwError(this.createAPIServerError(err))) // required to return an observable
     );
   }

@@ -1,8 +1,10 @@
 <?php
 require 'apirest.php';
 require 'connect.php';
+require 'utils.php';
 
-$input=file_get_contents('php://input');
+//$input = file_get_contents('php://input');
+$input = $_GET['jsondata']; // no he conseguido que funcionara con POST
 
 $data = json_decode($input);
 
@@ -48,6 +50,7 @@ if ($result = mysqli_query($con,$sql)) {
 
 function response($status,$status_message,$data)
 {
+    header("Access-Control-Allow-Origin: *");//NO VA en 000webhost !!!
     header("HTTP/1.1 ".$status);
     header('content-type: application/json; charset=utf-8');
 
