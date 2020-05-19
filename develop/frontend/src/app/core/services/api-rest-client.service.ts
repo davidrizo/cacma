@@ -17,6 +17,7 @@ export class ApiRestClientService {
               private logger: NGXLogger) { }
 
   private createAPIServerError(err: HttpErrorResponse): APIRestServerError {
+    debugger;
     const serverError: APIRestServerError = {
       url: err.url,
       message: err.error.error,
@@ -57,11 +58,6 @@ export class ApiRestClientService {
     );
   }
 
-  processErrorPost(err: any): Observable<never> {
-    debugger;
-    return throwError(this.createAPIServerError(err));
-  }
-
   public post$<T>(endpoint: string, body: any): Observable<T> {
 
     let url: string;
@@ -71,7 +67,7 @@ export class ApiRestClientService {
 
     return this.httpClient.post<T>(url, body).pipe(
       timeout(1000), // para evitar errores con el servidor
-      catchError(err => this.processErrorPost(this.createAPIServerError(err))) // required to return an observable
+      catchError(err => throwError(this.createAPIServerError(err))) // required to return an observable
     );
   }
 
