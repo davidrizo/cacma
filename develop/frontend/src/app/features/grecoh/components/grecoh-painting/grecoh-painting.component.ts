@@ -61,6 +61,11 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
             paintingVersion,
             painting_version_id: paintingVersion.id
           });
+
+          // preload images to avoid flicker
+          const image = new Image();
+          image.src = this.getVersionImage(paintingVersion);
+          console.log('loaded: ' + image.src);
         });
         this.activePaintingVersionId = this.scores[0].painting_version_id;
       }
