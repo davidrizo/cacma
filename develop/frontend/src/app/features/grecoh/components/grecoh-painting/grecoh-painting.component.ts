@@ -1,6 +1,12 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
-import {GetPainting, GetPaintingVersions, PostPaintingVersionsScores, ResetGrecohServerError} from '../../store/actions/grecoh.actions';
+import {
+  GetPainting,
+  GetPaintingVersions,
+  PostPaintingVersionsScores,
+  ResetGrecohServerError,
+  ResetScoreResults
+} from '../../store/actions/grecoh.actions';
 import {Store} from '@ngrx/store';
 import {GrecohState} from '../../store/state/grecoh.state';
 import {ShowErrorService} from '../../../../core/services/show-error.service';
@@ -48,6 +54,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
 
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.paintingID = +this.route.snapshot.paramMap.get('id'); // + converts the string to number
+      this.store.dispatch(new ResetScoreResults());
       this.store.dispatch(new GetPainting(this.paintingID));
       this.store.dispatch(new GetPaintingVersions(this.paintingID));
     });
@@ -88,7 +95,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
     this.insertionSubscription = this.store.select(selectPostScoresResult).subscribe(next => {
       if (next) {
         if (next.status === 200) {
-          console.log('Redirecciono con painting ID=' + this.paintingID);
+          // console.log('Redirecciono con painting ID=' + this.paintingID);
           this.router.navigate(['/grecoh/statistics', this.paintingID]);
         } else {
           this.showErrorService.warning(next);

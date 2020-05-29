@@ -19,6 +19,7 @@
             <ng-template ngbNavContent>
               <div class="imgOpcion">
                 <img [src]="getVersionImage(score.paintingVersion)" alt="Colored painting">
+                <!--<p>{{score.paintingVersion.id}}</p>-->
               </div>
             </ng-template>
             <a class="paintingVersionButton" ngbNavLink [style]="{'border-bottom-color': '#' + score.paintingVersion.color_hexa}">

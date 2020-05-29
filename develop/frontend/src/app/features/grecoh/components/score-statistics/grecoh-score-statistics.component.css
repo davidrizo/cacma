@@ -7,6 +7,11 @@
   margin-bottom: 0;
 }
 
+#statistics #images img {
+  max-width: 100%;
+  height: auto;
+}
+
 #statistics .medias {
   padding-top: 10px;
 }
@@ -22,6 +27,37 @@
 .scoreComments {
   max-height: 80vh;
   overflow-y: auto;
+}
+
+.originalVersion {
+  border-color: #14c871;
+  border-width: 5px;
+  border-style: solid;
+}
+
+#statistics .ng5-slider {
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .section-title span {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #statistics #sliders {
+    font-size: small;
+  }
+
+  .card-body {
+    font-size: small;
+  }
+
+  .card-body a {
+    font-size: 9px;
+  }
 }
 
 /*.star {

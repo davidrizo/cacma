@@ -21,24 +21,26 @@ import {
 } from '@ng-bootstrap/ng-bootstrap';
 import {LayoutModule} from '../../shared/layout/layout.module';
 import {RouterModule} from '@angular/router';
+import {Ng5SliderModule} from 'ng5-slider';
 
 
 @NgModule({
   declarations:
     [GrecohComponent, GrecohAdminComponent, GrecohPaintingsComponent, GrecohPaintingComponent, GrecohScoreStatisticsComponent],
-  imports: [
-    CommonModule,
-    GrecohRoutingModule,
-    StoreModule.forFeature('grecoh', grecohReducers),
-    EffectsModule.forFeature([GrecohEffects]),
-    NgbModule,
-    NgbRatingModule,
-    NgbCarouselModule,
-    NgbNavModule,
-    FormsModule,
-    LayoutModule,
-    RouterModule
-  ],
+    imports: [
+        CommonModule,
+        GrecohRoutingModule,
+        StoreModule.forFeature('grecoh', grecohReducers),
+        EffectsModule.forFeature([GrecohEffects]),
+        NgbModule,
+        NgbRatingModule,
+        NgbCarouselModule,
+        NgbNavModule,
+        FormsModule,
+        LayoutModule,
+        RouterModule,
+        Ng5SliderModule
+    ],
   exports: [
   ],
   providers: [

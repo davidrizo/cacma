@@ -6,11 +6,21 @@
     <h2>Resultados globales de <strong>{{painting.title}}</strong></h2>
   </div>
 
+  <div class="row" id="sliders">
+    <div class="col-5 offset-1 col-md-3">
+      <input id="cbImages" type="checkbox" [(ngModel)]="onlyImages"/>
+      <label for="cbImages">&nbsp; Sólo imágenes</label>
+    </div>
+    <div class="col-5 col-md-98">
+      <ng5-slider [(value)]="imagesWidth" [options]="sliderOptions"></ng5-slider>
+    </div>
+  </div>
   <div class="row" id="images" *ngIf="paintingStatistics$ | async as paintingStatistics; else loading">
-      <div class="col-12 col-sm-6 col-md-4" *ngFor="let paintingStatisticsItem of paintingStatistics; trackBy: trackByPaintingStatistics">
-        <div class="card">
+    <div class="col d-flex justify-content-around flex-wrap">
+      <div class="image" [style.width.vw]="imagesWidth" *ngFor="let paintingStatisticsItem of paintingStatistics; trackBy: trackByPaintingStatistics">
+        <div class="card" [ngClass]="{'originalVersion': isOriginalVersion(paintingStatisticsItem, painting)}">
           <img class="card-img-top" [src]="getVersionImage(paintingStatisticsItem)" alt="Colored composition of {{painting.title}}"/>
-          <div class="card-body">
+          <div *ngIf="!onlyImages" class="card-body">
 
             <!--<ng-template #t let-fill="fill">
               <span class="star" [class.full]="fill === 100">
@@ -23,12 +33,16 @@
             [max]="5"
             [(rate)]="paintingStatisticsItem.average"
             [readonly]="true"
+            [ngbTooltip]="paintingStatisticsItem.average | number:'1.1-2'"
           ></ngb-rating>
-          <div class="medias">
+          <!--<div class="medias">
             <pre>Media: {{paintingStatisticsItem.average | number:'1.1-2' }}</pre>
             <pre>Dispersión: {{paintingStatisticsItem.standard_deviation | number:'1.1-2' }}</pre>
-          </div>
+          </div>-->
           <p><a (click)="showComments(paintingStatisticsItem, modalComentarios)" class="details-link">Comentarios</a></p>
+          <p *ngIf="isOriginalVersion(paintingStatisticsItem, painting)">
+            <a [href]="painting.url" target="_blank">Información ampliada de la obra original</a>
+          </p>
 
           <ng-template #modalComentarios let-modal>
             <div class="modal-header">
@@ -56,8 +70,9 @@
             </div>
           </ng-template>
         </div> <!-- card-body -->
-      </div> <!-- card -->
-    </div> <!-- col -->
+        </div> <!-- card -->
+      </div> <!-- image -->
+    </div> <!-- col-12 -->
   </div> <!-- row -->
 
   <div class="row">

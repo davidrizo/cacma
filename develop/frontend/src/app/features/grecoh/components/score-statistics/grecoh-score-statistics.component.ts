@@ -16,6 +16,7 @@ import {PaintingVersion} from '../../model/painting-version';
 import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {Options} from 'ng5-slider';
 
 @Component({
   selector: 'app-score-statistics',
@@ -30,6 +31,15 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
   paintingVersions: Map<number, PaintingVersion> = new Map<number, PaintingVersion>();
   paintingVersionScores$: Observable<PaintingVersionScore[]>;
   paintingVersionsSubscription: Subscription;
+  imagesWidth = 30;
+  sliderOptions: Options = {
+    floor: 10,
+    ceil: 100,
+    hidePointerLabels: true,
+    hideLimitLabels: true
+  };
+  onlyImages = false;
+
   constructor(private route: ActivatedRoute, private store: Store<GrecohState>,
               private showErrorService: ShowErrorService, private modalService: NgbModal) { }
 
@@ -118,5 +128,9 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
     } else {
       return 'Sin comentarios';
     }
+  }
+
+  isOriginalVersion(paintingStatisticsItem: PaintingStatistics, painting: Painting) {
+    return paintingStatisticsItem.painting_version_id === painting.painting_version_id;
   }
 }

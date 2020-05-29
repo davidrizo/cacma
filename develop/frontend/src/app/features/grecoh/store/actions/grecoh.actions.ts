@@ -21,6 +21,7 @@ export enum GrecohActionTypes {
   GetPaintingStatisticsSuccess = '[Grecoh] Get painting statistics success',
   GetPaintingVersionScores = '[Grecoh] Get painting version scores',
   GetPaintingVersionScoresSuccess = '[Grecoh] Get painting version scores success',
+  ResetScoreResults = '[Grecoh] Reset score results'
 }
 
 export class ResetGrecohServerError implements Action {
@@ -52,6 +53,12 @@ export class GetPaintingSuccess implements Action {
   public readonly type = GrecohActionTypes.GetPaintingSuccess;
   constructor(public painting: Painting) {}
 }
+
+export class ResetScoreResults implements Action {
+  public readonly type = GrecohActionTypes.ResetScoreResults;
+  constructor() {}
+}
+
 
 export class GetPaintingVersions implements Action {
   public readonly type = GrecohActionTypes.GetPaintingVersions;
@@ -100,6 +107,6 @@ export type GrecohActions =
   GetPaintingVersions | GetPaintingVersionsSuccess |
   PostPaintingVersionsScores | PostPaintingVersionsScoresSuccess |
   GetPaintingStatistics | GetPaintingStatisticsSuccess |
-  GetPaintingVersionScores | GetPaintingVersionScoresSuccess;
+  GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults;
 
 
