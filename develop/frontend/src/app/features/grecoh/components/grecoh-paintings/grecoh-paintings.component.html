@@ -7,7 +7,7 @@
       <p>Selecciona una de las siguientes obras para comenzar</p>
     </div>
 
-    <div id="images">
+    <div id="images" *ngIf="paintings$ | async; else loading">
       <div *ngFor="let painting of paintings$ | async; trackBy: trackByPainting">
         <div class="image">
           <img [src]="getGrayscaleImage(painting)" alt="Grayscale image of {{painting.title}}"/>
@@ -19,6 +19,12 @@
         </div>
       </div>
     </div>
+
+  <ng-template #loading>
+    <div class="jumbotron">
+      Cargando datos del servidor ...
+    </div>
+  </ng-template>
 
 </section>
 <app-footer></app-footer>

@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/grecoh.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/model/painting.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/model/painting.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/actions/grecoh.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/actions/grecoh.actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/reducers/grecoh.reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/reducers/grecoh.reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php_backend/api/get_painting.php" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/api/get_painting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +169,8 @@
       <workItem from="1589732156659" duration="62805000" />
       <workItem from="1589971723326" duration="9000" />
       <workItem from="1590681541689" duration="1601000" />
-      <workItem from="1590768783899" duration="5273000" />
+      <workItem from="1590768783899" duration="5740000" />
+      <workItem from="1591036776335" duration="532000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -397,7 +387,7 @@
     <state x="77" y="255" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404957405" />
     <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589793347364" />
     <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1589955128722" />
-    <state width="2127" height="415" key="GridCell.Tab.0.bottom" timestamp="1590773774253">
+    <state width="2127" height="415" key="GridCell.Tab.0.bottom" timestamp="1590777357081">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466143" />
@@ -405,7 +395,8 @@
     <state width="2127" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589957645908" />
     <state width="2127" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1590773774253" />
     <state width="2508" height="256" key="GridCell.Tab.0.bottom/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198061" />
-    <state width="2127" height="415" key="GridCell.Tab.0.center" timestamp="1590773774252">
+    <state width="2127" height="415" key="GridCell.Tab.0.bottom/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1590777357081" />
+    <state width="2127" height="415" key="GridCell.Tab.0.center" timestamp="1590777357080">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.center/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466141" />
@@ -413,7 +404,8 @@
     <state width="2127" height="415" key="GridCell.Tab.0.center/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589957645908" />
     <state width="2127" height="415" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1590773774252" />
     <state width="2508" height="256" key="GridCell.Tab.0.center/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198059" />
-    <state width="2127" height="415" key="GridCell.Tab.0.left" timestamp="1590773774251">
+    <state width="2127" height="415" key="GridCell.Tab.0.center/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1590777357080" />
+    <state width="2127" height="415" key="GridCell.Tab.0.left" timestamp="1590777357080">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.left/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466139" />
@@ -421,7 +413,8 @@
     <state width="2127" height="415" key="GridCell.Tab.0.left/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589957645907" />
     <state width="2127" height="415" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1590773774251" />
     <state width="2508" height="256" key="GridCell.Tab.0.left/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198057" />
-    <state width="2127" height="415" key="GridCell.Tab.0.right" timestamp="1590773774253">
+    <state width="2127" height="415" key="GridCell.Tab.0.left/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1590777357080" />
+    <state width="2127" height="415" key="GridCell.Tab.0.right" timestamp="1590777357080">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1280" height="316" key="GridCell.Tab.0.right/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466142" />
@@ -429,6 +422,7 @@
     <state width="2127" height="415" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589957645908" />
     <state width="2127" height="415" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1590773774253" />
     <state width="2508" height="256" key="GridCell.Tab.0.right/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198060" />
+    <state width="2127" height="415" key="GridCell.Tab.0.right/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1590777357080" />
     <state x="824" y="521" key="NewPhpClassDialog" timestamp="1589911003066">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
