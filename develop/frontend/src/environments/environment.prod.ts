@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   // important not to finish the URL with slash
-  apiEndpoint: 'https://cacma.000webhostapp.com/api',
+  apiEndpoint: 'https://research.easda.es/cacma/grecoh/api',
   home: 'https://davidrizo.github.io/cacma',
   auth: {
     CLIENT_ID: 'rgueuEzyc9LAVIhNjCLTKeYG4O53dTvE',
