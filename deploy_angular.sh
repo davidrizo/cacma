@@ -12,7 +12,5 @@ git commit -a -m "Production release"
 git push
 
 
-echo "Subir con FTP a /easda.es/docs/investigacion/cacma"
-open .
 
 
