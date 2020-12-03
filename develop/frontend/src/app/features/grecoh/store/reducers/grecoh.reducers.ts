@@ -60,6 +60,18 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       newState.paintingVersionScores = action.paintingVersionScores;
       return newState;
     }
+    case GrecohActionTypes.GetCollaboratorsSuccess: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.collaborators = action.collaborators;
+      return newState;
+    }
+    case GrecohActionTypes.SelectCollaborator: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.selectedCollaborator = action.collaborator;
+      return newState;
+    }
     default: {
       return state;
     }

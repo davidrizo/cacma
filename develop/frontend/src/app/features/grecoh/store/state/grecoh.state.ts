@@ -3,6 +3,7 @@ import {Painting} from '../../model/painting';
 import {PaintingVersion} from '../../model/painting-version';
 import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
+import {Collaborator} from '../../model/collaborator';
 
 export interface GrecohState {
   paintings: Painting[];
@@ -11,6 +12,8 @@ export interface GrecohState {
   apiRestServerError: APIRestServerError;
   paintingStatistics: PaintingStatistics[];
   paintingVersionScores: PaintingVersionScore[];
+  collaborators: Collaborator[];
+  selectedCollaborator: Collaborator;
   postScoresResult: APIRestServerError;
 }
 
@@ -21,7 +24,9 @@ export const initialSemanticRepresentationState: GrecohState = {
   paintingVersions: null,
   paintingStatistics: null,
   postScoresResult: null,
-  paintingVersionScores: null
+  paintingVersionScores: null,
+  collaborators: null,
+  selectedCollaborator: null
 };
 
 export function getInitialState(): GrecohState {

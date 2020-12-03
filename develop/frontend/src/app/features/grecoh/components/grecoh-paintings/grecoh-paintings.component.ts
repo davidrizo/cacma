@@ -3,9 +3,15 @@ import {Observable, Subscription} from 'rxjs';
 import {Painting} from '../../model/painting';
 import {Store} from '@ngrx/store';
 import {ShowErrorService} from '../../../../core/services/show-error.service';
-import {selectGrecohServerError, selectPaintings} from '../../store/selectors/grecoh.selector';
-import {GetPaintings, ResetGrecohServerError} from '../../store/actions/grecoh.actions';
+import {
+  selectCollaborators,
+  selectGrecohServerError,
+  selectPaintings,
+  selectSelectedCollaborator
+} from '../../store/selectors/grecoh.selector';
+import {GetCollaborators, GetPaintings, ResetGrecohServerError, SelectCollaborator} from '../../store/actions/grecoh.actions';
 import {GrecohState} from '../../store/state/grecoh.state';
+import {Collaborator} from '../../model/collaborator';
 
 @Component({
   selector: 'app-grecoh-paintings',
@@ -14,14 +20,20 @@ import {GrecohState} from '../../store/state/grecoh.state';
 })
 export class GrecohPaintingsComponent implements OnInit, OnDestroy {
   paintings$: Observable<Painting[]>;
+  collaborators$: Observable<Collaborator[]>;
   private serverErrorSubscription: Subscription;
+  selectedCollaborator: Collaborator;
+  private selectedCollaboratorSubscription: Subscription;
+
   constructor(private store: Store<GrecohState>, private showErrorService: ShowErrorService) {
   }
 
   ngOnInit() {
     this.paintings$ = this.store.select(selectPaintings);
+    this.collaborators$ = this.store.select(selectCollaborators);
 
     this.store.dispatch(new GetPaintings());
+    this.store.dispatch(new GetCollaborators());
 
     this.serverErrorSubscription = this.store.select(selectGrecohServerError).subscribe(next => {
       if (next) {
@@ -29,6 +41,12 @@ export class GrecohPaintingsComponent implements OnInit, OnDestroy {
         this.store.dispatch(new ResetGrecohServerError());
       }
     });
+    this.selectedCollaboratorSubscription = this.store.select(selectSelectedCollaborator).subscribe(next => {
+      if (next) {
+        this.selectedCollaborator = next;
+      }
+    });
+
   }
 
   trackByPainting(index, item: Painting) {
@@ -41,6 +59,10 @@ export class GrecohPaintingsComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.serverErrorSubscription.unsubscribe();
+    this.selectedCollaboratorSubscription.unsubscribe();
   }
 
+  onCollaboratorChanged() {
+    this.store.dispatch(new SelectCollaborator(this.selectedCollaborator));
+  }
 }

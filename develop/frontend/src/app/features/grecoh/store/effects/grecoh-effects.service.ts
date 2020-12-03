@@ -3,6 +3,7 @@ import { Effect, ofType, Actions } from '@ngrx/effects';
 import {Observable, of} from 'rxjs';
 import {catchError, map, switchMap} from 'rxjs/operators';
 import {
+  GetCollaborators, GetCollaboratorsSuccess,
   GetPainting,
   GetPaintings,
   GetPaintingsSuccess, GetPaintingStatistics, GetPaintingStatisticsSuccess,
@@ -19,6 +20,7 @@ import {PaintingVersion} from '../../model/painting-version';
 import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 import {APIRestServerError} from '../../../../core/model/restapi/apirest-server-error';
+import {Collaborator} from '../../model/collaborator';
 
 @Injectable()
 export class GrecohEffects {
@@ -81,4 +83,12 @@ export class GrecohEffects {
         catchError(err => of(new GrecohServerError(err)))
       )));
 
+  @Effect()
+  getCollaborators$: Observable<Action> = this.actions$.pipe(
+    ofType<GetCollaborators>(GrecohActionTypes.GetCollaborators),
+    switchMap((action: GetCollaborators) =>
+      this.grecohService.getCollaborators$().pipe(
+        switchMap((collaborators: Collaborator[]) => of(new GetCollaboratorsSuccess(collaborators))),
+        catchError(err => of(new GrecohServerError(err)))
+      )));
 }

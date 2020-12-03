@@ -5,6 +5,7 @@ import {PaintingVersion} from '../../model/painting-version';
 import {UserPaintingVersionScores} from '../../model/user-painting-version-scores';
 import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
+import {Collaborator} from '../../model/collaborator';
 
 export enum GrecohActionTypes {
   ResetGrecohServerError = '[Grecoh] Server error reset',
@@ -21,6 +22,9 @@ export enum GrecohActionTypes {
   GetPaintingStatisticsSuccess = '[Grecoh] Get painting statistics success',
   GetPaintingVersionScores = '[Grecoh] Get painting version scores',
   GetPaintingVersionScoresSuccess = '[Grecoh] Get painting version scores success',
+  GetCollaborators = '[Grecoh] Get collaborators',
+  GetCollaboratorsSuccess = '[Grecoh] Get collaborators success',
+  SelectCollaborator = '[Grecoh] Select collaborator',
   ResetScoreResults = '[Grecoh] Reset score results'
 }
 
@@ -100,6 +104,21 @@ export class GetPaintingVersionScoresSuccess implements Action {
   constructor(public paintingVersionScores: PaintingVersionScore[]) {}
 }
 
+export class GetCollaborators implements Action {
+  public readonly type = GrecohActionTypes.GetCollaborators;
+  constructor() {}
+}
+
+export class GetCollaboratorsSuccess implements Action {
+  public readonly type = GrecohActionTypes.GetCollaboratorsSuccess;
+  constructor(public collaborators: Collaborator[]) {}
+}
+
+export class SelectCollaborator implements Action {
+  public readonly type = GrecohActionTypes.SelectCollaborator;
+  constructor(public collaborator: Collaborator) {}
+}
+
 export type GrecohActions =
   GrecohServerError | ResetGrecohServerError |
   GetPaintings | GetPaintingsSuccess |
@@ -107,6 +126,8 @@ export type GrecohActions =
   GetPaintingVersions | GetPaintingVersionsSuccess |
   PostPaintingVersionsScores | PostPaintingVersionsScoresSuccess |
   GetPaintingStatistics | GetPaintingStatisticsSuccess |
-  GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults;
+  GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults |
+  GetCollaborators | GetCollaboratorsSuccess |
+  SelectCollaborator;
 
 

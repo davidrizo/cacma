@@ -7,6 +7,7 @@ import {PaintingStatistics} from '../model/painting-statistics';
 import {UserPaintingVersionScores} from '../model/user-painting-version-scores';
 import {PaintingVersionScore} from '../model/painting-version-score';
 import {APIRestServerError} from '../../../core/model/restapi/apirest-server-error';
+import {Collaborator} from '../model/collaborator';
 
 
 @Injectable()
@@ -47,5 +48,10 @@ export class GrecohService {
   getPaintingVersionScores$(paintingVersionID: number): Observable<PaintingVersionScore[]> {
     const url = 'list_painting_version_scores.php?painting_version_id=' + paintingVersionID;
     return this.apiRestClientService.get$<PaintingVersionScore[]>(url);
+  }
+
+  getCollaborators$(): Observable<Collaborator[]> {
+    const url = 'list_collaborators.php';
+    return this.apiRestClientService.get$<Collaborator[]>(url);
   }
 }

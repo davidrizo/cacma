@@ -4,7 +4,12 @@
     <div class="section-title">
       <span>GreCoH</span>
       <h2>GreCoH</h2>
-      <p>Selecciona una de las siguientes obras para comenzar</p>
+      <p><strong>Selecciona una de las siguientes obras para comenzar</strong></p>
+      <p>Indica si estás realizando la actividad con algún/a colaborador/a:
+        <select [(ngModel)]="selectedCollaborator" name="collaborator" placeholder="Collaborator" (ngModelChange)="onCollaboratorChanged()">
+          <option *ngFor="let collaborator of collaborators$ | async" [ngValue]="collaborator" [selected]="selectedCollaborator != null && collaborator.id === selectedCollaborator.id">{{collaborator.name}}</option>
+        </select>
+      </p>
     </div>
 
     <div id="images" *ngIf="paintings$ | async; else loading">

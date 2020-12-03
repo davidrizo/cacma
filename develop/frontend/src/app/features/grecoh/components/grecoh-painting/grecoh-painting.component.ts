@@ -16,7 +16,7 @@ import {PaintingVersion} from '../../model/painting-version';
 import {
   selectGrecohServerError,
   selectPaintingVersions,
-  selectPostScoresResult,
+  selectPostScoresResult, selectSelectedCollaborator,
   selectSelectedPainting
 } from '../../store/selectors/grecoh.selector';
 import {AuthService} from '../../../../auth/auth.service';
@@ -25,6 +25,7 @@ import {PaintingVersionScore} from '../../model/painting-version-score';
 import {UserPaintingVersionScores} from '../../model/user-painting-version-scores';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {ToastrService} from 'ngx-toastr';
+import {Collaborator} from '../../model/collaborator';
 
 @Component({
   selector: 'app-grecoh-painting',
@@ -42,6 +43,10 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
   userEMail: string;
   serverErrorSubscription: Subscription;
   comentariosVersionSeleccionada: string;
+
+  selectedCollaborator: Collaborator;
+  private selectedCollaboratorSubscription: Subscription;
+
 
 
   constructor(private router: Router, private route: ActivatedRoute, private store: Store<GrecohState>,
@@ -102,6 +107,13 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
         }
       }
     });
+
+    this.selectedCollaboratorSubscription = this.store.select(selectSelectedCollaborator).subscribe(next => {
+      if (next) {
+        this.selectedCollaborator = next;
+      }
+    });
+
   }
 
   trackByPaintingVersionFn(index, item: PaintingVersionScore) {
@@ -121,6 +133,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
     this.serverErrorSubscription.unsubscribe();
     this.insertionSubscription.unsubscribe();
     this.paintingVersionsSubscription.unsubscribe();
+    this.selectedCollaboratorSubscription.unsubscribe();
   }
 
   /*getScore(paintingVersion: PaintingVersion): number {
@@ -205,7 +218,8 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
       sc.push({
         painting_version_id: score.painting_version_id,
         comments: score.comments,
-        value: score.value
+        value: score.value,
+        collaborator_id: this.selectedCollaborator != null ? this.selectedCollaborator.id : null
       });
     });
 

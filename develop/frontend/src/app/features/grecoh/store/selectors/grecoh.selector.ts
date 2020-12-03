@@ -33,6 +33,17 @@ export const selectPaintingVersionScores = createSelector(
   (state: GrecohState) => state.paintingVersionScores
 );
 
+export const selectCollaborators = createSelector(
+  grecohState,
+  (state: GrecohState) => state.collaborators
+);
+
+
+export const selectSelectedCollaborator = createSelector(
+  grecohState,
+  (state: GrecohState) => state.selectedCollaborator
+);
+
 
 export const selectGrecohServerError = createSelector(
   grecohState,
