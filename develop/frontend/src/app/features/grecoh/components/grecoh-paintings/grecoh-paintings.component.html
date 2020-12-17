@@ -3,7 +3,7 @@
 <section id="paintings" class="container">
     <div class="section-title">
       <span>GreCoH</span>
-      <h2>GreCoH</h2>
+      <h2>GreCoH - {{currentLevel$ | async}}º nivel</h2>
       <p><strong>Selecciona una de las siguientes obras para comenzar</strong></p>
       <p>Indica si estás realizando la actividad con algún/a colaborador/a:
         <select [(ngModel)]="selectedCollaborator" name="collaborator" placeholder="Collaborator" (ngModelChange)="onCollaboratorChanged()">

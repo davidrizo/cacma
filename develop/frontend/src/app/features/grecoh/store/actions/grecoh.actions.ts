@@ -6,6 +6,7 @@ import {UserPaintingVersionScores} from '../../model/user-painting-version-score
 import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 import {Collaborator} from '../../model/collaborator';
+import {Question} from '../../model/question';
 
 export enum GrecohActionTypes {
   ResetGrecohServerError = '[Grecoh] Server error reset',
@@ -25,7 +26,9 @@ export enum GrecohActionTypes {
   GetCollaborators = '[Grecoh] Get collaborators',
   GetCollaboratorsSuccess = '[Grecoh] Get collaborators success',
   SelectCollaborator = '[Grecoh] Select collaborator',
-  ResetScoreResults = '[Grecoh] Reset score results'
+  ResetScoreResults = '[Grecoh] Reset score results',
+  GetQuestions = '[Grecoh] Get questions',
+  GetQuestionsSuccess = '[Grecoh] Get questions success',
 }
 
 export class ResetGrecohServerError implements Action {
@@ -40,7 +43,7 @@ export class GrecohServerError implements Action {
 
 export class GetPaintings implements Action {
   public readonly type = GrecohActionTypes.GetPaintings;
-  constructor() {}
+  constructor(public experimentID: number, public level: number) {}
 }
 
 export class GetPaintingsSuccess implements Action {
@@ -119,6 +122,17 @@ export class SelectCollaborator implements Action {
   constructor(public collaborator: Collaborator) {}
 }
 
+export class GetQuestions implements Action {
+  public readonly type = GrecohActionTypes.GetQuestions;
+  constructor(public experimentID: number) {}
+}
+
+export class GetQuestionsSuccess implements Action {
+  public readonly type = GrecohActionTypes.GetQuestionsSuccess;
+  constructor(public questions: Question[]) {}
+}
+
+
 export type GrecohActions =
   GrecohServerError | ResetGrecohServerError |
   GetPaintings | GetPaintingsSuccess |
@@ -128,6 +142,7 @@ export type GrecohActions =
   GetPaintingStatistics | GetPaintingStatisticsSuccess |
   GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults |
   GetCollaborators | GetCollaboratorsSuccess |
+  GetQuestions | GetQuestionsSuccess |
   SelectCollaborator;
 
 

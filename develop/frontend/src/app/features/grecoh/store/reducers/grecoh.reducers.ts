@@ -16,6 +16,12 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
         apiRestServerError: action.serverError
       };
     }
+    case GrecohActionTypes.GetPaintings: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.currentLevel = action.level;
+      return newState;
+    }
     case GrecohActionTypes.GetPaintingsSuccess: {
       const newState = {...state,
         apiRestServerError: null};
@@ -70,6 +76,12 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       const newState = {...state,
         apiRestServerError: null};
       newState.selectedCollaborator = action.collaborator;
+      return newState;
+    }
+    case GrecohActionTypes.GetQuestionsSuccess: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.questions = action.questions;
       return newState;
     }
     default: {

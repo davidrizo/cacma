@@ -8,6 +8,7 @@ import {UserPaintingVersionScores} from '../model/user-painting-version-scores';
 import {PaintingVersionScore} from '../model/painting-version-score';
 import {APIRestServerError} from '../../../core/model/restapi/apirest-server-error';
 import {Collaborator} from '../model/collaborator';
+import {Question} from '../model/question';
 
 
 @Injectable()
@@ -16,8 +17,9 @@ export class GrecohService {
   constructor(private apiRestClientService: ApiRestClientService) {
   }
 
-  getPaintings$(): Observable<Painting[]> {
-    const url = 'list_paintings.php?_ijt=sav6aq084tdi6va9t83me4f749'; // TODO token - ver también en connect.php los permisos CORS
+  getPaintings$(experimentID: number, level: number): Observable<Painting[]> {
+    // TODO token - ver también en connect.php los permisos CORS
+    const url = 'list_paintings.php?_ijt=sav6aq084tdi6va9t83me4f749&experiment=' + experimentID + '&level=' + level;
     return this.apiRestClientService.get$<Painting[]>(url);
   }
 
@@ -54,4 +56,10 @@ export class GrecohService {
     const url = 'list_collaborators.php';
     return this.apiRestClientService.get$<Collaborator[]>(url);
   }
+
+  getQuestions$(experimentID: number): Observable<Question[]> {
+    const url = 'list_questions.php?experiment=' + experimentID;
+    return this.apiRestClientService.get$<Question[]>(url);
+  }
+
 }

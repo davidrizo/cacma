@@ -1,9 +1,14 @@
 <?php
 require 'apirest.php';
 require 'connect.php';
+require 'utils.php';
+
+$experiment = getGETParameterForMySQL('experiment', $con);
+$level = getGETParameterForMySQL('level', $con);
 
 $paintings = [];
-$sql = "SELECT p.id as id, p.title as title, p.slug as slug, pp.name as painter, pp.slug as painter_slug FROM grecoh_painting p, grecoh_painter pp where pp.id = p.painter_id";
+
+$sql = "SELECT p.id as id, p.title as title, p.slug as slug, pp.name as painter, pp.slug as painter_slug FROM grecoh_painting p, grecoh_painter pp where pp.id = p.painter_id and p.experiment_id = '${experiment}' and p.level = '${level}'";
 
 if($result = mysqli_query($con,$sql))
 {

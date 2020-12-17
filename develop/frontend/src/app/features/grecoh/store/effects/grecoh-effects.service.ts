@@ -9,7 +9,7 @@ import {
   GetPaintingsSuccess, GetPaintingStatistics, GetPaintingStatisticsSuccess,
   GetPaintingSuccess,
   GetPaintingVersions, GetPaintingVersionScores, GetPaintingVersionScoresSuccess,
-  GetPaintingVersionsSuccess,
+  GetPaintingVersionsSuccess, GetQuestions, GetQuestionsSuccess,
   GrecohActionTypes,
   GrecohServerError, PostPaintingVersionsScores, PostPaintingVersionsScoresSuccess
 } from '../actions/grecoh.actions';
@@ -21,6 +21,7 @@ import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 import {APIRestServerError} from '../../../../core/model/restapi/apirest-server-error';
 import {Collaborator} from '../../model/collaborator';
+import {Question} from '../../model/question';
 
 @Injectable()
 export class GrecohEffects {
@@ -33,7 +34,7 @@ export class GrecohEffects {
   getPaintings$: Observable<Action> = this.actions$.pipe(
     ofType<GetPaintings>(GrecohActionTypes.GetPaintings),
     switchMap((action: GetPaintings) =>
-      this.grecohService.getPaintings$().pipe(
+      this.grecohService.getPaintings$(action.experimentID, action.level).pipe(
     switchMap((paintings: Painting[]) => of(new GetPaintingsSuccess(paintings))),
         catchError(err => of(new GrecohServerError((err)))
       ))));
@@ -91,4 +92,14 @@ export class GrecohEffects {
         switchMap((collaborators: Collaborator[]) => of(new GetCollaboratorsSuccess(collaborators))),
         catchError(err => of(new GrecohServerError(err)))
       )));
+
+  @Effect()
+  getQuestions$: Observable<Action> = this.actions$.pipe(
+    ofType<GetQuestions>(GrecohActionTypes.GetQuestions),
+    switchMap((action: GetQuestions) =>
+      this.grecohService.getQuestions$(action.experimentID).pipe(
+        switchMap((questions: Question[]) => of(new GetQuestionsSuccess(questions))),
+        catchError(err => of(new GrecohServerError((err)))
+        ))));
+
 }

@@ -10,13 +10,15 @@ $data = json_decode($input);
 
 $painting_id=$data->painting_id;
 $email=$data->email;
+$collaborator_id=$data->collaborator_id;
 
-$sql = "replace INTO `grecoh_user_painting_version_score` (`email`, `painting_version_id`, `score`, `comments`)";
+$sql = "replace INTO `grecoh_user_painting_version_score` (`email`, `painting_version_id`, `score`, `comments`, `collaborator_id`)";
 
 $first = true;
 
 foreach ($data->scores as &$score) {
     $painting_version_id = $score->painting_version_id;
+    $collaborator_id = $score->collaborator_id;
     $score_value = $score->value;
     if (isset($score->comments)) {
         $comments = $score->comments;
@@ -34,7 +36,7 @@ foreach ($data->scores as &$score) {
         $sql = $sql . ', ';
     }
 
-    $sql = $sql . "('$email', '$painting_version_id', '$score_value', '$comments')";
+    $sql = $sql . "('$email', '$painting_version_id', '$score_value', '$comments', '$collaborator_id')";
 }
 
 

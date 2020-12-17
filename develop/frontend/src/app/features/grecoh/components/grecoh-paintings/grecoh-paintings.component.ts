@@ -4,7 +4,7 @@ import {Painting} from '../../model/painting';
 import {Store} from '@ngrx/store';
 import {ShowErrorService} from '../../../../core/services/show-error.service';
 import {
-  selectCollaborators,
+  selectCollaborators, selectCurrentLevel,
   selectGrecohServerError,
   selectPaintings,
   selectSelectedCollaborator
@@ -20,6 +20,7 @@ import {Collaborator} from '../../model/collaborator';
 })
 export class GrecohPaintingsComponent implements OnInit, OnDestroy {
   paintings$: Observable<Painting[]>;
+  currentLevel$: Observable<number>;
   collaborators$: Observable<Collaborator[]>;
   private serverErrorSubscription: Subscription;
   selectedCollaborator: Collaborator;
@@ -29,10 +30,12 @@ export class GrecohPaintingsComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.currentLevel$ = this.store.select(selectCurrentLevel);
     this.paintings$ = this.store.select(selectPaintings);
     this.collaborators$ = this.store.select(selectCollaborators);
 
-    this.store.dispatch(new GetPaintings());
+    //TODO Level
+    this.store.dispatch(new GetPaintings(1, 1)); // TODO Experiment ID 1 = colors
     this.store.dispatch(new GetCollaborators());
 
     this.serverErrorSubscription = this.store.select(selectGrecohServerError).subscribe(next => {

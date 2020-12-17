@@ -44,6 +44,17 @@ export const selectSelectedCollaborator = createSelector(
   (state: GrecohState) => state.selectedCollaborator
 );
 
+export const selectQuestions = createSelector(
+  grecohState,
+  (state: GrecohState) => state.questions
+);
+
+export const selectCurrentLevel = createSelector(
+  grecohState,
+  (state: GrecohState) => state.currentLevel
+);
+
+
 
 export const selectGrecohServerError = createSelector(
   grecohState,
