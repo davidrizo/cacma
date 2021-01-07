@@ -35,7 +35,7 @@ export class GrecohPaintingsComponent implements OnInit, OnDestroy {
     this.collaborators$ = this.store.select(selectCollaborators);
 
     //TODO Level
-    this.store.dispatch(new GetPaintings(1, 1)); // TODO Experiment ID 1 = colors
+    this.store.dispatch(new GetPaintings(1, 1, 'drizo@gcloud.ua.es')); // TODO Experiment ID 1 = colors
     this.store.dispatch(new GetCollaborators());
 
     this.serverErrorSubscription = this.store.select(selectGrecohServerError).subscribe(next => {

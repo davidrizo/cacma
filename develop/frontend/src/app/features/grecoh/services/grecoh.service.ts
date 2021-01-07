@@ -17,9 +17,12 @@ export class GrecohService {
   constructor(private apiRestClientService: ApiRestClientService) {
   }
 
-  getPaintings$(experimentID: number, level: number): Observable<Painting[]> {
+  getPaintings$(experimentID: number, level: number, email: string): Observable<Painting[]> {
     // TODO token - ver también en connect.php los permisos CORS
-    const url = 'list_paintings.php?_ijt=sav6aq084tdi6va9t83me4f749&experiment=' + experimentID + '&level=' + level;
+    let url = `list_paintings.php?_ijt=sav6aq084tdi6va9t83me4f749&experiment=${experimentID}&level=${level}`;
+    if (email) {
+      url += `&email=${email}`;
+    }
     return this.apiRestClientService.get$<Painting[]>(url);
   }
 

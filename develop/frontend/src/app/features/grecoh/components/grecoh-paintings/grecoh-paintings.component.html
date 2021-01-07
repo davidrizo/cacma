@@ -19,7 +19,8 @@
           <div class="image-info">
             <h4>{{painting.painter}}</h4>
             <p>{{painting.title}}</p>
-            <p><a [routerLink]="['../painting',painting.id]" class="details-link">Comienza</a></p>
+            <p *ngIf="!painting.scored"><a [routerLink]="['../painting',painting.id]" class="details-link">Comienza</a></p>
+            <p *ngIf="painting.scored"><a [routerLink]="['../statistics',painting.id]" class="details-link">Resultados</a></p>
           </div>
         </div>
       </div>

@@ -19,6 +19,8 @@ import {LayoutModule} from './shared/layout/layout.module';
 import {GrecohModule} from './features/grecoh/grecoh.module';
 import {CallbackComponent} from './core/components/callback/callback.component';
 import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
+import {environment} from '../environments/environment';
 
 // the second parameter 'es-ES' is optional
 registerLocaleData(localeEs, 'es-ES');
@@ -38,6 +40,11 @@ registerLocaleData(localeEs, 'es-ES');
     LoggerModule.forRoot({level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR}),
     StoreModule.forRoot({
       /* an empty object here  */
+    }),
+    // Instrumentation must be imported after importing StoreModule (config is optional) - for ngrx in Chrome debugger
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode
     }),
     EffectsModule.forRoot([]),
     NgbCollapseModule,

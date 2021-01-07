@@ -34,7 +34,7 @@ export class GrecohEffects {
   getPaintings$: Observable<Action> = this.actions$.pipe(
     ofType<GetPaintings>(GrecohActionTypes.GetPaintings),
     switchMap((action: GetPaintings) =>
-      this.grecohService.getPaintings$(action.experimentID, action.level).pipe(
+      this.grecohService.getPaintings$(action.experimentID, action.level, action.email).pipe(
     switchMap((paintings: Painting[]) => of(new GetPaintingsSuccess(paintings))),
         catchError(err => of(new GrecohServerError((err)))
       ))));

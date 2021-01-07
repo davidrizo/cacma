@@ -6,4 +6,5 @@ export interface Painting {
   slug: string;
   url?: string;
   painting_version_id?: number;
+  scored?: boolean;
 }

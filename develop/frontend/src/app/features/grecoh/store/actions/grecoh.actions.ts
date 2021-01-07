@@ -43,7 +43,7 @@ export class GrecohServerError implements Action {
 
 export class GetPaintings implements Action {
   public readonly type = GrecohActionTypes.GetPaintings;
-  constructor(public experimentID: number, public level: number) {}
+  constructor(public experimentID: number, public level: number, public email: string) {}
 }
 
 export class GetPaintingsSuccess implements Action {
