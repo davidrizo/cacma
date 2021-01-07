@@ -4,7 +4,7 @@ require 'apirest.php';
 require 'connect.php';
 require 'utils.php';
 
-$id = getGETParameterForMySQL('id', $con);
+$id = getIntGETParameterForMySQL('id', $con);
 
 if(!$id)
 {

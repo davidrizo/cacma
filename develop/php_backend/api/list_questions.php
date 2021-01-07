@@ -4,7 +4,7 @@ require 'connect.php';
 require 'utils.php';
 
 
-$experiment = getGETParameterForMySQL('experiment', $con);
+$experiment = getIntGETParameterForMySQL('experiment', $con);
 
 $questions = [];
 $sql = "SELECT q.id as id, q.ordering as ordering, q.question, q.experiment_id FROM grecoh_question q order by q.ordering and q.experiment_id = '${experiment}'";

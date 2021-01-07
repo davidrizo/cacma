@@ -3,7 +3,7 @@ require 'apirest.php';
 require 'connect.php';
 require 'utils.php';
 
-$painting_version_id = getGETParameterForMySQL('painting_version_id', $con);
+$painting_version_id = getIntGETParameterForMySQL('painting_version_id', $con);
 
 if (!$painting_version_id)
 {

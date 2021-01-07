@@ -3,7 +3,7 @@ require 'apirest.php';
 require 'connect.php';
 require 'utils.php';
 
-$id = getGETParameterForMySQL('painting_id', $con);
+$id = getIntGETParameterForMySQL('painting_id', $con);
 if(!$id)
 {
     return http_response_code(400);
