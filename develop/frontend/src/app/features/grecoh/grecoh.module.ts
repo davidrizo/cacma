@@ -11,7 +11,7 @@ import {EffectsModule} from '@ngrx/effects';
 import {grecohReducers} from './store/reducers/grecoh.reducers';
 import {GrecohEffects} from './store/effects/grecoh-effects.service';
 import {GrecohPaintingComponent } from './components/grecoh-painting/grecoh-painting.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { GrecohScoreStatisticsComponent } from './components/score-statistics/grecoh-score-statistics.component';
 import {
   NgbCarouselModule,
@@ -39,6 +39,7 @@ import {Ng5SliderModule} from 'ng5-slider';
         FormsModule,
         LayoutModule,
         RouterModule,
+        ReactiveFormsModule,
         Ng5SliderModule
     ],
   exports: [

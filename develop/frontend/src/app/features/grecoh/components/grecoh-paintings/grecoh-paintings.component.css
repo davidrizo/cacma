@@ -17,6 +17,8 @@
   -moz-column-gap:      10px;
   column-count:         3;
   column-gap:           10px;
+
+  position: relative; /* for being parent of .paintingDone */
 }
 
 #paintings #images img {
@@ -24,6 +26,15 @@
   width: 100% !important;
   height: auto !important;
   margin-bottom: 10px;
+}
+
+#paintings #images .paintingDone {
+  position: absolute;
+  z-index: 2;
+  color: #4DC7A0;
+  font-size: 2rem;
+  right: 1rem;
+  top: 1rem;
 }
 
 
@@ -71,4 +82,13 @@
 
 #paintings .image-info p {
   font-size: 14px;
+}
+
+#cambioNivel {
+  margin-top: 3em;
+  text-align: center;
+}
+
+#cambioNivel h2 {
+  margin-bottom: 1em;
 }

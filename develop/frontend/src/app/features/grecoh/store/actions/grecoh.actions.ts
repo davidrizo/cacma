@@ -119,7 +119,7 @@ export class GetCollaboratorsSuccess implements Action {
 
 export class SelectCollaborator implements Action {
   public readonly type = GrecohActionTypes.SelectCollaborator;
-  constructor(public collaborator: Collaborator) {}
+  constructor(public collaboratorID: number) {}
 }
 
 export class GetQuestions implements Action {

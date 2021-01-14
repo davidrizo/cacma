@@ -75,7 +75,7 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
     case GrecohActionTypes.SelectCollaborator: {
       const newState = {...state,
         apiRestServerError: null};
-      newState.selectedCollaborator = action.collaborator;
+      newState.selectedCollaboratorID = action.collaboratorID;
       return newState;
     }
     case GrecohActionTypes.GetQuestionsSuccess: {

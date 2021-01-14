@@ -5,16 +5,19 @@
       <span>GreCoH</span>
       <h2>GreCoH - {{currentLevel$ | async}}º nivel</h2>
       <p><strong>Selecciona una de las siguientes obras para comenzar</strong></p>
-      <p>Indica si estás realizando la actividad con algún/a colaborador/a:
-        <select [(ngModel)]="selectedCollaborator" name="collaborator" placeholder="Collaborator" (ngModelChange)="onCollaboratorChanged()">
-          <option *ngFor="let collaborator of collaborators$ | async" [ngValue]="collaborator" [selected]="selectedCollaborator != null && collaborator.id === selectedCollaborator.id">{{collaborator.name}}</option>
+
+      <p>Indica si estás realizando la actividad con algún/a colaborador/a:</p>
+        <select [(ngModel)]="selectedCollaboratorID" (ngModelChange)="onCollaboratorChanged($event)">
+          <option *ngFor="let collaborator of collaborators"
+                  [ngValue]="collaborator.id">{{collaborator.name}}</option>
         </select>
-      </p>
+
     </div>
 
     <div id="images" *ngIf="paintings$ | async; else loading">
       <div *ngFor="let painting of paintings$ | async; trackBy: trackByPainting">
         <div class="image">
+          <i *ngIf="painting.scored" class="paintingDone icofont-ui-check"></i>
           <img [src]="getGrayscaleImage(painting)" alt="Grayscale image of {{painting.title}}"/>
           <div class="image-info">
             <h4>{{painting.painter}}</h4>
@@ -31,6 +34,12 @@
       Cargando datos del servidor ...
     </div>
   </ng-template>
+
+  <div id="cambioNivel" *ngIf="allPaintingsEvaluated$">
+    <hr>
+    <h2>Nivel completado</h2>
+    <p><a href="#">Siguiente nivel</a></p>
+  </div>
 
 </section>
 <app-footer></app-footer>

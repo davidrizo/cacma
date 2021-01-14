@@ -39,9 +39,9 @@ export const selectCollaborators = createSelector(
 );
 
 
-export const selectSelectedCollaborator = createSelector(
+export const selectSelectedCollaboratorID = createSelector(
   grecohState,
-  (state: GrecohState) => state.selectedCollaborator
+  (state: GrecohState) => state.selectedCollaboratorID
 );
 
 export const selectQuestions = createSelector(

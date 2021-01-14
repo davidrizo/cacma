@@ -8,15 +8,16 @@ import {
   ResetScoreResults
 } from '../../store/actions/grecoh.actions';
 import {Store} from '@ngrx/store';
-import {GrecohState} from '../../store/state/grecoh.state';
+import {GrecohState, initialSemanticRepresentationState} from '../../store/state/grecoh.state';
 import {ShowErrorService} from '../../../../core/services/show-error.service';
 import {Observable, Subscription} from 'rxjs';
 import {Painting} from '../../model/painting';
 import {PaintingVersion} from '../../model/painting-version';
 import {
+  grecohState,
   selectGrecohServerError,
   selectPaintingVersions,
-  selectPostScoresResult, selectSelectedCollaborator,
+  selectPostScoresResult, selectSelectedCollaboratorID,
   selectSelectedPainting
 } from '../../store/selectors/grecoh.selector';
 import {AuthService} from '../../../../auth/auth.service';
@@ -44,7 +45,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
   serverErrorSubscription: Subscription;
   comentariosVersionSeleccionada: string;
 
-  selectedCollaborator: Collaborator;
+  selectedCollaboratorID: number;
   private selectedCollaboratorSubscription: Subscription;
 
 
@@ -108,9 +109,9 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
       }
     });
 
-    this.selectedCollaboratorSubscription = this.store.select(selectSelectedCollaborator).subscribe(next => {
+    this.selectedCollaboratorSubscription = this.store.select(selectSelectedCollaboratorID).subscribe(next => {
       if (next) {
-        this.selectedCollaborator = next;
+        this.selectedCollaboratorID = next;
       }
     });
 
@@ -219,7 +220,8 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
         painting_version_id: score.painting_version_id,
         comments: score.comments,
         value: score.value,
-        collaborator_id: this.selectedCollaborator != null ? this.selectedCollaborator.id : null
+        collaborator_id:
+          this.selectedCollaboratorID !== initialSemanticRepresentationState.selectedCollaboratorID ? this.selectedCollaboratorID : null
       });
     });
 
