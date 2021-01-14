@@ -1,45 +1,67 @@
 <app-nav-bar></app-nav-bar>
 
 <section id="paintings" class="container">
-    <div class="section-title">
-      <span>GreCoH</span>
-      <h2>GreCoH - {{currentLevel$ | async}}º nivel</h2>
-      <p><strong>Selecciona una de las siguientes obras para comenzar</strong></p>
+      <div *ngIf="currentLevelEmpty$ | async; else titleLevelNotEmpty" class="row">
+        <div class="section-title col">
+          <span>GreCoH</span>
+          <h2 id="allLevelsCompleted">Has completado todos los niveles</h2>
+          <h3>¡Muchas gracias!</h3>
 
-      <p>Indica si estás realizando la actividad con algún/a colaborador/a:</p>
-        <select [(ngModel)]="selectedCollaboratorID" (ngModelChange)="onCollaboratorChanged($event)">
-          <option *ngFor="let collaborator of collaborators"
-                  [ngValue]="collaborator.id">{{collaborator.name}}</option>
-        </select>
-
-    </div>
-
-    <div id="images" *ngIf="paintings$ | async; else loading">
-      <div *ngFor="let painting of paintings$ | async; trackBy: trackByPainting">
-        <div class="image">
-          <i *ngIf="painting.scored" class="paintingDone icofont-ui-check"></i>
-          <img [src]="getGrayscaleImage(painting)" alt="Grayscale image of {{painting.title}}"/>
-          <div class="image-info">
-            <h4>{{painting.painter}}</h4>
-            <p>{{painting.title}}</p>
-            <p *ngIf="!painting.scored"><a [routerLink]="['../painting',painting.id]" class="details-link">Comienza</a></p>
-            <p *ngIf="painting.scored"><a [routerLink]="['../statistics',painting.id]" class="details-link">Resultados</a></p>
-          </div>
+          <hr>
+          <p><a (click)="firstLevel()">Volver al primer nivel</a></p>
         </div>
       </div>
-    </div>
 
-  <ng-template #loading>
-    <div class="jumbotron">
-      Cargando datos del servidor ...
-    </div>
-  </ng-template>
+      <ng-template #titleLevelNotEmpty>
+        <div class="section-title row">
+          <div class="col">
+            <span>GreCoH</span>
+            <h2>GreCoH - {{currentLevel}}º nivel</h2>
+            <p><strong>Selecciona una de las siguientes obras para comenzar</strong></p>
 
-  <div id="cambioNivel" *ngIf="allPaintingsEvaluated$">
-    <hr>
-    <h2>Nivel completado</h2>
-    <p><a href="#">Siguiente nivel</a></p>
-  </div>
+            <div id="collaborator">
+              <p>Indica si estás realizando la actividad con algún/a colaborador/a:
+              <select [(ngModel)]="selectedCollaboratorID" (ngModelChange)="onCollaboratorChanged($event)">
+                <option *ngFor="let collaborator of collaborators"
+                        [ngValue]="collaborator.id">{{collaborator.name}}</option>
+              </select>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="images" *ngIf="paintings$ | async; else loading">
+              <div *ngFor="let painting of paintings$ | async; trackBy: trackByPainting">
+                <div class="image">
+                  <i *ngIf="painting.scored" class="paintingDone icofont-ui-check"></i>
+                  <img [src]="getGrayscaleImage(painting)" alt="Grayscale image of {{painting.title}}"/>
+                  <div class="image-info">
+                    <h4>{{painting.painter}}</h4>
+                    <p>{{painting.title}}</p>
+                    <p *ngIf="!painting.scored"><a [routerLink]="['../painting',painting.id]" class="details-link">Comienza</a></p>
+                    <p *ngIf="painting.scored"><a [routerLink]="['../statistics',painting.id]" class="details-link">Resultados</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      <ng-template #loading>
+        <div class="jumbotron">
+          Cargando datos del servidor ...
+        </div>
+      </ng-template>
+
+      <div class="row">
+        <div id="cambioNivel" class="col" *ngIf="allLevelPaintingsScored$ | async">
+          <hr>
+          <h2>Nivel completado</h2>
+          <p *ngIf="!isFirstLevel()"><a (click)="prevLevel()">Anterior nivel</a></p>
+          <p><a (click)="nextLevel()">Siguiente nivel</a></p>
+        </div>
+      </div>
+      </ng-template>
 </section>
 <app-footer></app-footer>

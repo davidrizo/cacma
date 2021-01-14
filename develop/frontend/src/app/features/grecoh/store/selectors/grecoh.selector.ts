@@ -54,6 +54,15 @@ export const selectCurrentLevel = createSelector(
   (state: GrecohState) => state.currentLevel
 );
 
+export const selectAllLevelPaintingsScored = createSelector(
+  grecohState,
+  (state: GrecohState) => state.allLevelPaintingsScored
+);
+
+export const selectCurrentLevelEmpty = createSelector(
+  grecohState,
+  (state: GrecohState) => !state.paintings || state.paintings.length === 0
+);
 
 
 export const selectGrecohServerError = createSelector(

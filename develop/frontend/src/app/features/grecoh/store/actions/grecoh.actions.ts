@@ -26,6 +26,7 @@ export enum GrecohActionTypes {
   GetCollaborators = '[Grecoh] Get collaborators',
   GetCollaboratorsSuccess = '[Grecoh] Get collaborators success',
   SelectCollaborator = '[Grecoh] Select collaborator',
+  ChangeLevel = '[Grecoh] Change level',
   ResetScoreResults = '[Grecoh] Reset score results',
   GetQuestions = '[Grecoh] Get questions',
   GetQuestionsSuccess = '[Grecoh] Get questions success',
@@ -132,6 +133,11 @@ export class GetQuestionsSuccess implements Action {
   constructor(public questions: Question[]) {}
 }
 
+export class ChangeLevel implements Action {
+  public readonly type = GrecohActionTypes.ChangeLevel;
+  constructor(public level: number) {}
+}
+
 
 export type GrecohActions =
   GrecohServerError | ResetGrecohServerError |
@@ -143,6 +149,7 @@ export type GrecohActions =
   GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults |
   GetCollaborators | GetCollaboratorsSuccess |
   GetQuestions | GetQuestionsSuccess |
-  SelectCollaborator;
+  SelectCollaborator |
+  ChangeLevel;
 
 

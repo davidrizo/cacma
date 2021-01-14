@@ -26,6 +26,12 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       const newState = {...state,
         apiRestServerError: null};
       newState.paintings = action.paintings;
+      newState.allLevelPaintingsScored = true;
+      action.paintings.forEach(painting => {
+        if (!painting.scored) {
+          newState.allLevelPaintingsScored = false;
+        }
+      });
       return newState;
     }
     case GrecohActionTypes.GetPaintingSuccess: {
@@ -76,6 +82,14 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       const newState = {...state,
         apiRestServerError: null};
       newState.selectedCollaboratorID = action.collaboratorID;
+      return newState;
+    }
+    case GrecohActionTypes.ChangeLevel: {
+      const newState = {
+        ...state,
+        apiRestServerError: null
+      };
+      newState.currentLevel = action.level;
       return newState;
     }
     case GrecohActionTypes.GetQuestionsSuccess: {

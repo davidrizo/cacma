@@ -20,6 +20,7 @@ export interface GrecohState {
   questions: Question[];
   postScoresResult: APIRestServerError;
   currentLevel: number;
+  allLevelPaintingsScored: boolean;
 }
 
 export const initialSemanticRepresentationState: GrecohState = {
@@ -33,7 +34,8 @@ export const initialSemanticRepresentationState: GrecohState = {
   collaborators: null,
   selectedCollaboratorID: -1,
   questions: null,
-  currentLevel: 1
+  currentLevel: 1,
+  allLevelPaintingsScored: null
 };
 
 export function getInitialState(): GrecohState {

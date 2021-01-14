@@ -18,7 +18,11 @@ $first = true;
 
 foreach ($data->scores as &$score) {
     $painting_version_id = $score->painting_version_id;
-    $collaborator_id = $score->collaborator_id;
+    if (isset($score->collaborator_id)) {
+        $collaborator_id = $score->collaborator_id;
+    } else {
+        $collaborator_id = 'NULL';
+    }
     $score_value = $score->value;
     if (isset($score->comments)) {
         $comments = $score->comments;
@@ -36,7 +40,7 @@ foreach ($data->scores as &$score) {
         $sql = $sql . ', ';
     }
 
-    $sql = $sql . "('$email', '$painting_version_id', '$score_value', '$comments', '$collaborator_id')";
+    $sql = $sql . "('$email', '$painting_version_id', '$score_value', '$comments', $collaborator_id)";
 }
 
 
