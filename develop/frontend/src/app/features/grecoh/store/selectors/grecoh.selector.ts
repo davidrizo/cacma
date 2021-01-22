@@ -59,13 +59,24 @@ export const selectAllLevelPaintingsScored = createSelector(
   (state: GrecohState) => state.allLevelPaintingsScored
 );
 
+export const selectCurrentExperiment = createSelector(
+  grecohState,
+  (state: GrecohState) => state.currentExperiment
+);
+
 export const selectCurrentLevelEmpty = createSelector(
   grecohState,
   (state: GrecohState) => !state.paintings || state.paintings.length === 0
 );
 
+export const selectExperimentLevelUser = createSelector(
+  grecohState,
+  (state: GrecohState) => state.experimentLevelUser
+);
 
 export const selectGrecohServerError = createSelector(
   grecohState,
   (state: GrecohState) => state.apiRestServerError
 );
+
+

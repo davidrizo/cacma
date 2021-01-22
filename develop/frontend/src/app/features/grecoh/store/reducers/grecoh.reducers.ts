@@ -98,6 +98,24 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       newState.questions = action.questions;
       return newState;
     }
+    case GrecohActionTypes.GetExperimentSuccess: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.currentExperiment = action.experiment;
+      return newState;
+    }
+    case GrecohActionTypes.GetExperimentLevelUserSuccess: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.experimentLevelUser = action.experimentLevelUser;
+      return newState;
+    }
+    case GrecohActionTypes.PostExperimentLevelUserCommentSuccess: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.postExperimentLevelUserCommentsResult = action.success;
+      return newState;
+    }
     default: {
       return state;
     }

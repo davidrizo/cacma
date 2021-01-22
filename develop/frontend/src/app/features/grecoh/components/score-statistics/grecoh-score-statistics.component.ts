@@ -81,6 +81,10 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
     return `assets/paintings/${item.painter_slug}/${item.slug}/${item.color_hexa}.jpg`;
   }*/
 
+  getSchemeImage(painting: Painting): string {
+    return `assets/paintings/${painting.painter_slug}/${painting.slug}/scheme.jpg`;
+  }
+
   getVersionImage(item: PaintingStatistics): string {
     const version = this.paintingVersions.get(item.painting_version_id);
     if (version) {

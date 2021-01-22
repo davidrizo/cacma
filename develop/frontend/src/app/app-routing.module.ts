@@ -17,6 +17,7 @@ const routes = [
   },
   {
     path: 'grecoh',
+    canActivate: [AuthGuard],
     loadChildren: () => import('./features/grecoh/grecoh.module').then(m => m.GrecohModule)
   },
   {

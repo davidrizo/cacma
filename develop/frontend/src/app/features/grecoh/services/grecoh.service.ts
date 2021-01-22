@@ -9,6 +9,8 @@ import {PaintingVersionScore} from '../model/painting-version-score';
 import {APIRestServerError} from '../../../core/model/restapi/apirest-server-error';
 import {Collaborator} from '../model/collaborator';
 import {Question} from '../model/question';
+import {Experiment} from '../model/experiment';
+import {ExperimentLevelUser} from '../model/experiment-level-user';
 
 
 @Injectable()
@@ -65,4 +67,22 @@ export class GrecohService {
     return this.apiRestClientService.get$<Question[]>(url);
   }
 
+  getExperiment$(experimentID: number): Observable<Experiment> {
+    const url = 'get_experiment.php?id=' + experimentID;
+    return this.apiRestClientService.get$<Experiment>(url);
+  }
+
+  getCommentsExperimentUserLevel$(experimentID: number, level: number, email: string): Observable<ExperimentLevelUser> {
+    const url = `get_comments_experiment_level_user.php?experiment_id=${experimentID}&level=${level}&email=${email}`;
+    return this.apiRestClientService.get$<ExperimentLevelUser>(url);
+  }
+
+  postCommentsExperimentUserLevel$(experimentLevelUser: ExperimentLevelUser): Observable<APIRestServerError> {
+    let url = 'change_experiment_level_user.php';
+    // console.log(JSON.stringify(userPaintingVersionScores));
+    // return this.apiRestClientService.post$<APIRestServerError>(url, userPaintingVersionScores);
+    // No me funciona, incluso activando CORS
+    url += '?jsondata=' + encodeURIComponent(JSON.stringify(experimentLevelUser));
+    return this.apiRestClientService.get$<APIRestServerError>(url);
+  }
 }

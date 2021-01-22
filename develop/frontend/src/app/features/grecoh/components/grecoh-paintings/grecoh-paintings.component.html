@@ -7,6 +7,7 @@
           <h2 id="allLevelsCompleted">Has completado todos los niveles</h2>
           <h3>¡Muchas gracias!</h3>
 
+          <h4 *ngIf="currentExperiment$  | async as experimentObservable">{{experimentObservable.final_comment}}</h4>
           <hr>
           <p><a (click)="firstLevel()">Volver al primer nivel</a></p>
         </div>
@@ -58,8 +59,16 @@
         <div id="cambioNivel" class="col" *ngIf="allLevelPaintingsScored$ | async">
           <hr>
           <h2>Nivel completado</h2>
+          <form [formGroup]="formUserLevelComments" (ngSubmit)="sendComments()">
+            <h3 *ngIf="currentExperiment$  | async as experimentObservable">{{experimentObservable.user_comments_caption}}</h3>
+            <textarea required formControlName="comments" placeholder="Obligatorio"></textarea>
+            <p>
+              <button class="button" type="submit">Envía comentarios</button>
+            </p>
+          </form>
+          <hr>
           <p *ngIf="!isFirstLevel()"><a (click)="prevLevel()">Anterior nivel</a></p>
-          <p><a (click)="nextLevel()">Siguiente nivel</a></p>
+          <p *ngIf="hasComments"><a (click)="nextLevel()">Siguiente nivel</a></p>
         </div>
       </div>
       </ng-template>

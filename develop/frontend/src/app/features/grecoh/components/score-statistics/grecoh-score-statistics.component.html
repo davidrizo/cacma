@@ -6,6 +6,14 @@
     <h2>Resultados globales de <strong>{{painting.title}}</strong></h2>
   </div>
 
+  <div class="row">
+    <div class="col text-center">
+      <img class="img-fluid" [src]="getSchemeImage(painting)" alt="Scheme of {{painting.title}}"/>
+    </div>
+  </div>
+
+  <hr>
+
   <div class="row" id="sliders">
     <div class="col-5 offset-1 col-md-3">
       <input id="cbImages" type="checkbox" [(ngModel)]="onlyImages"/>
@@ -39,12 +47,12 @@
             <pre>Media: {{paintingStatisticsItem.average | number:'1.1-2' }}</pre>
             <pre>Dispersión: {{paintingStatisticsItem.standard_deviation | number:'1.1-2' }}</pre>
           </div>-->
-          <p><a (click)="showComments(paintingStatisticsItem, modalComentarios)" class="details-link">Comentarios</a></p>
+          <!--<p><a (click)="showComments(paintingStatisticsItem, modalComentarios)" class="details-link">Comentarios</a></p>-->
           <p *ngIf="isOriginalVersion(paintingStatisticsItem, painting)">
             <a [href]="painting.url" target="_blank">Información ampliada de la obra original</a>
           </p>
 
-          <ng-template #modalComentarios let-modal>
+          <!--<ng-template #modalComentarios let-modal>
             <div class="modal-header">
               <h4 class="modal-title" id="modal-basic-title">Comentarios de otros usuarios</h4>
               <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cerrar')">
@@ -68,7 +76,7 @@
                 </ngb-rating>
               </div>
             </div>
-          </ng-template>
+          </ng-template> -->
         </div> <!-- card-body -->
         </div> <!-- card -->
       </div> <!-- image -->

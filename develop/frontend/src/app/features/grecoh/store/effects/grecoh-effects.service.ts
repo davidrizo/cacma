@@ -3,15 +3,29 @@ import { Effect, ofType, Actions } from '@ngrx/effects';
 import {Observable, of} from 'rxjs';
 import {catchError, map, switchMap} from 'rxjs/operators';
 import {
-  GetCollaborators, GetCollaboratorsSuccess,
+  GetCollaborators,
+  GetCollaboratorsSuccess,
+  GetExperimentLevelUser,
+  GetExperimentLevelUserSuccess,
+  GetExperimentSuccess,
   GetPainting,
   GetPaintings,
-  GetPaintingsSuccess, GetPaintingStatistics, GetPaintingStatisticsSuccess,
+  GetPaintingsSuccess,
+  GetPaintingStatistics,
+  GetPaintingStatisticsSuccess,
   GetPaintingSuccess,
-  GetPaintingVersions, GetPaintingVersionScores, GetPaintingVersionScoresSuccess,
-  GetPaintingVersionsSuccess, GetQuestions, GetQuestionsSuccess,
+  GetPaintingVersions,
+  GetPaintingVersionScores,
+  GetPaintingVersionScoresSuccess,
+  GetPaintingVersionsSuccess,
+  GetQuestions,
+  GetQuestionsSuccess,
   GrecohActionTypes,
-  GrecohServerError, PostPaintingVersionsScores, PostPaintingVersionsScoresSuccess
+  GrecohServerError,
+  PostExperimentLevelUserComment,
+  PostExperimentLevelUserCommentSuccess,
+  PostPaintingVersionsScores,
+  PostPaintingVersionsScoresSuccess
 } from '../actions/grecoh.actions';
 import {GrecohService} from '../../services/grecoh.service';
 import {Action} from '@ngrx/store';
@@ -22,6 +36,8 @@ import {PaintingVersionScore} from '../../model/painting-version-score';
 import {APIRestServerError} from '../../../../core/model/restapi/apirest-server-error';
 import {Collaborator} from '../../model/collaborator';
 import {Question} from '../../model/question';
+import {Experiment} from '../../model/experiment';
+import {ExperimentLevelUser} from '../../model/experiment-level-user';
 
 @Injectable()
 export class GrecohEffects {
@@ -101,5 +117,32 @@ export class GrecohEffects {
         switchMap((questions: Question[]) => of(new GetQuestionsSuccess(questions))),
         catchError(err => of(new GrecohServerError((err)))
         ))));
+
+  @Effect()
+  getExperiment$: Observable<Action> = this.actions$.pipe(
+    ofType<GetQuestions>(GrecohActionTypes.GetExperiment),
+    switchMap((action: GetQuestions) =>
+      this.grecohService.getExperiment$(action.experimentID).pipe(
+        switchMap((experiment: Experiment) => of(new GetExperimentSuccess(experiment))),
+        catchError(err => of(new GrecohServerError((err)))
+        ))));
+
+  @Effect()
+  getExperimentLevelUser$: Observable<Action> = this.actions$.pipe(
+    ofType<GetExperimentLevelUser>(GrecohActionTypes.GetExperimentLevelUser),
+    switchMap((action: GetExperimentLevelUser) =>
+      this.grecohService.getCommentsExperimentUserLevel$(action.experimentID, action.level, action.email).pipe(
+        switchMap((experimentLevelUser: ExperimentLevelUser) => of(new GetExperimentLevelUserSuccess(experimentLevelUser))),
+        catchError(err => of(new GrecohServerError((err)))
+        ))));
+
+  @Effect()
+  postCommentsExperimentUserLevel$: Observable<Action> = this.actions$.pipe(
+    ofType<PostExperimentLevelUserComment>(GrecohActionTypes.PostExperimentLevelUserComment),
+    switchMap((action: PostExperimentLevelUserComment) =>
+      this.grecohService.postCommentsExperimentUserLevel$(action.experimentLevelUser).pipe(
+        switchMap((result: APIRestServerError) => of(new PostExperimentLevelUserCommentSuccess(result))),
+        catchError(err => of(new GrecohServerError(err)))
+      )));
 
 }

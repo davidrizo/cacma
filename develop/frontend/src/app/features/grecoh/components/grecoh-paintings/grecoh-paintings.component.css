@@ -96,3 +96,8 @@
 #allLevelsCompleted {
   margin-top: 3rem;
 }
+
+#cambioNivel textarea {
+  margin: 2em;
+  width: 100%;
+}
