@@ -6,9 +6,9 @@ import {UserPaintingVersionScores} from '../../model/user-painting-version-score
 import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 import {Collaborator} from '../../model/collaborator';
-import {Question} from '../../model/question';
 import {Experiment} from '../../model/experiment';
-import {ExperimentLevelUser} from '../../model/experiment-level-user';
+import {Level} from '../../model/level';
+import {ExperimentLevelUserQuestionAnswer} from '../../model/experiment-level-user_questions';
 
 export enum GrecohActionTypes {
   ResetGrecohServerError = '[Grecoh] Server error reset',
@@ -28,14 +28,18 @@ export enum GrecohActionTypes {
   GetCollaborators = '[Grecoh] Get collaborators',
   GetCollaboratorsSuccess = '[Grecoh] Get collaborators success',
   SelectCollaborator = '[Grecoh] Select collaborator',
-  ChangeLevel = '[Grecoh] Change level',
+  GetLevels = '[Grecoh] Get levels',
+  GetLevelsSuccess = '[Grecoh] Get levels success',
+  FirstLevel = '[Grecoh] First level',
+  PreviousLevel = '[Grecoh] Previous level',
+  NextLevel = '[Grecoh] Next level',
   ResetScoreResults = '[Grecoh] Reset score results',
   GetQuestions = '[Grecoh] Get questions',
   GetQuestionsSuccess = '[Grecoh] Get questions success',
   GetExperiment = '[Grecoh] Get experiment',
   GetExperimentSuccess = '[Grecoh] Get experiment success',
-  GetExperimentLevelUser = '[Grecoh] Get experiment level user',
-  GetExperimentLevelUserSuccess = '[Grecoh] Get experiment  level user success',
+  GetExperimentLevelUserQuestions = '[Grecoh] Get experiment level user',
+  GetExperimentLevelUserQuestionsSuccess = '[Grecoh] Get experiment  level user success',
   PostExperimentLevelUserComment = '[Grecoh] Post experiment level user comment',
   PostExperimentLevelUserCommentSuccess = '[Grecoh] Post experiment level user comment success'
 }
@@ -52,7 +56,7 @@ export class GrecohServerError implements Action {
 
 export class GetPaintings implements Action {
   public readonly type = GrecohActionTypes.GetPaintings;
-  constructor(public experimentID: number, public level: number, public email: string) {}
+  constructor(public levelID: number, public email: string) {}
 }
 
 export class GetPaintingsSuccess implements Action {
@@ -131,16 +135,6 @@ export class SelectCollaborator implements Action {
   constructor(public collaboratorID: number) {}
 }
 
-export class GetQuestions implements Action {
-  public readonly type = GrecohActionTypes.GetQuestions;
-  constructor(public experimentID: number) {}
-}
-
-export class GetQuestionsSuccess implements Action {
-  public readonly type = GrecohActionTypes.GetQuestionsSuccess;
-  constructor(public questions: Question[]) {}
-}
-
 export class GetExperiment implements Action {
   public readonly type = GrecohActionTypes.GetExperiment;
   constructor(public experimentID: number) {}
@@ -152,25 +146,45 @@ export class GetExperimentSuccess implements Action {
 }
 
 
-export class GetExperimentLevelUser implements Action {
-  public readonly type = GrecohActionTypes.GetExperimentLevelUser;
-  constructor(public experimentID: number, public level: number, public email: string) {}
+export class GetExperimentLevelUserQuestions implements Action {
+  public readonly type = GrecohActionTypes.GetExperimentLevelUserQuestions;
+  constructor(public levelID: number, public email: string) {}
 }
 
-export class GetExperimentLevelUserSuccess implements Action {
-  public readonly type = GrecohActionTypes.GetExperimentLevelUserSuccess;
-  constructor(public experimentLevelUser: ExperimentLevelUser) {}
+export class GetExperimentLevelUserQuestionsSuccess implements Action {
+  public readonly type = GrecohActionTypes.GetExperimentLevelUserQuestionsSuccess;
+  constructor(public answers: ExperimentLevelUserQuestionAnswer[]) {}
 }
 
 
-export class ChangeLevel implements Action {
-  public readonly type = GrecohActionTypes.ChangeLevel;
-  constructor(public level: number) {}
+export class GetLevels implements Action {
+  public readonly type = GrecohActionTypes.GetLevels;
+  constructor(public experimentID: number) {}
+}
+
+export class GetLevelsSuccess implements Action {
+  public readonly type = GrecohActionTypes.GetLevelsSuccess;
+  constructor(public levels: Level[]) {}
+}
+
+export class FirstLevel implements Action {
+  public readonly type = GrecohActionTypes.FirstLevel;
+  constructor() {}
+}
+
+export class PreviousLevel implements Action {
+  public readonly type = GrecohActionTypes.PreviousLevel;
+  constructor() {}
+}
+
+export class NextLevel implements Action {
+  public readonly type = GrecohActionTypes.NextLevel;
+  constructor() {}
 }
 
 export class PostExperimentLevelUserComment implements Action {
   public readonly type = GrecohActionTypes.PostExperimentLevelUserComment;
-  constructor(public experimentLevelUser: ExperimentLevelUser) {}
+  constructor(public answers: ExperimentLevelUserQuestionAnswer[]) {}
 }
 
 export class PostExperimentLevelUserCommentSuccess implements Action {
@@ -187,11 +201,10 @@ export type GrecohActions =
   GetPaintingStatistics | GetPaintingStatisticsSuccess |
   GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults |
   GetCollaborators | GetCollaboratorsSuccess |
-  GetQuestions | GetQuestionsSuccess |
   SelectCollaborator |
-  ChangeLevel |
+  GetLevels | GetLevelsSuccess | FirstLevel | PreviousLevel | NextLevel |
   GetExperiment | GetExperimentSuccess |
-  GetExperimentLevelUser | GetExperimentLevelUserSuccess |
+  GetExperimentLevelUserQuestions | GetExperimentLevelUserQuestionsSuccess |
   PostExperimentLevelUserComment | PostExperimentLevelUserCommentSuccess
   ;
 

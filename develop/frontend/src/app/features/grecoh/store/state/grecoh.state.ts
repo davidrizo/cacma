@@ -4,9 +4,9 @@ import {PaintingVersion} from '../../model/painting-version';
 import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 import {Collaborator} from '../../model/collaborator';
-import {Question} from '../../model/question';
 import {Experiment} from '../../model/experiment';
-import {ExperimentLevelUser} from '../../model/experiment-level-user';
+import {Level} from '../../model/level';
+import {ExperimentLevelUserQuestionAnswer} from '../../model/experiment-level-user_questions';
 
 export const EMPTY_COLLABORATOR_ID = -1;
 
@@ -20,11 +20,13 @@ export interface GrecohState {
   paintingVersionScores: PaintingVersionScore[];
   collaborators: Collaborator[];
   selectedCollaboratorID: number;
-  questions: Question[];
   postScoresResult: APIRestServerError;
-  currentLevel: number;
+  currentLevelIndex: number;
+  currentLevel: Level;
+  levels: Level[];
+  levelsCompleted: boolean;
   allLevelPaintingsScored: boolean;
-  experimentLevelUser: ExperimentLevelUser;
+  questionsUserAnswers: ExperimentLevelUserQuestionAnswer[];
   postExperimentLevelUserCommentsResult: APIRestServerError;
 }
 
@@ -39,10 +41,12 @@ export const initialSemanticRepresentationState: GrecohState = {
   paintingVersionScores: null,
   collaborators: null,
   selectedCollaboratorID: -1,
-  questions: null,
-  currentLevel: 1,
+  currentLevelIndex: null,
+  currentLevel: null,
+  levels: null,
+  levelsCompleted: false,
   allLevelPaintingsScored: null,
-  experimentLevelUser: null,
+  questionsUserAnswers: null,
   postExperimentLevelUserCommentsResult: null
 };
 

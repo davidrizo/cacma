@@ -1,13 +1,13 @@
 <app-nav-bar></app-nav-bar>
 
 <section id="paintings" class="container">
-      <div *ngIf="currentLevelEmpty$ | async; else titleLevelNotEmpty" class="row">
+      <div *ngIf="isLevelsCompleted$ | async; else titleLevelNotEmpty" class="row">
         <div class="section-title col">
           <span>GreCoH</span>
           <h2 id="allLevelsCompleted">Has completado todos los niveles</h2>
           <h3>¡Muchas gracias!</h3>
 
-          <h4 *ngIf="currentExperiment$  | async as experimentObservable">{{experimentObservable.final_comment}}</h4>
+          <p *ngIf="currentExperiment" [innerHTML]="currentExperiment.final_comment"></p>
           <hr>
           <p><a (click)="firstLevel()">Volver al primer nivel</a></p>
         </div>
@@ -17,7 +17,7 @@
         <div class="section-title row">
           <div class="col">
             <span>GreCoH</span>
-            <h2>GreCoH - {{currentLevel}}º nivel</h2>
+            <h2 *ngIf="currentLevel">GreCoH - {{currentLevel.ordering}}º nivel</h2>
             <p><strong>Selecciona una de las siguientes obras para comenzar</strong></p>
 
             <div id="collaborator">
@@ -59,15 +59,19 @@
         <div id="cambioNivel" class="col" *ngIf="allLevelPaintingsScored$ | async">
           <hr>
           <h2>Nivel completado</h2>
-          <form [formGroup]="formUserLevelComments" (ngSubmit)="sendComments()">
-            <h3 *ngIf="currentExperiment$  | async as experimentObservable">{{experimentObservable.user_comments_caption}}</h3>
-            <textarea required formControlName="comments" placeholder="Obligatorio"></textarea>
-            <p>
-              <button class="button" type="submit">Envía comentarios</button>
-            </p>
+          <form *ngIf="questionsAnswers" [formGroup]="formQuestionsAnswers" (ngSubmit)="sendAnswers()">
+            <div formArrayName="questionsControls">
+              <div *ngFor="let question of questionsControls.controls; index as i">
+                <h3>{{questionsAnswers[i].question}}</h3>
+                <textarea required="true" [formControlName]="i" placeholder="Obligatorio"></textarea>
+              </div>
+              <p>
+                <button class="button" type="submit">Envía comentarios</button>
+              </p>
+            </div>
           </form>
           <hr>
-          <p *ngIf="!isFirstLevel()"><a (click)="prevLevel()">Anterior nivel</a></p>
+          <p *ngIf="!(isFirstLevel$ | async)"><a (click)="prevLevel()">Anterior nivel</a></p>
           <p *ngIf="hasComments"><a (click)="nextLevel()">Siguiente nivel</a></p>
         </div>
       </div>

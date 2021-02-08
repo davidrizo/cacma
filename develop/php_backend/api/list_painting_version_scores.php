@@ -26,6 +26,6 @@ if ($result = mysqli_query($con,$sql)) {
     }
     echo json_encode($scores);
 } else {
-    error_log('Error with SQL:  ' . $sql);
+    //error_log('Error with SQL:  ' . $sql);
     http_response_code(500);
 }

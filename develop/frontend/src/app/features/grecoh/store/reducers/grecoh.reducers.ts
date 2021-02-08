@@ -19,7 +19,6 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
     case GrecohActionTypes.GetPaintings: {
       const newState = {...state,
         apiRestServerError: null};
-      newState.currentLevel = action.level;
       return newState;
     }
     case GrecohActionTypes.GetPaintingsSuccess: {
@@ -84,18 +83,56 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       newState.selectedCollaboratorID = action.collaboratorID;
       return newState;
     }
-    case GrecohActionTypes.ChangeLevel: {
+    case GrecohActionTypes.GetLevelsSuccess: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.currentLevelIndex = null;
+      newState.levels = action.levels;
+      if (newState.levels && newState.levels.length > 0) {
+        newState.currentLevelIndex = 0;
+        newState.currentLevel = newState.levels[0];
+      }
+      newState.levelsCompleted = false;
+      return newState;
+    }
+    case GrecohActionTypes.FirstLevel: {
       const newState = {
         ...state,
         apiRestServerError: null
       };
-      newState.currentLevel = action.level;
+      if (newState.levels && newState.levels.length > 0) {
+        newState.currentLevelIndex = 0;
+        newState.currentLevel = newState.levels[0];
+      }
+      newState.levelsCompleted = false;
       return newState;
     }
-    case GrecohActionTypes.GetQuestionsSuccess: {
-      const newState = {...state,
-        apiRestServerError: null};
-      newState.questions = action.questions;
+    case GrecohActionTypes.PreviousLevel: {
+      const newState = {
+        ...state,
+        apiRestServerError: null
+      };
+      if (newState.levels && newState.levels.length > 0 && newState.currentLevelIndex > 0) {
+        newState.currentLevelIndex--;
+        newState.currentLevel = newState.levels[newState.currentLevelIndex];
+      }
+      newState.levelsCompleted = false;
+      return newState;
+    }
+    case GrecohActionTypes.NextLevel: {
+      const newState = {
+        ...state,
+        apiRestServerError: null
+      };
+      if (newState.levels && newState.levels.length > 0) {
+        if (newState.currentLevelIndex < newState.levels.length) {
+          newState.currentLevelIndex++;
+          newState.currentLevel = newState.levels[newState.currentLevelIndex];
+          newState.levelsCompleted = false;
+        } else {
+          newState.levelsCompleted = true;
+        }
+      }
       return newState;
     }
     case GrecohActionTypes.GetExperimentSuccess: {
@@ -104,10 +141,10 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       newState.currentExperiment = action.experiment;
       return newState;
     }
-    case GrecohActionTypes.GetExperimentLevelUserSuccess: {
+    case GrecohActionTypes.GetExperimentLevelUserQuestionsSuccess: {
       const newState = {...state,
         apiRestServerError: null};
-      newState.experimentLevelUser = action.experimentLevelUser;
+      newState.questionsUserAnswers = action.answers;
       return newState;
     }
     case GrecohActionTypes.PostExperimentLevelUserCommentSuccess: {

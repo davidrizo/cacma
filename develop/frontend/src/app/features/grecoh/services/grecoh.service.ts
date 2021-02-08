@@ -8,9 +8,9 @@ import {UserPaintingVersionScores} from '../model/user-painting-version-scores';
 import {PaintingVersionScore} from '../model/painting-version-score';
 import {APIRestServerError} from '../../../core/model/restapi/apirest-server-error';
 import {Collaborator} from '../model/collaborator';
-import {Question} from '../model/question';
 import {Experiment} from '../model/experiment';
-import {ExperimentLevelUser} from '../model/experiment-level-user';
+import {Level} from '../model/level';
+import {ExperimentLevelUserQuestionAnswer} from '../model/experiment-level-user_questions';
 
 
 @Injectable()
@@ -19,9 +19,9 @@ export class GrecohService {
   constructor(private apiRestClientService: ApiRestClientService) {
   }
 
-  getPaintings$(experimentID: number, level: number, email: string): Observable<Painting[]> {
+  getPaintings$(levelID: number, email: string): Observable<Painting[]> {
     // TODO token - ver también en connect.php los permisos CORS
-    let url = `list_paintings.php?_ijt=sav6aq084tdi6va9t83me4f749&experiment=${experimentID}&level=${level}`;
+    let url = `list_paintings.php?_ijt=sav6aq084tdi6va9t83me4f749&&level_id=${levelID}`;
     if (email) {
       url += `&email=${email}`;
     }
@@ -62,9 +62,9 @@ export class GrecohService {
     return this.apiRestClientService.get$<Collaborator[]>(url);
   }
 
-  getQuestions$(experimentID: number): Observable<Question[]> {
-    const url = 'list_questions.php?experiment=' + experimentID;
-    return this.apiRestClientService.get$<Question[]>(url);
+  getLevels$(experimentID: number): Observable<Level[]> {
+    const url = 'list_levels.php?experiment_id=' + experimentID;
+    return this.apiRestClientService.get$<Level[]>(url);
   }
 
   getExperiment$(experimentID: number): Observable<Experiment> {
@@ -72,17 +72,17 @@ export class GrecohService {
     return this.apiRestClientService.get$<Experiment>(url);
   }
 
-  getCommentsExperimentUserLevel$(experimentID: number, level: number, email: string): Observable<ExperimentLevelUser> {
-    const url = `get_comments_experiment_level_user.php?experiment_id=${experimentID}&level=${level}&email=${email}`;
-    return this.apiRestClientService.get$<ExperimentLevelUser>(url);
+  getCommentsExperimentUserLevel$(levelID: number, email: string): Observable<ExperimentLevelUserQuestionAnswer[]> {
+    const url = `get_answers_experiment_level_questions.php?level_id=${levelID}&email=${email}`;
+    return this.apiRestClientService.get$<ExperimentLevelUserQuestionAnswer[]>(url);
   }
 
-  postCommentsExperimentUserLevel$(experimentLevelUser: ExperimentLevelUser): Observable<APIRestServerError> {
-    let url = 'change_experiment_level_user.php';
+  postCommentsExperimentUserLevel$(answers: ExperimentLevelUserQuestionAnswer[]): Observable<APIRestServerError> {
+    let url = 'change_experiment_level_user_question_answer.php';
     // console.log(JSON.stringify(userPaintingVersionScores));
     // return this.apiRestClientService.post$<APIRestServerError>(url, userPaintingVersionScores);
     // No me funciona, incluso activando CORS
-    url += '?jsondata=' + encodeURIComponent(JSON.stringify(experimentLevelUser));
+    url += '?jsondata=' + encodeURIComponent(JSON.stringify(answers));
     return this.apiRestClientService.get$<APIRestServerError>(url);
   }
 }

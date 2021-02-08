@@ -44,14 +44,25 @@ export const selectSelectedCollaboratorID = createSelector(
   (state: GrecohState) => state.selectedCollaboratorID
 );
 
-export const selectQuestions = createSelector(
-  grecohState,
-  (state: GrecohState) => state.questions
-);
-
 export const selectCurrentLevel = createSelector(
   grecohState,
+  // (state: GrecohState) => state.currentLevelIndex ? state.levels[state.currentLevelIndex] : null
   (state: GrecohState) => state.currentLevel
+);
+
+export const selectIsFirstLevel = createSelector(
+  grecohState,
+  (state: GrecohState) => state.currentLevelIndex != null ? state.currentLevelIndex === 0 : null
+);
+
+export const selectIsLastLevel = createSelector(
+  grecohState,
+  (state: GrecohState) => state.currentLevelIndex ? state.currentLevelIndex === state.levels.length - 1 : null
+);
+
+export const selectLevelsCompleted = createSelector(
+  grecohState,
+  (state: GrecohState) => state.levelsCompleted
 );
 
 export const selectAllLevelPaintingsScored = createSelector(
@@ -64,14 +75,9 @@ export const selectCurrentExperiment = createSelector(
   (state: GrecohState) => state.currentExperiment
 );
 
-export const selectCurrentLevelEmpty = createSelector(
+export const selectQuestionsUserAnswers = createSelector(
   grecohState,
-  (state: GrecohState) => !state.paintings || state.paintings.length === 0
-);
-
-export const selectExperimentLevelUser = createSelector(
-  grecohState,
-  (state: GrecohState) => state.experimentLevelUser
+  (state: GrecohState) => state.questionsUserAnswers
 );
 
 export const selectGrecohServerError = createSelector(
