@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e643a80-a449-470c-897a-5789003f3fcd" name="Default Changelist" comment="...">
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/ana_galvan/palmera_fest/scheme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella/scheme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/greco/expolio/scheme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/john_petch/omd_punishment_of_luxury/scheme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/leibovitz/zoolander2_vogue/30a5b9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/leibovitz/zoolander2_vogue/4ab52d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/leibovitz/zoolander2_vogue/907969.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/leibovitz/zoolander2_vogue/b0332d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/leibovitz/zoolander2_vogue/b7bb32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/leibovitz/zoolander2_vogue/grayscale.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/paintings/leibovitz/zoolander2_vogue/scheme.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-painting/grecoh-painting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/grecoh-paintings/grecoh-paintings.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/components/score-statistics/grecoh-score-statistics.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/actions/grecoh.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/actions/grecoh.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/reducers/grecoh.reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/reducers/grecoh.reducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/selectors/grecoh.selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/features/grecoh/store/selectors/grecoh.selector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php_backend/grecoh.sql" beforeDir="false" afterPath="$PROJECT_DIR$/php_backend/grecoh.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +33,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JupyterTrust" id="f40f6574-8e3e-41f3-80c3-7acaea2599fc" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
@@ -35,7 +60,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/php_backend/api" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -50,19 +75,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php_backend/api" />
+      <recent name="$PROJECT_DIR$/frontend/src/app/features/grecoh/model" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/images" />
+      <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/john_petch" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/assets/img/grecoh" />
       <recent name="$PROJECT_DIR$/frontend/src/app/auth" />
       <recent name="$PROJECT_DIR$/frontend/src/app/core/components" />
       <recent name="$PROJECT_DIR$/frontend/src/app/core/services" />
       <recent name="$PROJECT_DIR$/frontend/src/app/shared/auth/services" />
-      <recent name="$PROJECT_DIR$/frontend/src/app/shared/layout/components" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/assets" />
-      <recent name="$PROJECT_DIR$/frontend/src/assets/images" />
-      <recent name="$PROJECT_DIR$/php_backend/api" />
-      <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/john_petch" />
-      <recent name="$PROJECT_DIR$/frontend/src/assets/paintings/elena_odriozola/neruda_oda_a_una_estrella" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server (frontend)">
@@ -186,7 +211,31 @@
       <workItem from="1590768783899" duration="5740000" />
       <workItem from="1591036776335" duration="928000" />
       <workItem from="1591110977355" duration="155000" />
-      <workItem from="1604579308895" duration="49000" />
+      <workItem from="1604579308895" duration="367000" />
+      <workItem from="1606992556129" duration="3947000" />
+      <workItem from="1607013905416" duration="304000" />
+      <workItem from="1607588567397" duration="652000" />
+      <workItem from="1608195630513" duration="3774000" />
+      <workItem from="1608204994525" duration="1850000" />
+      <workItem from="1610017540462" duration="8000" />
+      <workItem from="1610017687357" duration="8554000" />
+      <workItem from="1610117781787" duration="7000" />
+      <workItem from="1610118888547" duration="19000" />
+      <workItem from="1610617398822" duration="12512000" />
+      <workItem from="1610648425915" duration="15000" />
+      <workItem from="1610971751419" duration="1147000" />
+      <workItem from="1610987919337" duration="590000" />
+      <workItem from="1611249286244" duration="1054000" />
+      <workItem from="1611301166594" duration="16451000" />
+      <workItem from="1611339215815" duration="11000" />
+      <workItem from="1611561753002" duration="367000" />
+      <workItem from="1611685478372" duration="93000" />
+      <workItem from="1611685650297" duration="9000" />
+      <workItem from="1612511011447" duration="4391000" />
+      <workItem from="1612720774329" duration="591000" />
+      <workItem from="1612782245090" duration="12513000" />
+      <workItem from="1612806006064" duration="16000" />
+      <workItem from="1613582736763" duration="4664000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1585650413460</created>
@@ -342,7 +391,77 @@
       <option name="project" value="LOCAL" />
       <updated>1589955129253</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Cambiamos servidor producción">
+      <created>1604579576338</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1604579576338</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add collaborators">
+      <created>1606996956743</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1606996956744</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add levels and database columns for experiment type">
+      <created>1608223560436</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1608223560436</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add levels">
+      <created>1610024068232</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610024068233</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Si el usuario ya ha hecho una obra se le muestra el enlace para ver los resultados">
+      <created>1610046692492</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610046692492</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Corregimos el select que tiene que colaborador seleccionado. Añadimos una marca que dice al usuario qué cuadros ha seleccionado">
+      <created>1610639873327</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1610639873327</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Levels addded">
+      <created>1610646369918</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1610646369918</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Corregimos comentarios, email, auth. Añadimos esquemas">
+      <created>1611330799343</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1611330799344</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Añadimos varias preguntas por nivel">
+      <created>1612798501873</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1612798501873</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Production version">
+      <created>1613588745115</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1613588745115</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,154 +478,16 @@
     <MESSAGE value="Production ready" />
     <MESSAGE value="Funciona con 0auth tanto en desarrollo como en producción y Angular 9" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="151" y="319" key="#CLI_Interpreters" timestamp="1589392740838">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="151" y="301" key="#CLI_Interpreters/0.0.2560.1440@0.0.2560.1440" timestamp="1585654432634" />
-    <state x="151" y="319" key="#CLI_Interpreters/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392740838" />
-    <state x="909" y="300" key="#PHP" timestamp="1589392762866">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="302" y="210" key="#PHP/0.0.2560.1440@0.0.2560.1440" timestamp="1585654434107" />
-    <state x="909" y="300" key="#PHP/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392762866" />
-    <state x="780" y="304" key="#Project_Structure" timestamp="1585645025539">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="780" y="304" key="#Project_Structure/0.0.2560.1440@0.0.2560.1440" timestamp="1585645025539" />
-    <state x="151" y="302" key="#Test_Frameworks" timestamp="1585653549913">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="151" y="302" key="#Test_Frameworks/0.0.2560.1440@0.0.2560.1440" timestamp="1585653549913" />
-    <state x="372" y="515" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585651879921">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="372" y="515" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1585651879921" />
-    <state x="1049" y="394" key="#com.intellij.ide.util.MemberChooser" timestamp="1589913760860">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="1049" y="377" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1587399812827" />
-    <state x="1049" y="394" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1589913760860" />
-    <state x="968" y="468" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1589392774183">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="968" y="468" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392774183" />
-    <state x="279" y="286" key="#php_backend" timestamp="1585652236407">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="279" y="286" key="#php_backend/0.0.2560.1440@0.0.2560.1440" timestamp="1585652236407" />
-    <state x="77" y="274" key="CommitChangelistDialog2" timestamp="1589955128722">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="77" y="255" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404957405" />
-    <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589793347364" />
-    <state x="77" y="274" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1589955128722" />
-    <state width="1680" height="283" key="GridCell.Tab.0.bottom" timestamp="1591082807406">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1280" height="316" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466143" />
-    <state width="2560" height="157" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
-    <state width="1680" height="283" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1591082807406" />
-    <state width="2127" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589957645908" />
-    <state width="2127" height="415" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1590773774253" />
-    <state width="2508" height="256" key="GridCell.Tab.0.bottom/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198061" />
-    <state width="2127" height="415" key="GridCell.Tab.0.bottom/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1590777357081" />
-    <state width="1680" height="283" key="GridCell.Tab.0.center" timestamp="1591082807405">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1280" height="316" key="GridCell.Tab.0.center/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466141" />
-    <state width="2560" height="157" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
-    <state width="1680" height="283" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1591082807405" />
-    <state width="2127" height="415" key="GridCell.Tab.0.center/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589957645908" />
-    <state width="2127" height="415" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1590773774252" />
-    <state width="2508" height="256" key="GridCell.Tab.0.center/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198059" />
-    <state width="2127" height="415" key="GridCell.Tab.0.center/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1590777357080" />
-    <state width="1680" height="283" key="GridCell.Tab.0.left" timestamp="1591082807405">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1280" height="316" key="GridCell.Tab.0.left/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466139" />
-    <state width="2560" height="157" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393069" />
-    <state width="1680" height="283" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1591082807405" />
-    <state width="2127" height="415" key="GridCell.Tab.0.left/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589957645907" />
-    <state width="2127" height="415" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1590773774251" />
-    <state width="2508" height="256" key="GridCell.Tab.0.left/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198057" />
-    <state width="2127" height="415" key="GridCell.Tab.0.left/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1590777357080" />
-    <state width="1680" height="283" key="GridCell.Tab.0.right" timestamp="1591082807405">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state width="1280" height="316" key="GridCell.Tab.0.right/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589472466142" />
-    <state width="2560" height="157" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1587463393070" />
-    <state width="1680" height="283" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1591082807405" />
-    <state width="2127" height="415" key="GridCell.Tab.0.right/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589957645908" />
-    <state width="2127" height="415" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1590773774253" />
-    <state width="2508" height="256" key="GridCell.Tab.0.right/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926198060" />
-    <state width="2127" height="415" key="GridCell.Tab.0.right/2560.23.1680.1027/0.23.2560.1417@0.23.2560.1417" timestamp="1590777357080" />
-    <state x="824" y="521" key="NewPhpClassDialog" timestamp="1589911003066">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="824" y="506" key="NewPhpClassDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1585935068243" />
-    <state x="824" y="521" key="NewPhpClassDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1589911003066" />
-    <state x="461" y="650" key="NewPhpFileDialog" timestamp="1589911012635">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="461" y="637" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1585935073330" />
-    <state x="461" y="650" key="NewPhpFileDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1589911012635" />
-    <state x="56" y="290" key="SettingsEditor" timestamp="1588615357075">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="56" y="271" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1585665574183" />
-    <state x="56" y="290" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1588615357075" />
-    <state width="625" height="564" key="SwitcherDM" timestamp="1590768824532">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state width="625" height="500" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1587401244897" />
-    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589900643423" />
-    <state width="625" height="564" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1590768824532" />
-    <state x="163" y="399" key="Vcs.Push.Dialog.v2" timestamp="1589955133918">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="163" y="382" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1587404958868" />
-    <state x="163" y="399" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1589955133918" />
-    <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586365928725">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1586365928725" />
-    <state x="903" y="529" key="com.intellij.ide.util.TipDialog" timestamp="1589392960510">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="903" y="514" key="com.intellij.ide.util.TipDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1586630096566" />
-    <state x="903" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589392960510" />
-    <state x="903" y="529" key="com.intellij.ide.util.TipDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1588786643854" />
-    <state x="893" y="449" width="774" height="574" key="find.popup" timestamp="1589804135423">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="893" y="433" width="774" height="574" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587404445205" />
-    <state x="893" y="449" width="774" height="574" key="find.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1589804135423" />
-    <state x="953" y="488" key="git4idea.merge.GitPullDialog" timestamp="1588615369020">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="953" y="488" key="git4idea.merge.GitPullDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1588615369020" />
-    <state x="69" y="207" key="new project wizard" timestamp="1591111129728">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="479" y="258" key="new project wizard/0.0.2560.1440@0.0.2560.1440" timestamp="1585651847459" />
-    <state x="69" y="207" key="new project wizard/0.23.1680.1027@0.23.1680.1027" timestamp="1591111129728" />
-    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate" timestamp="1590773772332">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1589471884519" />
-    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.0.2560.1440@0.0.2560.1440" timestamp="1587396700850" />
-    <state x="1797" y="668" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589563242548" />
-    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/0.23.2560.1417@0.23.2560.1417" timestamp="1590773772332" />
-    <state x="1797" y="655" width="438" height="375" key="org.angular.cli.generate/2560.0.1680.1050/0.0.2560.1440@0.0.2560.1440" timestamp="1585926188367" />
-    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup" timestamp="1589814865607">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1440/2560.0.1680.1050@0.0.2560.1440" timestamp="1587390370513" />
-    <state x="861" y="324" width="838" height="1032" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587029999460" />
-    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup/0.23.2560.1417/2560.23.1680.1027@0.23.2560.1417" timestamp="1589814865607" />
-    <state x="861" y="342" width="838" height="1016" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1589642927394" />
+    <MESSAGE value="Cambiamos servidor producción" />
+    <MESSAGE value="Add collaborators" />
+    <MESSAGE value="Add levels and database columns for experiment type" />
+    <MESSAGE value="Add levels" />
+    <MESSAGE value="Si el usuario ya ha hecho una obra se le muestra el enlace para ver los resultados" />
+    <MESSAGE value="Corregimos el select que tiene que colaborador seleccionado. Añadimos una marca que dice al usuario qué cuadros ha seleccionado" />
+    <MESSAGE value="Levels addded" />
+    <MESSAGE value="Corregimos comentarios, email, auth. Añadimos esquemas" />
+    <MESSAGE value="Añadimos varias preguntas por nivel" />
+    <MESSAGE value="Production version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Production version" />
   </component>
 </project>
