@@ -11,6 +11,7 @@ import {
   selectSelectedCollaboratorID
 } from '../../store/selectors/grecoh.selector';
 import {
+  // ChangeLevelIndex,
   FirstLevel,
   GetCollaborators,
   GetExperiment, GetExperimentLevelUserQuestions, GetLevels,
@@ -25,6 +26,7 @@ import {AuthService} from '../../../../auth/auth.service';
 import {Level} from '../../model/level';
 import {Experiment} from '../../model/experiment';
 import {ExperimentLevelUserQuestionAnswer} from '../../model/experiment-level-user_questions';
+import {ActivatedRoute, ParamMap} from '@angular/router';
 
 @Component({
   selector: 'app-grecoh-paintings',
@@ -58,7 +60,7 @@ export class GrecohPaintingsComponent implements OnInit, OnDestroy {
   questionsAnswers: ExperimentLevelUserQuestionAnswer[];
 
   constructor(private store: Store<GrecohState>, private showErrorService: ShowErrorService, private formBuilder: FormBuilder,
-              private authService: AuthService) {
+              private authService: AuthService) { // , private route: ActivatedRoute) {
     this.collaborators = [
       {
         id: initialSemanticRepresentationState.selectedCollaboratorID,
@@ -80,6 +82,14 @@ export class GrecohPaintingsComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.store.dispatch(new GetExperiment(this.currentExperimentID));
+
+   /* this.route.paramMap.subscribe((params: ParamMap) => {
+      const levelIndex = this.route.snapshot.paramMap.get('levelIndex');
+      if (levelIndex) {
+        this.store.dispatch(new ChangeLevelIndex(+levelIndex));
+      }
+    });*/
+
     this.currentExperimentSubscription = this.store.select(selectCurrentExperiment).subscribe(next => {
       if (next) {
         this.currentExperiment = next;

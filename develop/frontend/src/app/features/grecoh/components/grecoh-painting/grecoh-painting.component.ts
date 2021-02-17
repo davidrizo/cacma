@@ -14,7 +14,6 @@ import {Observable, Subscription} from 'rxjs';
 import {Painting} from '../../model/painting';
 import {PaintingVersion} from '../../model/painting-version';
 import {
-  grecohState,
   selectGrecohServerError,
   selectPaintingVersions,
   selectPostScoresResult, selectSelectedCollaboratorID,
@@ -25,8 +24,7 @@ import {PaintingVersionScore} from '../../model/painting-version-score';
 
 import {UserPaintingVersionScores} from '../../model/user-painting-version-scores';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
-import {ToastrService} from 'ngx-toastr';
-import {Collaborator} from '../../model/collaborator';
+
 
 @Component({
   selector: 'app-grecoh-painting',
@@ -78,7 +76,7 @@ export class GrecohPaintingComponent implements OnInit, OnDestroy {
           // preload images to avoid flicker
           const image = new Image();
           image.src = this.getVersionImage(paintingVersion);
-          console.log('loaded: ' + image.src);
+          // console.log('loaded: ' + image.src);
         });
         this.activePaintingVersionId = this.scores[0].painting_version_id;
       }

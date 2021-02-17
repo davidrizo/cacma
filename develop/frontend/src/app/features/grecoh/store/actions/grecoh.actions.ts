@@ -33,9 +33,10 @@ export enum GrecohActionTypes {
   FirstLevel = '[Grecoh] First level',
   PreviousLevel = '[Grecoh] Previous level',
   NextLevel = '[Grecoh] Next level',
+  // ChangeLevelIndex = '[Grecoh] Change level',
   ResetScoreResults = '[Grecoh] Reset score results',
-  GetQuestions = '[Grecoh] Get questions',
-  GetQuestionsSuccess = '[Grecoh] Get questions success',
+  // GetQuestions = '[Grecoh] Get questions',
+  // GetQuestionsSuccess = '[Grecoh] Get questions success',
   GetExperiment = '[Grecoh] Get experiment',
   GetExperimentSuccess = '[Grecoh] Get experiment success',
   GetExperimentLevelUserQuestions = '[Grecoh] Get experiment level user',
@@ -167,6 +168,11 @@ export class GetLevelsSuccess implements Action {
   constructor(public levels: Level[]) {}
 }
 
+/*export class ChangeLevelIndex implements Action {
+  public readonly type = GrecohActionTypes.ChangeLevelIndex;
+  constructor(public levelIndex: number) {}
+}*/
+
 export class FirstLevel implements Action {
   public readonly type = GrecohActionTypes.FirstLevel;
   constructor() {}
@@ -202,7 +208,7 @@ export type GrecohActions =
   GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults |
   GetCollaborators | GetCollaboratorsSuccess |
   SelectCollaborator |
-  GetLevels | GetLevelsSuccess | FirstLevel | PreviousLevel | NextLevel |
+  GetLevels | GetLevelsSuccess | FirstLevel | PreviousLevel | NextLevel | // ChangeLevelIndex |
   GetExperiment | GetExperimentSuccess |
   GetExperimentLevelUserQuestions | GetExperimentLevelUserQuestionsSuccess |
   PostExperimentLevelUserComment | PostExperimentLevelUserCommentSuccess

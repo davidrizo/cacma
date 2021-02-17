@@ -50,6 +50,13 @@ export const selectCurrentLevel = createSelector(
   (state: GrecohState) => state.currentLevel
 );
 
+/*export const selectCurrentLevelIndex = createSelector(
+  grecohState,
+  // (state: GrecohState) => state.currentLevelIndex ? state.levels[state.currentLevelIndex] : null
+  (state: GrecohState) => state.currentLevelIndex
+);*/
+
+
 export const selectIsFirstLevel = createSelector(
   grecohState,
   (state: GrecohState) => state.currentLevelIndex != null ? state.currentLevelIndex === 0 : null

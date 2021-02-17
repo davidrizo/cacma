@@ -86,11 +86,12 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
     case GrecohActionTypes.GetLevelsSuccess: {
       const newState = {...state,
         apiRestServerError: null};
-      newState.currentLevelIndex = null;
       newState.levels = action.levels;
-      if (newState.levels && newState.levels.length > 0) {
+      if (!newState.currentLevelIndex) {
         newState.currentLevelIndex = 0;
-        newState.currentLevel = newState.levels[0];
+      }
+      if (newState.levels && newState.levels.length > 0) {
+        newState.currentLevel = newState.levels[newState.currentLevelIndex];
       }
       newState.levelsCompleted = false;
       return newState;
@@ -135,6 +136,18 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       }
       return newState;
     }
+/*    case GrecohActionTypes.ChangeLevelIndex: {
+      const newState = {
+        ...state,
+        apiRestServerError: null
+      };
+      newState.currentLevelIndex = action.levelIndex;
+      if (newState.levels) { // if already loaded
+        newState.currentLevel = newState.levels[newState.currentLevelIndex];
+        newState.levelsCompleted = false;
+      }
+      return newState;
+    }*/
     case GrecohActionTypes.GetExperimentSuccess: {
       const newState = {...state,
         apiRestServerError: null};

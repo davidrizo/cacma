@@ -5,6 +5,7 @@ import {GrecohState} from '../../store/state/grecoh.state';
 import {ShowErrorService} from '../../../../core/services/show-error.service';
 import {GetPainting, GetPaintingStatistics, GetPaintingVersions, GetPaintingVersionScores} from '../../store/actions/grecoh.actions';
 import {
+  selectCurrentLevel,
   selectPaintingStatistics,
   selectPaintingVersions,
   selectPaintingVersionScores,
@@ -25,6 +26,7 @@ import {Options} from 'ng5-slider';
 })
 export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
   paintingID: number;
+ // currentLevelIndex$: Observable<number>;
   painting$: Observable<Painting>;
   paintingStatistics$: Observable<PaintingStatistics[]>;
   // key = painting_version_id
@@ -53,6 +55,7 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
 
     this.painting$ = this.store.select(selectSelectedPainting);
     this.paintingStatistics$ = this.store.select(selectPaintingStatistics);
+   // this.currentLevelIndex$ = this.store.select(selectCurrentLevelIndex);
 
     this.paintingVersionsSubscription = this.store.select(selectPaintingVersions).subscribe(next => {
       if (next && next.length > 0) {
