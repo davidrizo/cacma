@@ -1,18 +1,10 @@
 <app-nav-bar></app-nav-bar>
 
-<section id="statistics" class="container" *ngIf="painting$ | async as painting; else loading">
+<section id="statistics" class="container-fluid" *ngIf="painting$ | async as painting; else loading">
   <div class="section-title">
     <span>GreCoH</span>
     <h2>Resultados globales de <strong>{{painting.title}}</strong></h2>
   </div>
-
-  <div class="row">
-    <div class="col text-center">
-      <img class="img-fluid" [src]="getSchemeImage(painting)" alt="Scheme of {{painting.title}}"/>
-    </div>
-  </div>
-
-  <hr>
 
   <div class="row" id="sliders">
     <div class="col-5 offset-1 col-md-3">
@@ -25,6 +17,16 @@
   </div>
   <div class="row" id="images" *ngIf="paintingStatistics$ | async as paintingStatistics; else loading">
     <div class="col d-flex justify-content-around flex-wrap">
+
+      <div class="image" [style.width.vw]="imagesWidth">
+        <div class="card">
+          <img class="card-img-top" [src]="getSchemeImage(painting)" alt="Scheme of {{painting.title}}"/>
+          <div class="card-body">
+            <h5>Esquema</h5>
+          </div>
+        </div>
+      </div>
+
       <div class="image" [style.width.vw]="imagesWidth" *ngFor="let paintingStatisticsItem of paintingStatistics; trackBy: trackByPaintingStatistics">
         <div class="card" [ngClass]="{'originalVersion': isOriginalVersion(paintingStatisticsItem, painting)}">
           <img class="card-img-top" [src]="getVersionImage(paintingStatisticsItem)" alt="Colored composition of {{painting.title}}"/>
@@ -49,7 +51,7 @@
           </div>-->
           <!--<p><a (click)="showComments(paintingStatisticsItem, modalComentarios)" class="details-link">Comentarios</a></p>-->
           <p *ngIf="isOriginalVersion(paintingStatisticsItem, painting)">
-            <a [href]="painting.url" target="_blank">Información ampliada de la obra original</a>
+            <a [href]="painting.url" target="_blank">Ampliar información sobre la obra original</a>
           </p>
 
           <!--<ng-template #modalComentarios let-modal>

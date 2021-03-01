@@ -7,7 +7,7 @@
           <h2 id="allLevelsCompleted">Has completado todos los niveles</h2>
           <h3>¡Muchas gracias!</h3>
 
-          <p *ngIf="currentExperiment" [innerHTML]="currentExperiment.final_comment"></p>
+          <p class="text-left" *ngIf="currentExperiment" [innerHTML]="currentExperiment.final_comment"></p>
           <hr>
           <p><a (click)="firstLevel()">Volver al primer nivel</a></p>
         </div>

@@ -60,6 +60,10 @@
   }
 }
 
+
+#schemeImage {
+  max-height: 75vh;
+}
 /*.star {
   position: relative;
   display: inline-block;
