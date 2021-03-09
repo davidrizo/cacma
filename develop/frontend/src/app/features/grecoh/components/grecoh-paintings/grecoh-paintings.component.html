@@ -71,8 +71,8 @@
             </div>
           </form>
           <hr>
-          <p *ngIf="!(isFirstLevel$ | async)"><a (click)="prevLevel()">Anterior nivel</a></p>
-          <p *ngIf="hasComments"><a (click)="nextLevel()">Siguiente nivel</a></p>
+          <p *ngIf="!(isFirstLevel$ | async)"><a (click)="prevLevel()">Volver al nivel {{getPreviousLevelName()}}</a></p>
+          <p *ngIf="hasComments"><a (click)="nextLevel()">{{getNextLevelName()}} </a></p>
         </div>
       </div>
       </ng-template>

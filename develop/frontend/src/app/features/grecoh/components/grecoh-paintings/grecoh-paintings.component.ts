@@ -228,4 +228,17 @@ export class GrecohPaintingsComponent implements OnInit, OnDestroy {
     this.store.dispatch(new PostExperimentLevelUserComment(answers));
   }
 
+  getPreviousLevelName() {
+    const n: number = +this.currentLevel.ordering as number;
+    return n - 1;
+  }
+  getNextLevelName() {
+    let n: number = +this.currentLevel.ordering as number;
+    if (n === 2) { // TODO
+      return 'Pasar a la conclusión final';
+    } else {
+      n++;
+      return 'Pasar al nivel ' + n;
+    }
+  }
 }
