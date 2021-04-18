@@ -30,8 +30,11 @@
       <div class="image" [style.width.vw]="imagesWidth" *ngFor="let paintingStatisticsItem of paintingStatistics; trackBy: trackByPaintingStatistics">
         <div class="card" [ngClass]="{'originalVersion': isOriginalVersion(paintingStatisticsItem, painting)}">
           <img class="card-img-top" [src]="getVersionImage(paintingStatisticsItem)" alt="Colored composition of {{painting.title}}"/>
+          <div *ngIf="onlyImages" class="card-body">
+            <h5 *ngIf="isOriginalVersion(paintingStatisticsItem, painting)">Original</h5>
+          </div>
           <div *ngIf="!onlyImages" class="card-body">
-
+            <h5 *ngIf="isOriginalVersion(paintingStatisticsItem, painting)">Original</h5>
             <!--<ng-template #t let-fill="fill">
               <span class="star" [class.full]="fill === 100">
               <span class="half" [style.width.%]="fill">&#9733;</span>

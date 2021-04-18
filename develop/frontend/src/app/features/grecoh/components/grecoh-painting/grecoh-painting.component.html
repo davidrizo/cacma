@@ -4,7 +4,7 @@
       <div class="col-8 offset-1 pl-0">
         <!--<h2>{{painting.title}}</h2>
         <h3>{{painting.painter}}</h3>-->
-        <p>Valora todas las composiciones</p>
+        <p class="texts">Valora todas las composiciones</p>
       </div>
       <div class="col-2" id="close">
         <p><a routerLink="/grecoh/paintings"><span id="cierra">Cierra</span><i class="icofont-close"></i></a></p>
@@ -39,6 +39,7 @@
         >
         </ngb-rating>
         <div>
+          <p class="texts">¿Cuántas estrellas le das a esta composición?</p>
           <div *ngIf="!getRate()" class="icon" class="pendingRate"><a><i class="icofont-exclamation-tringle" ngbTooltip="Valora con al menos una estrella"></i></a></div>
         </div>
       </div>
