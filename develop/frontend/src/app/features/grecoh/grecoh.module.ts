@@ -22,11 +22,13 @@ import {
 import {LayoutModule} from '../../shared/layout/layout.module';
 import {RouterModule} from '@angular/router';
 import {Ng5SliderModule} from 'ng5-slider';
+import { GrecohPaintingAnalysisComponent } from './components/grecoh-painting-analysis/grecoh-painting-analysis.component';
+import { GrecohPaintingAnalysisGraphComponent } from './components/grecoh-painting-analysis-graph/grecoh-painting-analysis-graph.component';
 
 
 @NgModule({
   declarations:
-    [GrecohComponent, GrecohAdminComponent, GrecohPaintingsComponent, GrecohPaintingComponent, GrecohScoreStatisticsComponent],
+    [GrecohComponent, GrecohAdminComponent, GrecohPaintingsComponent, GrecohPaintingComponent, GrecohScoreStatisticsComponent, GrecohPaintingAnalysisComponent, GrecohPaintingAnalysisGraphComponent],
     imports: [
         CommonModule,
         GrecohRoutingModule,

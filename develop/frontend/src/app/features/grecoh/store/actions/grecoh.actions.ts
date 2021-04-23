@@ -13,8 +13,10 @@ import {ExperimentLevelUserQuestionAnswer} from '../../model/experiment-level-us
 export enum GrecohActionTypes {
   ResetGrecohServerError = '[Grecoh] Server error reset',
   GrecohServerError = '[Grecoh] Server error',
-  GetPaintings = '[Grecoh] Get paintings',
-  GetPaintingsSuccess = '[Grecoh] Get paintings success',
+  GetAllPaintings = '[Grecoh] Get all paintings',
+  GetAllPaintingsSuccess = '[Grecoh] Get all paintings success',
+  GetLevelPaintings = '[Grecoh] Get level paintings',
+  GetLevelPaintingsSuccess = '[Grecoh] Get level paintings success',
   GetPainting = '[Grecoh] Get painting',
   GetPaintingSuccess = '[Grecoh] Get painting success',
   GetPaintingVersions = '[Grecoh] Get painting versions',
@@ -55,13 +57,23 @@ export class GrecohServerError implements Action {
   constructor(public serverError: APIRestServerError) {}
 }
 
-export class GetPaintings implements Action {
-  public readonly type = GrecohActionTypes.GetPaintings;
+export class GetLevelPaintings implements Action {
+  public readonly type = GrecohActionTypes.GetLevelPaintings;
   constructor(public levelID: number, public email: string) {}
 }
 
-export class GetPaintingsSuccess implements Action {
-  public readonly type = GrecohActionTypes.GetPaintingsSuccess;
+export class GetLevelPaintingsSuccess implements Action {
+  public readonly type = GrecohActionTypes.GetLevelPaintingsSuccess;
+  constructor(public paintings: Painting[]) {}
+}
+
+export class GetAllPaintings implements Action {
+  public readonly type = GrecohActionTypes.GetAllPaintings;
+  constructor() {}
+}
+
+export class GetAllPaintingsSuccess implements Action {
+  public readonly type = GrecohActionTypes.GetAllPaintingsSuccess;
   constructor(public paintings: Painting[]) {}
 }
 
@@ -200,7 +212,8 @@ export class PostExperimentLevelUserCommentSuccess implements Action {
 
 export type GrecohActions =
   GrecohServerError | ResetGrecohServerError |
-  GetPaintings | GetPaintingsSuccess |
+  GetAllPaintings | GetAllPaintingsSuccess |
+  GetLevelPaintings | GetLevelPaintingsSuccess |
   GetPainting | GetPaintingSuccess |
   GetPaintingVersions | GetPaintingVersionsSuccess |
   PostPaintingVersionsScores | PostPaintingVersionsScoresSuccess |

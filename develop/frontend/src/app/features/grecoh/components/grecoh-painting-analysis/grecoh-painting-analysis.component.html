@@ -1,0 +1,41 @@
+<div class="container-fluid" *ngIf="painting$ | async as painting; else loading">
+  <div class="row">
+    <div class="col-9">
+      <h1>{{painting.painter}}</h1>
+      <h2>{{painting.title}}</h2>
+    </div>
+    <div class="col-3">
+      <a href="../admin">Back to all pairings</a>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="paintingStatistics$ | async as paintingStatistics; else loadingStatistics">
+    <div class="col-2">
+      <ul *ngFor="let paintingStatisticsItem of paintingStatistics; trackBy: trackByPaintingStatistics">
+        <li>
+          <p *ngIf="isOriginalVersion(paintingStatisticsItem, painting)">Original</p>
+          <img class="card-img-top" [src]="getVersionImage(paintingStatisticsItem)" alt="Colored composition of {{painting.title}}"/>
+          <pre class="statistics">{{paintingStatisticsItem.average | number:'1.1-2' }} ± {{paintingStatisticsItem.standard_deviation | number:'1.1-2' }}</pre>
+        </li>
+      </ul>
+    </div>
+    <div class="col-10">
+      <app-grecoh-painting-analysis-graph></app-grecoh-painting-analysis-graph>
+    </div>
+  </div>
+
+  <ng-template #loadingStatistics>
+    <div class="jumbotron">
+      Cargando estadísticas ...
+    </div>
+  </ng-template>
+
+
+</div>
+
+<ng-template #loading>
+  <div class="jumbotron">
+    Cargando ...
+  </div>
+</ng-template>
+

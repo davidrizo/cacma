@@ -28,6 +28,12 @@ export class GrecohService {
     return this.apiRestClientService.get$<Painting[]>(url);
   }
 
+  getAllPaintings$(): Observable<Painting[]> {
+    // TODO token - ver también en connect.php los permisos CORS
+    const url = `list_all_paintings.php?_ijt=sav6aq084tdi6va9t83me4f749`;
+    return this.apiRestClientService.get$<Painting[]>(url);
+  }
+
   getPainting$(id: number): Observable<Painting> {
     const url = 'get_painting.php?id=' + id;
     return this.apiRestClientService.get$<Painting>(url);

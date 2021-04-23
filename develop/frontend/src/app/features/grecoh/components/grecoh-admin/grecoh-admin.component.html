@@ -1,1 +1,6 @@
-<p>grecoh-admin works!</p>
+<h1>GreCoH Administration</h1>
+<ul>
+  <li *ngFor="let painting of paintings$ | async; trackBy: trackByPainting">
+    <a [routerLink]="['../analysis',painting.id]">{{painting.painter}}: "{{painting.title}}"</a>
+  </li>
+</ul>

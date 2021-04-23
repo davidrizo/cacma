@@ -9,8 +9,8 @@ import {
   GetExperimentLevelUserQuestionsSuccess,
   GetExperimentSuccess, GetLevels, GetLevelsSuccess,
   GetPainting,
-  GetPaintings,
-  GetPaintingsSuccess,
+  GetLevelPaintings,
+  GetLevelPaintingsSuccess,
   GetPaintingStatistics,
   GetPaintingStatisticsSuccess,
   GetPaintingSuccess,
@@ -23,7 +23,7 @@ import {
   PostExperimentLevelUserComment,
   PostExperimentLevelUserCommentSuccess,
   PostPaintingVersionsScores,
-  PostPaintingVersionsScoresSuccess
+  PostPaintingVersionsScoresSuccess, GetAllPaintings, GetAllPaintingsSuccess
 } from '../actions/grecoh.actions';
 import {GrecohService} from '../../services/grecoh.service';
 import {Action} from '@ngrx/store';
@@ -45,11 +45,20 @@ export class GrecohEffects {
   ) {}
 
   @Effect()
-  getPaintings$: Observable<Action> = this.actions$.pipe(
-    ofType<GetPaintings>(GrecohActionTypes.GetPaintings),
-    switchMap((action: GetPaintings) =>
+  getAllPaintings$: Observable<Action> = this.actions$.pipe(
+    ofType<GetAllPaintings>(GrecohActionTypes.GetAllPaintings),
+    switchMap((action: GetAllPaintings) =>
+      this.grecohService.getAllPaintings$().pipe(
+        switchMap((paintings: Painting[]) => of(new GetAllPaintingsSuccess(paintings))),
+        catchError(err => of(new GrecohServerError((err)))
+        ))));
+
+  @Effect()
+  getLevelPaintings$: Observable<Action> = this.actions$.pipe(
+    ofType<GetLevelPaintings>(GrecohActionTypes.GetLevelPaintings),
+    switchMap((action: GetLevelPaintings) =>
       this.grecohService.getPaintings$(action.levelID, action.email).pipe(
-    switchMap((paintings: Painting[]) => of(new GetPaintingsSuccess(paintings))),
+    switchMap((paintings: Painting[]) => of(new GetLevelPaintingsSuccess(paintings))),
         catchError(err => of(new GrecohServerError((err)))
       ))));
 

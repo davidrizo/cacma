@@ -16,12 +16,18 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
         apiRestServerError: action.serverError
       };
     }
-    case GrecohActionTypes.GetPaintings: {
+    case GrecohActionTypes.GetLevelPaintings: {
       const newState = {...state,
         apiRestServerError: null};
       return newState;
     }
-    case GrecohActionTypes.GetPaintingsSuccess: {
+    case GrecohActionTypes.GetAllPaintingsSuccess: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.paintings = action.paintings;
+      return newState;
+    }
+    case GrecohActionTypes.GetLevelPaintingsSuccess: {
       const newState = {...state,
         apiRestServerError: null};
       newState.paintings = action.paintings;

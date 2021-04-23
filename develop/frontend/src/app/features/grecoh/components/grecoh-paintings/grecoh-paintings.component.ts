@@ -15,7 +15,7 @@ import {
   FirstLevel,
   GetCollaborators,
   GetExperiment, GetExperimentLevelUserQuestions, GetLevels,
-  GetPaintings, NextLevel, PostExperimentLevelUserComment, PreviousLevel,
+  GetLevelPaintings, NextLevel, PostExperimentLevelUserComment, PreviousLevel,
   ResetGrecohServerError,
   SelectCollaborator
 } from '../../store/actions/grecoh.actions';
@@ -185,7 +185,7 @@ export class GrecohPaintingsComponent implements OnInit, OnDestroy {
 
   private dispatchPaintingsAndExperimentLevelUser() {
     if (this.email && this.currentLevel && this.currentExperimentID) {
-      this.store.dispatch(new GetPaintings(this.currentLevel.id, this.email));
+      this.store.dispatch(new GetLevelPaintings(this.currentLevel.id, this.email));
       this.store.dispatch(new GetExperimentLevelUserQuestions(this.currentLevel.id, this.email));
     }
   }
