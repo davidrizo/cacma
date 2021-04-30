@@ -23,12 +23,14 @@ import {LayoutModule} from '../../shared/layout/layout.module';
 import {RouterModule} from '@angular/router';
 import {Ng5SliderModule} from 'ng5-slider';
 import { GrecohPaintingAnalysisComponent } from './components/grecoh-painting-analysis/grecoh-painting-analysis.component';
-import { GrecohPaintingAnalysisGraphComponent } from './components/grecoh-painting-analysis-graph/grecoh-painting-analysis-graph.component';
-
+import {BoxplotComponent} from './components/grecoh-painting-analysis-graph/boxplot.component';
+import { ChartModule } from 'angular2-chartjs';
+import 'chartjs-chart-box-and-violin-plot/build/Chart.BoxPlot.js';
 
 @NgModule({
   declarations:
-    [GrecohComponent, GrecohAdminComponent, GrecohPaintingsComponent, GrecohPaintingComponent, GrecohScoreStatisticsComponent, GrecohPaintingAnalysisComponent, GrecohPaintingAnalysisGraphComponent],
+    [GrecohComponent, GrecohAdminComponent, GrecohPaintingsComponent, GrecohPaintingComponent, GrecohScoreStatisticsComponent,
+      GrecohPaintingAnalysisComponent, BoxplotComponent],
     imports: [
         CommonModule,
         GrecohRoutingModule,
@@ -42,7 +44,8 @@ import { GrecohPaintingAnalysisGraphComponent } from './components/grecoh-painti
         LayoutModule,
         RouterModule,
         ReactiveFormsModule,
-        Ng5SliderModule
+        Ng5SliderModule,
+        ChartModule
     ],
   exports: [
   ],
