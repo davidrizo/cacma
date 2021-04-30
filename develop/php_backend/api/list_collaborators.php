@@ -3,7 +3,7 @@ require 'apirest.php';
 require 'connect.php';
 
 $collaborators = [];
-$sql = "SELECT c.id as id, c.name as name FROM grecoh_collaborator c";
+$sql = "SELECT c.id as id, c.name as name, email FROM grecoh_collaborator c";
 
 if($result = mysqli_query($con,$sql))
 {
@@ -12,6 +12,7 @@ if($result = mysqli_query($con,$sql))
     {
         $collaborators[$cr]['id']    = $row['id'];
         $collaborators[$cr]['name'] = $row['name'];
+        $collaborators[$cr]['email'] = $row['email'];
         $cr++;
     }
 

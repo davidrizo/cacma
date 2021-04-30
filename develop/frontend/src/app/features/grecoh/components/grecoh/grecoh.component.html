@@ -9,7 +9,8 @@
       <p>En cada caso podrás comprobar al final la valoración que has concedido a las composiciones originales, y las coincidencias con otros usuarios. Además, te pedimos que respondas a dos preguntas sencillas, que nos ayudarán a comprobar la funcionalidad de la aplicación.
       <p><em>Si no lo has hecho, haz login usando tu cuenta de Google</em></p>
       <div>
-        <a routerLink="../paintings" class="btnPrincipal">Inicia el experimento</a>
+        <a routerLink="../paintings" class="btnPrincipal">Inicia el experimento</a>&nbsp;
+        <a *ngIf="isCollaborator" routerLink="../admin">Análisis</a>
       </div>
     </div>
     <div class="col-md-5 order-1 order-md-2">
