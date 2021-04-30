@@ -27,6 +27,8 @@ export enum GrecohActionTypes {
   GetPaintingStatisticsSuccess = '[Grecoh] Get painting statistics success',
   GetPaintingVersionScores = '[Grecoh] Get painting version scores',
   GetPaintingVersionScoresSuccess = '[Grecoh] Get painting version scores success',
+  GetPaintingAllVersionsScores = '[Grecoh] Get all painting versions scores',
+  GetPaintingAllVersionsScoresSuccess = '[Grecoh] Get all painting versions scores success',
   GetCollaborators = '[Grecoh] Get collaborators',
   GetCollaboratorsSuccess = '[Grecoh] Get collaborators success',
   SelectCollaborator = '[Grecoh] Select collaborator',
@@ -133,6 +135,18 @@ export class GetPaintingVersionScoresSuccess implements Action {
   constructor(public paintingVersionScores: PaintingVersionScore[]) {}
 }
 
+
+export class GetPaintingAllVersionsScores implements Action {
+  public readonly type = GrecohActionTypes.GetPaintingAllVersionsScores;
+  constructor(public paintingID: number) {}
+}
+
+export class GetPaintingAllVersionsScoresSuccess implements Action {
+  public readonly type = GrecohActionTypes.GetPaintingAllVersionsScoresSuccess;
+  constructor(public paintingVersionsScores: PaintingVersionScore[]) {}
+}
+
+
 export class GetCollaborators implements Action {
   public readonly type = GrecohActionTypes.GetCollaborators;
   constructor() {}
@@ -219,6 +233,7 @@ export type GrecohActions =
   PostPaintingVersionsScores | PostPaintingVersionsScoresSuccess |
   GetPaintingStatistics | GetPaintingStatisticsSuccess |
   GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults |
+  GetPaintingAllVersionsScores | GetPaintingAllVersionsScoresSuccess |
   GetCollaborators | GetCollaboratorsSuccess |
   SelectCollaborator |
   GetLevels | GetLevelsSuccess | FirstLevel | PreviousLevel | NextLevel | // ChangeLevelIndex |

@@ -63,6 +63,12 @@ export class GrecohService {
     return this.apiRestClientService.get$<PaintingVersionScore[]>(url);
   }
 
+
+  getPaintingAllVersionsScores$(paintingID: number): Observable<PaintingVersionScore[]> {
+    const url = 'list_painting_allversions_scores.php?painting_id=' + paintingID;
+    return this.apiRestClientService.get$<PaintingVersionScore[]>(url);
+  }
+
   getCollaborators$(): Observable<Collaborator[]> {
     const url = 'list_collaborators.php';
     return this.apiRestClientService.get$<Collaborator[]>(url);
@@ -91,4 +97,5 @@ export class GrecohService {
     url += '?jsondata=' + encodeURIComponent(JSON.stringify(answers));
     return this.apiRestClientService.get$<APIRestServerError>(url);
   }
+
 }

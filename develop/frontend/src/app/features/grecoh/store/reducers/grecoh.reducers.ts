@@ -77,6 +77,12 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       newState.paintingVersionScores = action.paintingVersionScores;
       return newState;
     }
+    case GrecohActionTypes.GetPaintingAllVersionsScoresSuccess: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.paintingAllVersionsScores = action.paintingVersionsScores;
+      return newState;
+    }
     case GrecohActionTypes.GetCollaboratorsSuccess: {
       const newState = {...state,
         apiRestServerError: null};

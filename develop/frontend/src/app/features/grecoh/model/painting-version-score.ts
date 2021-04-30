@@ -7,4 +7,5 @@ export interface PaintingVersionScore {
   comments?: string;
   email?: string;
   collaborator_id?: number;
+  color?: string;
 }

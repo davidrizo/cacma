@@ -1,7 +1,14 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap} from '@angular/router';
-import {GetPainting, GetPaintingStatistics, GetPaintingVersions, ResetScoreResults} from '../../store/actions/grecoh.actions';
 import {
+  GetPainting, GetPaintingAllVersionsScores,
+  GetPaintingStatistics,
+  GetPaintingVersions,
+  GetPaintingVersionScores,
+  ResetScoreResults
+} from '../../store/actions/grecoh.actions';
+import {
+  selectPaintingAllVersionsScores,
   selectPaintingStatistics,
   selectPaintingVersions,
   selectPaintingVersionScores,
@@ -26,7 +33,7 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
   paintingStatistics$: Observable<PaintingStatistics[]>;
   paintingVersionsSubscription: Subscription;
   paintingVersions: Map<number, PaintingVersion> = new Map<number, PaintingVersion>();
-  paintingVersionScores$: Observable<PaintingVersionScore[]>;
+  paintingAllVersionsScores$: Observable<PaintingVersionScore[]>;
 
   constructor(private route: ActivatedRoute, private store: Store<GrecohState>) { }
 
@@ -36,6 +43,7 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
       this.store.dispatch(new GetPainting(this.paintingID));
       this.store.dispatch(new GetPaintingVersions(this.paintingID));
       this.store.dispatch(new GetPaintingStatistics(this.paintingID));
+      this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID));
     });
 
     this.painting$ = this.store.select(selectSelectedPainting);
@@ -50,7 +58,7 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
       }
     });
 
-    this.paintingVersionScores$ = this.store.select(selectPaintingVersionScores);
+    this.paintingAllVersionsScores$ = this.store.select(selectPaintingAllVersionsScores);
   }
 
 

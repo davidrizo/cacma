@@ -7,3 +7,22 @@ img {
 .statistics {
   text-align: center;
 }
+
+#versions {
+  height: 80vh;
+  overflow: auto;
+}
+
+.version {
+  border-width: 5px;
+  border-style: solid;
+}
+
+.version {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.version img {
+  width: 80%;
+}

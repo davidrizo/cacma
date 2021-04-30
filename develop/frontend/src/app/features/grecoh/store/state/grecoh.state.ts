@@ -18,6 +18,7 @@ export interface GrecohState {
   apiRestServerError: APIRestServerError;
   paintingStatistics: PaintingStatistics[];
   paintingVersionScores: PaintingVersionScore[];
+  paintingAllVersionsScores: PaintingVersionScore[];
   collaborators: Collaborator[];
   selectedCollaboratorID: number;
   postScoresResult: APIRestServerError;
@@ -39,6 +40,7 @@ export const initialSemanticRepresentationState: GrecohState = {
   paintingStatistics: null,
   postScoresResult: null,
   paintingVersionScores: null,
+  paintingAllVersionsScores: null,
   collaborators: null,
   selectedCollaboratorID: -1,
   currentLevelIndex: null,
