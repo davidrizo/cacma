@@ -40,10 +40,10 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.paintingID = +this.route.snapshot.paramMap.get('id'); // + converts the string to number
+      this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID));
       this.store.dispatch(new GetPainting(this.paintingID));
       this.store.dispatch(new GetPaintingVersions(this.paintingID));
       this.store.dispatch(new GetPaintingStatistics(this.paintingID));
-      this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID));
     });
 
     this.painting$ = this.store.select(selectSelectedPainting);
@@ -52,6 +52,7 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
 
     this.paintingVersionsSubscription = this.store.select(selectPaintingVersions).subscribe(next => {
       if (next && next.length > 0) {
+        // avoid race conditions on result
         next.forEach(version => {
           this.paintingVersions.set(version.id, version);
         });

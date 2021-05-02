@@ -20,9 +20,13 @@
         </li>
       </ul>
     </div>
-    <div class="col-10">
-      <app-boxplot [paintingAllVersionsScore]="paintingAllVersionsScores$ | async"></app-boxplot>
+    <div *ngIf="paintingAllVersionsScores$ | async as paintingAllVersionScores; else reload" class="col-10">
+      <app-boxplot [paintingAllVersionsScore]="paintingAllVersionScores"></app-boxplot>
     </div>
+
+    <ng-template #reload>
+      <p>Por favor, recarga la página</p>
+    </ng-template>
   </div>
 
   <ng-template #loadingStatistics>
@@ -30,6 +34,8 @@
       Cargando estadísticas ...
     </div>
   </ng-template>
+
+
 
 
 </div>

@@ -1,5 +1,5 @@
 import {GrecohState, initialSemanticRepresentationState} from '../state/grecoh.state';
-import {GrecohActions, GrecohActionTypes} from '../actions/grecoh.actions';
+import {GetPaintingVersionScores, GrecohActions, GrecohActionTypes} from '../actions/grecoh.actions';
 
 export function grecohReducers(state = initialSemanticRepresentationState, action: GrecohActions):
   GrecohState {
@@ -46,9 +46,11 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       return newState;
     }
     case GrecohActionTypes.GetPaintingVersionsSuccess: {
+      console.log('1');
       const newState = {...state,
         apiRestServerError: null};
       newState.paintingVersions = action.paintingVersions;
+      console.log('2');
       return newState;
     }
     case GrecohActionTypes.PostPaintingVersionsScoresSuccess: {
@@ -58,11 +60,13 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       return newState;
     }
     case GrecohActionTypes.GetPaintingStatisticsSuccess: {
+      console.log('X');
       const newState = {...state,
         apiRestServerError: null};
       // sort descending by average
       // slice because the redux store array is inmutable
       newState.paintingStatistics = action.paintingStatistics.slice().sort((a, b): number => b.average - a.average);
+      console.log('Y');
       return newState;
     }
     case GrecohActionTypes.ResetScoreResults: {
@@ -75,6 +79,12 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       const newState = {...state,
         apiRestServerError: null};
       newState.paintingVersionScores = action.paintingVersionScores;
+      return newState;
+    }
+    case GrecohActionTypes.GetPaintingAllVersionsScores: {
+      const newState = {...state,
+        apiRestServerError: null};
+      newState.paintingAllVersionsScores = null;
       return newState;
     }
     case GrecohActionTypes.GetPaintingAllVersionsScoresSuccess: {
