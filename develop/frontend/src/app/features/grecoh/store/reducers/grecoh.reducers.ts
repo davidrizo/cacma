@@ -213,11 +213,10 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
           lqa.questions.set(answer.questionID, q);
         }
 
-        const coherence: string = answer.coherence === '1' ? 'S' : answer.coherence === '0' ? 'N' : 'U';
         const a: Answer = {
           answer: answer.answer,
           email: answer.email,
-          coherence
+          coherence: answer.coherence
         };
         q.answers.push(a);
       });
@@ -239,8 +238,7 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
         if (question) {
           const answer = question.answers.find(a => a.email === action.email);
           if (answer) {
-            const coherence: string = action.coherence === 1 ? 'S' : action.coherence === 0 ? 'N' : 'U';
-            answer.coherence = coherence;
+            answer.coherence = action.coherence;
           }
           break;
         }

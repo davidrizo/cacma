@@ -65,8 +65,13 @@ export class GrecohService {
   }
 
 
-  getPaintingAllVersionsScores$(paintingID: number): Observable<PaintingVersionScore[]> {
-    const url = 'list_painting_allversions_scores.php?painting_id=' + paintingID;
+  getPaintingAllVersionsScores$(paintingID: number, coherence: string): Observable<PaintingVersionScore[]> {
+    let url;
+    if (coherence) {
+      url = 'list_painting_allversions_scores.php?painting_id=' + paintingID + '&coherence=' + coherence;
+    } else {
+      url = 'list_painting_allversions_scores.php?painting_id=' + paintingID;
+    }
     return this.apiRestClientService.get$<PaintingVersionScore[]>(url);
   }
 
@@ -104,7 +109,7 @@ export class GrecohService {
     return this.apiRestClientService.get$<AnswerExperiment[]>(url);
   }
 
-  changeAnswersCoherence$(questionID: number, email: string, coherence: number): Observable<AnswerExperiment> {
+  changeAnswersCoherence$(questionID: number, email: string, coherence: string): Observable<AnswerExperiment> {
     let url;
     if (coherence) {
       url = `change_answer_coherence.php?question_id=${questionID}&email=${email}&coherence=${coherence}`;

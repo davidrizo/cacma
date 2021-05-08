@@ -3,6 +3,7 @@
     <div class="col">
       <h1>GreCoH</h1>
       <h2>Análisis de resultados</h2>
+      <p><a routerLink="../admin">Vuelve atrás</a></p>
       <h3>Respuestas a las preguntas finales por niveles</h3>
       <ul *ngIf="(levelsQuestionsAnswers$ | async) as levelsQuestionsAnswers">
         <li *ngFor="let level of levelsQuestionsAnswers.levels.values(); trackBy: trackByIndex; let iLevel = index">
@@ -24,9 +25,9 @@
                       <td>{{answer.email}}</td>
                       <td>{{answer.answer}}</td>
                       <td>
-                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'S'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 1)">Sí<br>
-                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'N'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 0)">No<br>
-                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'U'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, undefined)">Otro
+                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'Y'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 'Y')">Sí<br>
+                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'N'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 'N')">No<br>
+                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'U'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 'U')">Otro
                       </td>
                     </tr>
                   </tbody>

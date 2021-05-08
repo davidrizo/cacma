@@ -9,18 +9,16 @@ $question_id = getIntGETParameterForMySQL('question_id', $con);
 $email = getStringGETParameterForMySQL('email', $con);
 $coherence = $_GET['coherence'];
 if (!$coherence) {
-    $coherence = 'null';
+    $coherence = 'U';
 }
 
-if(!$question_id || !email )
+if(!$question_id || !$email )
 {
     return http_response_code(400);
 }
 
 
-$sql = "update grecoh_experiment_level_question_user set coherence = $coherence where email = '$email' and question_id = $question_id";
-
-error_log('Error with SQL:  ' . $sql);
+$sql = "update grecoh_experiment_level_question_user set coherence = '$coherence' where email = '$email' and question_id = $question_id";
 
 if ($result = mysqli_query($con,$sql)) {
     $changedAnswer['question_id'] = $question_id;
@@ -30,5 +28,6 @@ if ($result = mysqli_query($con,$sql)) {
     }
     echo json_encode($changedAnswer);
 } else {
+    error_log('Error with SQL:  ' . $sql);
     http_response_code(500);
 }

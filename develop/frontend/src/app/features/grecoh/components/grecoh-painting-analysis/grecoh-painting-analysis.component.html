@@ -1,11 +1,10 @@
 <div class="container-fluid" *ngIf="painting$ | async as painting; else loading">
   <div class="row">
-    <div class="col-9">
+    <div class="col">
       <h1>{{painting.painter}}</h1>
       <h2>{{painting.title}}</h2>
-    </div>
-    <div class="col-3">
-      <a href="../admin">Back to all paintings</a>
+      <p><a routerLink="../../admin">Vuelve atrás</a></p>
+
     </div>
   </div>
 
@@ -21,11 +20,20 @@
       </ul>
     </div>
     <div *ngIf="paintingAllVersionsScores$ | async as paintingAllVersionScores; else reload" class="col-10">
+      Filtra por coherencia de las respuestas
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'Y'" (ngModelChange)="onCoherenceChanged('Y')">Sí &nbsp;&nbsp;
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'N'" (ngModelChange)="onCoherenceChanged('N')">No&nbsp;
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'U'" (ngModelChange)="onCoherenceChanged('U')">Otro&nbsp;
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'A'" (ngModelChange)="onCoherenceChanged('A')">Ver todo
+      <div>
+
+      </div>
+
       <app-boxplot [paintingAllVersionsScore]="paintingAllVersionScores"></app-boxplot>
     </div>
 
     <ng-template #reload>
-      <p>Por favor, recarga la página</p>
+      <p>Por favor, vuelve atrás y entra de nuevo</p>
     </ng-template>
   </div>
 

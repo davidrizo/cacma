@@ -10,7 +10,13 @@ if (!$painting_id)
     return http_response_code(400);
 }
 
-$sql = "select painting_version_id, score, color_hexa from grecoh_user_painting_version_score s, grecoh_painting_version v where s.painting_version_id = v.id and v.painting_id = $painting_id";
+if (isset($_GET['coherence'])) {
+    $coherence = $_GET['coherence'];
+    $sql = "select p.level_id, s.email, s.painting_version_id as painting_version_id, score, color_hexa from grecoh_user_painting_version_score s, grecoh_painting_version v, grecoh_painting p where p.id = v.painting_id && s.painting_version_id = v.id and v.painting_id = $painting_id and s.email in (select email from grecoh_experiment_level_question_user u, grecoh_experiment_level_question q where u.coherence = '$coherence' and u.question_id = q.id and q.level_id = p.level_id)";
+} else {
+    $sql = "select painting_version_id, score, color_hexa from grecoh_user_painting_version_score s, grecoh_painting_version v where s.painting_version_id = v.id and v.painting_id = $painting_id";
+}
+
  
 if ($result = mysqli_query($con,$sql)) {
     $scores = [];

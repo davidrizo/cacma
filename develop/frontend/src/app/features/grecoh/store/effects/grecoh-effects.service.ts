@@ -123,7 +123,7 @@ export class GrecohEffects {
   getPaintingAllVersionsScore$: Observable<Action> = this.actions$.pipe(
     ofType<GetPaintingAllVersionsScores>(GrecohActionTypes.GetPaintingAllVersionsScores),
     switchMap((action: GetPaintingAllVersionsScores) =>
-      this.grecohService.getPaintingAllVersionsScores$(action.paintingID).pipe(
+      this.grecohService.getPaintingAllVersionsScores$(action.paintingID, action.coherence).pipe(
         switchMap((paintingVersionsScores: PaintingVersionScore[]) => of(new GetPaintingAllVersionsScoresSuccess(paintingVersionsScores))),
         catchError(err => of(new GrecohServerError(err)))
       )));

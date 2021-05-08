@@ -143,7 +143,7 @@ export class GetPaintingVersionScoresSuccess implements Action {
 
 export class GetPaintingAllVersionsScores implements Action {
   public readonly type = GrecohActionTypes.GetPaintingAllVersionsScores;
-  constructor(public paintingID: number) {}
+  constructor(public paintingID: number, public coherence: string) {}
 }
 
 export class GetPaintingAllVersionsScoresSuccess implements Action {
@@ -242,7 +242,7 @@ export class GetAnswersExperimentSuccess implements Action {
 
 export class ChangeAnswerCoherence implements Action {
   public readonly type = GrecohActionTypes.ChangeAnswerCoherence;
-  constructor(public questionID: number, public email: string, public coherence: number) {}
+  constructor(public questionID: number, public email: string, public coherence: string) {}
 }
 
 export class ChangeAnswerCoherenceSuccess implements Action {

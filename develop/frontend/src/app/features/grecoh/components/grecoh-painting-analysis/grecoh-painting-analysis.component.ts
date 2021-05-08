@@ -4,14 +4,11 @@ import {
   GetPainting, GetPaintingAllVersionsScores,
   GetPaintingStatistics,
   GetPaintingVersions,
-  GetPaintingVersionScores,
-  ResetScoreResults
 } from '../../store/actions/grecoh.actions';
 import {
   selectPaintingAllVersionsScores,
   selectPaintingStatistics,
   selectPaintingVersions,
-  selectPaintingVersionScores,
   selectSelectedPainting
 } from '../../store/selectors/grecoh.selector';
 import {Store} from '@ngrx/store';
@@ -28,6 +25,7 @@ import {PaintingStatistics} from '../../model/painting-statistics';
   styleUrls: ['./grecoh-painting-analysis.component.css']
 })
 export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
+  coherence = 'A';
   paintingID: number;
   painting$: Observable<Painting>;
   paintingStatistics$: Observable<PaintingStatistics[]>;
@@ -44,7 +42,7 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.paintingID = +this.route.snapshot.paramMap.get('id'); // + converts the string to number
-      this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID));
+      this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID, undefined));
       this.store.dispatch(new GetPainting(this.paintingID));
       this.store.dispatch(new GetPaintingVersions(this.paintingID));
       this.store.dispatch(new GetPaintingStatistics(this.paintingID));
@@ -93,6 +91,14 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
       return `assets/paintings/${version.painter_slug}/${version.slug}/${version.color_hexa}.jpg`;
     } else {
       return '';
+    }
+  }
+
+  onCoherenceChanged(coherence: string) {
+    if (coherence === 'A') {
+      this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID, undefined));
+    } else {
+      this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID, coherence));
     }
   }
 }
