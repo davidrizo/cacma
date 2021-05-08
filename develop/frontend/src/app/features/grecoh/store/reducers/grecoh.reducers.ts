@@ -1,5 +1,8 @@
 import {GrecohState, initialSemanticRepresentationState} from '../state/grecoh.state';
 import {GetPaintingVersionScores, GrecohActions, GrecohActionTypes} from '../actions/grecoh.actions';
+import {Answer, LevelQuestionAnswers, LevelsQuestionAnswers, Question} from '../../components/questions-analysis/question-analysis-model';
+import {selectLevelsQuestionAnswers} from '../selectors/grecoh.selector';
+import {klona} from 'klona';
 
 export function grecohReducers(state = initialSemanticRepresentationState, action: GrecohActions):
   GrecohState {
@@ -187,6 +190,62 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
         apiRestServerError: null};
       newState.postExperimentLevelUserCommentsResult = action.success;
       return newState;
+    }
+    case GrecohActionTypes.GetAnswersExperimentSuccess: {
+      const levels: Map<number, LevelQuestionAnswers> = new Map<number, LevelQuestionAnswers>();
+      action.answers.forEach(answer => {
+        let lqa: LevelQuestionAnswers = levels.get(answer.levelOrdering);
+        if (!lqa) {
+          lqa = {
+            ordering: answer.levelOrdering,
+            questions: new Map<number, Question>()
+          };
+          levels.set(answer.levelOrdering, lqa);
+        }
+
+        let q: Question = lqa.questions.get(answer.questionID);
+        if (!q) {
+          q = {
+            id: answer.questionID,
+            question: answer.question,
+            answers: []
+          };
+          lqa.questions.set(answer.questionID, q);
+        }
+
+        const coherence: string = answer.coherence === '1' ? 'S' : answer.coherence === '0' ? 'N' : 'U';
+        const a: Answer = {
+          answer: answer.answer,
+          email: answer.email,
+          coherence
+        };
+        q.answers.push(a);
+      });
+      const levelsQuestionAnswers: LevelsQuestionAnswers = {
+        levels
+      };
+      const newState = {...state,
+        levelsQuestionAnswers,
+        apiRestServerError: null};
+      return newState;
+    }
+    case GrecohActionTypes.ChangeAnswerCoherence: {
+      const newState = {...state,
+        levelsQuestionAnswers: klona(state.levelsQuestionAnswers),
+        apiRestServerError: null};
+
+      for (const level of newState.levelsQuestionAnswers.levels.values()) {
+        const question = level.questions.get(action.questionID);
+        if (question) {
+          const answer = question.answers.find(a => a.email === action.email);
+          if (answer) {
+            const coherence: string = action.coherence === 1 ? 'S' : action.coherence === 0 ? 'N' : 'U';
+            answer.coherence = coherence;
+          }
+          break;
+        }
+      }
+      return  newState;
     }
     default: {
       return state;

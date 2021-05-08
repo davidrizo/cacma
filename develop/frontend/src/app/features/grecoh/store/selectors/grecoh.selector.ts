@@ -1,5 +1,6 @@
 import {createFeatureSelector, createSelector} from '@ngrx/store';
 import {GrecohState} from '../state/grecoh.state';
+import {LevelsQuestionAnswers} from '../../components/questions-analysis/question-analysis-model';
 
 export const grecohState = createFeatureSelector<GrecohState>('grecoh');
 
@@ -61,6 +62,10 @@ export const selectCurrentLevel = createSelector(
   (state: GrecohState) => state.currentLevelIndex
 );*/
 
+export const selectLevels = createSelector(
+  grecohState,
+  (state: GrecohState) => state.levels
+);
 
 export const selectIsFirstLevel = createSelector(
   grecohState,
@@ -91,6 +96,12 @@ export const selectQuestionsUserAnswers = createSelector(
   grecohState,
   (state: GrecohState) => state.questionsUserAnswers
 );
+
+export const selectLevelsQuestionAnswers = createSelector(
+  grecohState,
+  (state: GrecohState) => state.levelsQuestionAnswers
+);
+
 
 export const selectGrecohServerError = createSelector(
   grecohState,

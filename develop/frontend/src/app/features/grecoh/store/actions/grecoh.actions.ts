@@ -9,6 +9,7 @@ import {Collaborator} from '../../model/collaborator';
 import {Experiment} from '../../model/experiment';
 import {Level} from '../../model/level';
 import {ExperimentLevelUserQuestionAnswer} from '../../model/experiment-level-user_questions';
+import {AnswerExperiment} from '../../model/payload/answer-experiment';
 
 export enum GrecohActionTypes {
   ResetGrecohServerError = '[Grecoh] Server error reset',
@@ -46,7 +47,11 @@ export enum GrecohActionTypes {
   GetExperimentLevelUserQuestions = '[Grecoh] Get experiment level user',
   GetExperimentLevelUserQuestionsSuccess = '[Grecoh] Get experiment  level user success',
   PostExperimentLevelUserComment = '[Grecoh] Post experiment level user comment',
-  PostExperimentLevelUserCommentSuccess = '[Grecoh] Post experiment level user comment success'
+  PostExperimentLevelUserCommentSuccess = '[Grecoh] Post experiment level user comment success',
+  GetAnswersExperiment = '[Grecoh] Get answer experiment',
+  GetAnswersExperimentSuccess = '[Grecoh] Get answer experiment success',
+  ChangeAnswerCoherence = '[Grecoh] Change coherence',
+  ChangeAnswerCoherenceSuccess = '[Grecoh] Change coherence success'
 }
 
 export class ResetGrecohServerError implements Action {
@@ -224,6 +229,27 @@ export class PostExperimentLevelUserCommentSuccess implements Action {
   constructor(public success: APIRestServerError) {}
 }
 
+
+export class GetAnswersExperiment implements Action {
+  public readonly type = GrecohActionTypes.GetAnswersExperiment;
+  constructor(public experimentID: number) {}
+}
+
+export class GetAnswersExperimentSuccess implements Action {
+  public readonly type = GrecohActionTypes.GetAnswersExperimentSuccess;
+  constructor(public answers: AnswerExperiment[]) {}
+}
+
+export class ChangeAnswerCoherence implements Action {
+  public readonly type = GrecohActionTypes.ChangeAnswerCoherence;
+  constructor(public questionID: number, public email: string, public coherence: number) {}
+}
+
+export class ChangeAnswerCoherenceSuccess implements Action {
+  public readonly type = GrecohActionTypes.ChangeAnswerCoherenceSuccess;
+  constructor(public answerChanged: AnswerExperiment) {}
+}
+
 export type GrecohActions =
   GrecohServerError | ResetGrecohServerError |
   GetAllPaintings | GetAllPaintingsSuccess |
@@ -239,7 +265,9 @@ export type GrecohActions =
   GetLevels | GetLevelsSuccess | FirstLevel | PreviousLevel | NextLevel | // ChangeLevelIndex |
   GetExperiment | GetExperimentSuccess |
   GetExperimentLevelUserQuestions | GetExperimentLevelUserQuestionsSuccess |
-  PostExperimentLevelUserComment | PostExperimentLevelUserCommentSuccess
+  PostExperimentLevelUserComment | PostExperimentLevelUserCommentSuccess |
+  GetAnswersExperiment | GetAnswersExperimentSuccess |
+  ChangeAnswerCoherence | ChangeAnswerCoherenceSuccess
   ;
 
 

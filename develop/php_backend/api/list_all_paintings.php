@@ -24,5 +24,5 @@ if($result = mysqli_query($con,$sql) or trigger_error("Cannot exectue query"))
 }
 else
 {
-    http_response_code(404);
+    http_response_code(500);
 }

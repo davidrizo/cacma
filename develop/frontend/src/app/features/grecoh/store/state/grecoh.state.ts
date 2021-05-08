@@ -7,6 +7,8 @@ import {Collaborator} from '../../model/collaborator';
 import {Experiment} from '../../model/experiment';
 import {Level} from '../../model/level';
 import {ExperimentLevelUserQuestionAnswer} from '../../model/experiment-level-user_questions';
+import {AnswerExperiment} from '../../model/payload/answer-experiment';
+import {LevelsQuestionAnswers} from '../../components/questions-analysis/question-analysis-model';
 
 export const EMPTY_COLLABORATOR_ID = -1;
 
@@ -29,6 +31,7 @@ export interface GrecohState {
   allLevelPaintingsScored: boolean;
   questionsUserAnswers: ExperimentLevelUserQuestionAnswer[];
   postExperimentLevelUserCommentsResult: APIRestServerError;
+  levelsQuestionAnswers: LevelsQuestionAnswers;
 }
 
 export const initialSemanticRepresentationState: GrecohState = {
@@ -49,7 +52,8 @@ export const initialSemanticRepresentationState: GrecohState = {
   levelsCompleted: false,
   allLevelPaintingsScored: null,
   questionsUserAnswers: null,
-  postExperimentLevelUserCommentsResult: null
+  postExperimentLevelUserCommentsResult: null,
+  levelsQuestionAnswers: null
 };
 
 export function getInitialState(): GrecohState {

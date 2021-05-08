@@ -35,7 +35,11 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
   paintingVersions: Map<number, PaintingVersion> = new Map<number, PaintingVersion>();
   paintingAllVersionsScores$: Observable<PaintingVersionScore[]>;
 
-  constructor(private route: ActivatedRoute, private store: Store<GrecohState>) { }
+  constructor(private route: ActivatedRoute, private store: Store<GrecohState>) {
+    this.painting$ = this.store.select(selectSelectedPainting);
+    this.paintingStatistics$ = this.store.select(selectPaintingStatistics);
+    this.paintingAllVersionsScores$ = this.store.select(selectPaintingAllVersionsScores);
+  }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
@@ -46,8 +50,6 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
       this.store.dispatch(new GetPaintingStatistics(this.paintingID));
     });
 
-    this.painting$ = this.store.select(selectSelectedPainting);
-    this.paintingStatistics$ = this.store.select(selectPaintingStatistics);
     // this.currentLevelIndex$ = this.store.select(selectCurrentLevelIndex);
 
     this.paintingVersionsSubscription = this.store.select(selectPaintingVersions).subscribe(next => {
@@ -59,7 +61,6 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
       }
     });
 
-    this.paintingAllVersionsScores$ = this.store.select(selectPaintingAllVersionsScores);
   }
 
 

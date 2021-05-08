@@ -1,6 +1,22 @@
-<h1>GreCoH Administration</h1>
-<ul>
-  <li *ngFor="let painting of paintings$ | async; trackBy: trackByPainting">
-    <a [routerLink]="['../analysis',painting.id]">{{painting.painter}}: "{{painting.title}}"</a>
-  </li>
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>GreCoH</h1>
+      <h2>Análisis de resultados</h2>
+      <h3>Resultados de las puntuaciones de versiones de obras</h3>
+      <ul>
+        <li *ngFor="let painting of paintings$ | async; trackBy: trackByPainting">
+          <a [routerLink]="['../scoresAnalysis',painting.id]">{{painting.painter}}: "{{painting.title}}"</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <a [routerLink]="['../questionsAnalysis']">
+        <h3>Respuestas a las preguntas finales por niveles</h3>
+      </a>
+    </div>
+  </div>
+</div>

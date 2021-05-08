@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>GreCoH</h1>
+      <h2>Análisis de resultados</h2>
+      <h3>Respuestas a las preguntas finales por niveles</h3>
+      <ul *ngIf="(levelsQuestionsAnswers$ | async) as levelsQuestionsAnswers">
+        <li *ngFor="let level of levelsQuestionsAnswers.levels.values(); trackBy: trackByIndex; let iLevel = index">
+          <h4>Nivel #{{level.ordering}}</h4>
+          <ul>
+            <li *ngFor="let question of level.questions.values(); trackBy: trackByIndex; let iQuestion = index">
+              <h5>{{question.question}}</h5>
+              <ul class="row">
+                <table class="table table-sm table-bordered table-striped table-hover">
+                  <thead>
+                    <tr scope="row">
+                      <th scope="col">Usuario</th>
+                      <th scope="col">Respuesta</th>
+                      <th scope="col">Coherencia</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr scope="row" *ngFor="let answer of question.answers; trackBy: trackByIndex; let iAnswer = index">
+                      <td>{{answer.email}}</td>
+                      <td>{{answer.answer}}</td>
+                      <td>
+                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'S'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 1)">Sí<br>
+                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'N'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 0)">No<br>
+                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'U'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, undefined)">Otro
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

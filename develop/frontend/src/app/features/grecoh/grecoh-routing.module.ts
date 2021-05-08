@@ -7,6 +7,7 @@ import {GrecohPaintingComponent} from './components/grecoh-painting/grecoh-paint
 import {GrecohScoreStatisticsComponent} from './components/score-statistics/grecoh-score-statistics.component';
 import {AuthGuard} from '../../auth/auth.guard';
 import {GrecohPaintingAnalysisComponent} from './components/grecoh-painting-analysis/grecoh-painting-analysis.component';
+import {QuestionsAnalysisComponent} from './components/questions-analysis/questions-analysis.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'paintings', component: GrecohPaintingsComponent },
   { path: 'painting/:id', component: GrecohPaintingComponent, canActivate: [AuthGuard] },
   { path: 'statistics/:id', component: GrecohScoreStatisticsComponent, canActivate: [AuthGuard] },
-  { path: 'analysis/:id', component: GrecohPaintingAnalysisComponent, canActivate: [AuthGuard] },
+  { path: 'scoresAnalysis/:id', component: GrecohPaintingAnalysisComponent, canActivate: [AuthGuard] },
+  { path: 'questionsAnalysis', component: QuestionsAnalysisComponent, canActivate: [AuthGuard] },
   { path: 'admin', component: GrecohAdminComponent, canActivate: [AuthGuard] },
 ];
 

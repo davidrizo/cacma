@@ -26,11 +26,12 @@ import { GrecohPaintingAnalysisComponent } from './components/grecoh-painting-an
 import {BoxplotComponent} from './components/grecoh-painting-analysis-graph/boxplot.component';
 import { ChartModule } from 'angular2-chartjs';
 import 'chartjs-chart-box-and-violin-plot/build/Chart.BoxPlot.js';
+import { QuestionsAnalysisComponent } from './components/questions-analysis/questions-analysis.component';
 
 @NgModule({
   declarations:
     [GrecohComponent, GrecohAdminComponent, GrecohPaintingsComponent, GrecohPaintingComponent, GrecohScoreStatisticsComponent,
-      GrecohPaintingAnalysisComponent, BoxplotComponent],
+      GrecohPaintingAnalysisComponent, BoxplotComponent, QuestionsAnalysisComponent],
     imports: [
         CommonModule,
         GrecohRoutingModule,

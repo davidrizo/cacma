@@ -30,7 +30,11 @@ import {
   GetAllPaintings,
   GetAllPaintingsSuccess,
   GetPaintingAllVersionsScores,
-  GetPaintingAllVersionsScoresSuccess
+  GetPaintingAllVersionsScoresSuccess,
+  GetAnswersExperiment,
+  GetAnswersExperimentSuccess,
+  ChangeAnswerCoherence,
+  ChangeAnswerCoherenceSuccess
 } from '../actions/grecoh.actions';
 import {GrecohService} from '../../services/grecoh.service';
 import {Action} from '@ngrx/store';
@@ -43,6 +47,7 @@ import {Collaborator} from '../../model/collaborator';
 import {Experiment} from '../../model/experiment';
 import {Level} from '../../model/level';
 import {ExperimentLevelUserQuestionAnswer} from '../../model/experiment-level-user_questions';
+import {AnswerExperiment} from '../../model/payload/answer-experiment';
 
 @Injectable()
 export class GrecohEffects {
@@ -165,6 +170,24 @@ export class GrecohEffects {
     switchMap((action: GetLevels) =>
       this.grecohService.getLevels$(action.experimentID).pipe(
         switchMap((levels: Level[]) => of(new GetLevelsSuccess(levels))),
+        catchError(err => of(new GrecohServerError((err)))
+        ))));
+
+  @Effect()
+  getAnswersExperiment$: Observable<Action> = this.actions$.pipe(
+    ofType<GetAnswersExperiment>(GrecohActionTypes.GetAnswersExperiment),
+    switchMap((action: GetAnswersExperiment) =>
+      this.grecohService.getAnswersExperiment$(action.experimentID).pipe(
+        switchMap((answers: AnswerExperiment[]) => of(new GetAnswersExperimentSuccess(answers))),
+        catchError(err => of(new GrecohServerError((err)))
+        ))));
+
+  @Effect()
+  changeAnswerCoherence$: Observable<Action> = this.actions$.pipe(
+    ofType<ChangeAnswerCoherence>(GrecohActionTypes.ChangeAnswerCoherence),
+    switchMap((action: ChangeAnswerCoherence) =>
+      this.grecohService.changeAnswersCoherence$(action.questionID, action.email, action.coherence).pipe(
+        switchMap((answer: AnswerExperiment) => of(new ChangeAnswerCoherenceSuccess(answer))),
         catchError(err => of(new GrecohServerError((err)))
         ))));
 }

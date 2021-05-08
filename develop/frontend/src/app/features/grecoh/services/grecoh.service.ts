@@ -11,6 +11,7 @@ import {Collaborator} from '../model/collaborator';
 import {Experiment} from '../model/experiment';
 import {Level} from '../model/level';
 import {ExperimentLevelUserQuestionAnswer} from '../model/experiment-level-user_questions';
+import {AnswerExperiment} from '../model/payload/answer-experiment';
 
 
 @Injectable()
@@ -97,5 +98,22 @@ export class GrecohService {
     url += '?jsondata=' + encodeURIComponent(JSON.stringify(answers));
     return this.apiRestClientService.get$<APIRestServerError>(url);
   }
+
+  getAnswersExperiment$(experimentID: number): Observable<AnswerExperiment[]> {
+    const url = `list_answers_experiment.php?experiment_id=${experimentID}`;
+    return this.apiRestClientService.get$<AnswerExperiment[]>(url);
+  }
+
+  changeAnswersCoherence$(questionID: number, email: string, coherence: number): Observable<AnswerExperiment> {
+    let url;
+    if (coherence) {
+      url = `change_answer_coherence.php?question_id=${questionID}&email=${email}&coherence=${coherence}`;
+    } else {
+      url = `change_answer_coherence.php?question_id=${questionID}&email=${email}`;
+    }
+    console.log(url);
+    return this.apiRestClientService.get$<AnswerExperiment>(url);
+  }
+
 
 }
