@@ -17,7 +17,7 @@
                     <tr scope="row">
                       <th scope="col">Usuario</th>
                       <th scope="col">Respuesta</th>
-                      <th scope="col">Coherencia</th>
+                      <th scope="col">Coherencia&nbsp;&nbsp;&nbsp;</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -26,8 +26,9 @@
                       <td>{{answer.answer}}</td>
                       <td>
                         <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'Y'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 'Y')">Sí<br>
+                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'A'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 'U')">Alternativo<br>
                         <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'N'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 'N')">No<br>
-                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'U'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 'U')">Otro
+                        <input type="radio" [name]="iLevel + '_' + iQuestion + '_' + iAnswer" [ngModel]="answer.coherence" [value]="'U'" (ngModelChange)="onCoherenceChanged(question.id, answer.email, 'U')">NS/NC
                       </td>
                     </tr>
                   </tbody>

@@ -25,7 +25,7 @@ import {PaintingStatistics} from '../../model/painting-statistics';
   styleUrls: ['./grecoh-painting-analysis.component.css']
 })
 export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
-  coherence = 'A';
+  coherence = 'L';
   paintingID: number;
   painting$: Observable<Painting>;
   paintingStatistics$: Observable<PaintingStatistics[]>;
@@ -95,7 +95,7 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
   }
 
   onCoherenceChanged(coherence: string) {
-    if (coherence === 'A') {
+    if (coherence === 'L') {
       this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID, undefined));
     } else {
       this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID, coherence));

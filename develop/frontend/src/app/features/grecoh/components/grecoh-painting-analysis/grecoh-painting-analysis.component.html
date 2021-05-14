@@ -21,10 +21,11 @@
     </div>
     <div *ngIf="paintingAllVersionsScores$ | async as paintingAllVersionScores; else reload" class="col-10">
       Filtra por coherencia de las respuestas
-      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'Y'" (ngModelChange)="onCoherenceChanged('Y')">Sí &nbsp;&nbsp;
-      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'N'" (ngModelChange)="onCoherenceChanged('N')">No&nbsp;
-      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'U'" (ngModelChange)="onCoherenceChanged('U')">Otro&nbsp;
-      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'A'" (ngModelChange)="onCoherenceChanged('A')">Ver todo
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'Y'" (ngModelChange)="onCoherenceChanged('Y')">Sí |
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'N'" (ngModelChange)="onCoherenceChanged('N')">No&nbsp;|
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'A'" (ngModelChange)="onCoherenceChanged('A')">Alternativo |
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'U'" (ngModelChange)="onCoherenceChanged('U')">NS/NC&nbsp;|
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'L'" (ngModelChange)="onCoherenceChanged('A')">Ver todo
       <div>
 
       </div>

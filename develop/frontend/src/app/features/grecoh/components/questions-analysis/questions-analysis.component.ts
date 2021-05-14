@@ -28,7 +28,7 @@ export class QuestionsAnalysisComponent implements OnInit {
     return index;
   }
 
-  onCoherenceChanged(questionID: number, email: string, coherence: number) {
+  onCoherenceChanged(questionID: number, email: string, coherence: string) {
     this.store.dispatch(new ChangeAnswerCoherence(questionID, email, coherence));
   }
 }
