@@ -26,6 +26,8 @@ export enum GrecohActionTypes {
   PostPaintingVersionsScoresSuccess = '[Grecoh] Post painting version scores success',
   GetPaintingStatistics = '[Grecoh] Get painting statistics',
   GetPaintingStatisticsSuccess = '[Grecoh] Get painting statistics success',
+  GetPaintingStatisticsWithCoherence = '[Grecoh] Get painting with coherence statistics',
+  GetPaintingStatisticsWithCoherenceSuccess = '[Grecoh] Get painting statistics with coherence success',
   GetPaintingVersionScores = '[Grecoh] Get painting version scores',
   GetPaintingVersionScoresSuccess = '[Grecoh] Get painting version scores success',
   GetPaintingAllVersionsScores = '[Grecoh] Get all painting versions scores',
@@ -127,6 +129,17 @@ export class GetPaintingStatistics implements Action {
 
 export class GetPaintingStatisticsSuccess implements Action {
   public readonly type = GrecohActionTypes.GetPaintingStatisticsSuccess;
+  constructor(public paintingStatistics: PaintingStatistics[]) {}
+}
+
+
+export class GetPaintingStatisticsWithCoherence implements Action {
+  public readonly type = GrecohActionTypes.GetPaintingStatisticsWithCoherence;
+  constructor(public paintingID: number) {}
+}
+
+export class GetPaintingStatisticsWithCoherenceSuccess implements Action {
+  public readonly type = GrecohActionTypes.GetPaintingStatisticsWithCoherenceSuccess;
   constructor(public paintingStatistics: PaintingStatistics[]) {}
 }
 
@@ -258,6 +271,7 @@ export type GrecohActions =
   GetPaintingVersions | GetPaintingVersionsSuccess |
   PostPaintingVersionsScores | PostPaintingVersionsScoresSuccess |
   GetPaintingStatistics | GetPaintingStatisticsSuccess |
+  GetPaintingStatisticsWithCoherence | GetPaintingStatisticsWithCoherenceSuccess |
   GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults |
   GetPaintingAllVersionsScores | GetPaintingAllVersionsScoresSuccess |
   GetCollaborators | GetCollaboratorsSuccess |

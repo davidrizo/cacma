@@ -9,23 +9,62 @@
   </div>
 
   <div class="row" *ngIf="paintingStatistics$ | async as paintingStatistics; else loadingStatistics">
-    <div class="col-2">
-      <ul id="versions">
+    <div class="col-3">
+      <ul id="versions" *ngIf="paintingStatisticsWithCoherence$ | async as paintingStatisticsWithCoherence; else loadingStatistics">
         <li class="version" [style.border-color]="'#' + paintingStatisticsItem.color" *ngFor="let paintingStatisticsItem of paintingStatistics; trackBy: trackByPaintingStatistics">
           <p *ngIf="isOriginalVersion(paintingStatisticsItem, painting)">Original</p>
           <p *ngIf="isOriginalVersion(paintingStatisticsItem, painting)">Version</p>
-          <img class="card-img-top" [src]="getVersionImage(paintingStatisticsItem)" alt="Colored composition of {{painting.title}}"/>
-          <pre class="statistics">{{paintingStatisticsItem.average | number:'1.1-2' }} ± {{paintingStatisticsItem.standard_deviation | number:'1.1-2' }}</pre>
+          <p><img class="card-img-top" [src]="getVersionImage(paintingStatisticsItem)" alt="Colored composition of {{painting.title}}"/></p>
+          <table class="tableStatistics table table-sm table-bordered table-striped table-hover">
+            <th>
+              Filtro
+            </th>
+            <th>
+              Valoraciones
+            </th>
+            <tr>
+              <th>
+                Todos
+              </th>
+              <td>
+                <pre class="statistics">{{paintingStatisticsItem.average | number:'1.1-2' }} ± {{paintingStatisticsItem.standard_deviation | number:'1.1-2' }}</pre>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Coherentes
+              </th>
+              <td *ngIf="filterStatistics(paintingStatisticsItem.painting_version_id, paintingStatisticsWithCoherence, 'Y') as statistics">
+                <pre class="statistics">{{statistics.average | number:'1.1-2' }} ± {{statistics.standard_deviation | number:'1.1-2' }}</pre>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                No coherentes
+              </th>
+              <td *ngIf="filterStatistics(paintingStatisticsItem.painting_version_id, paintingStatisticsWithCoherence, 'N') as statistics">
+                <pre class="statistics">{{statistics.average | number:'1.1-2' }} ± {{statistics.standard_deviation | number:'1.1-2' }}</pre>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                NS/NC
+              </th>
+              <td *ngIf="filterStatistics(paintingStatisticsItem.painting_version_id, paintingStatisticsWithCoherence, 'U') as statistics">
+                <pre class="statistics">{{statistics.average | number:'1.1-2' }} ± {{statistics.standard_deviation | number:'1.1-2' }}</pre>
+              </td>
+            </tr>
+          </table>
         </li>
       </ul>
     </div>
-    <div *ngIf="paintingAllVersionsScores$ | async as paintingAllVersionScores; else reload" class="col-10">
+    <div *ngIf="paintingAllVersionsScores$ | async as paintingAllVersionScores; else reload" class="col-9">
       Filtra por coherencia de las respuestas
       <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'Y'" (ngModelChange)="onCoherenceChanged('Y')">Sí |
       <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'N'" (ngModelChange)="onCoherenceChanged('N')">No&nbsp;|
       <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'A'" (ngModelChange)="onCoherenceChanged('A')">Alternativo |
       <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'U'" (ngModelChange)="onCoherenceChanged('U')">NS/NC&nbsp;|
-      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'L'" (ngModelChange)="onCoherenceChanged('A')">Ver todo
+      <input type="radio" name="coherence" [(ngModel)]="coherence" [value]="'L'" (ngModelChange)="onCoherenceChanged('L')">Ver todo
       <div>
 
       </div>

@@ -59,6 +59,12 @@ export class GrecohService {
     return this.apiRestClientService.get$<PaintingStatistics[]>(url);
   }
 
+  getPaintingStatisticsWithCoherence$(paintingId: number): Observable<PaintingStatistics[]> {
+    const url = 'list_painting_version_statistics_with_coherence.php?painting_id=' + paintingId;
+    return this.apiRestClientService.get$<PaintingStatistics[]>(url);
+  }
+
+
   getPaintingVersionScores$(paintingVersionID: number): Observable<PaintingVersionScore[]> {
     const url = 'list_painting_version_scores.php?painting_version_id=' + paintingVersionID;
     return this.apiRestClientService.get$<PaintingVersionScore[]>(url);

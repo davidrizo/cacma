@@ -2,12 +2,12 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap} from '@angular/router';
 import {
   GetPainting, GetPaintingAllVersionsScores,
-  GetPaintingStatistics,
+  GetPaintingStatistics, GetPaintingStatisticsWithCoherence,
   GetPaintingVersions,
 } from '../../store/actions/grecoh.actions';
 import {
   selectPaintingAllVersionsScores,
-  selectPaintingStatistics,
+  selectPaintingStatistics, selectPaintingStatisticsWithCoherence,
   selectPaintingVersions,
   selectSelectedPainting
 } from '../../store/selectors/grecoh.selector';
@@ -29,6 +29,7 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
   paintingID: number;
   painting$: Observable<Painting>;
   paintingStatistics$: Observable<PaintingStatistics[]>;
+  paintingStatisticsWithCoherence$: Observable<PaintingStatistics[]>;
   paintingVersionsSubscription: Subscription;
   paintingVersions: Map<number, PaintingVersion> = new Map<number, PaintingVersion>();
   paintingAllVersionsScores$: Observable<PaintingVersionScore[]>;
@@ -36,6 +37,7 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute, private store: Store<GrecohState>) {
     this.painting$ = this.store.select(selectSelectedPainting);
     this.paintingStatistics$ = this.store.select(selectPaintingStatistics);
+    this.paintingStatisticsWithCoherence$ = this.store.select(selectPaintingStatisticsWithCoherence);
     this.paintingAllVersionsScores$ = this.store.select(selectPaintingAllVersionsScores);
   }
 
@@ -46,6 +48,7 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
       this.store.dispatch(new GetPainting(this.paintingID));
       this.store.dispatch(new GetPaintingVersions(this.paintingID));
       this.store.dispatch(new GetPaintingStatistics(this.paintingID));
+      this.store.dispatch(new GetPaintingStatisticsWithCoherence(this.paintingID));
     });
 
     // this.currentLevelIndex$ = this.store.select(selectCurrentLevelIndex);
@@ -100,5 +103,9 @@ export class GrecohPaintingAnalysisComponent implements OnInit, OnDestroy {
     } else {
       this.store.dispatch(new GetPaintingAllVersionsScores(this.paintingID, coherence));
     }
+  }
+
+  filterStatistics(paintingVersionID: number, paintingStatisticsWithCoherence: PaintingStatistics[], coherence: string): PaintingStatistics {
+    return paintingStatisticsWithCoherence.find(value => value.painting_version_id === paintingVersionID && value.coherence === coherence);
   }
 }

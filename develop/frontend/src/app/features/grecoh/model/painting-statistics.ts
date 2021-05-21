@@ -3,4 +3,5 @@ export interface PaintingStatistics {
   color: string;
   average: number;
   standard_deviation: number;
+  coherence?: string;
 }

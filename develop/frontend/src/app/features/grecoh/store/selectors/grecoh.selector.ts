@@ -24,6 +24,11 @@ export const selectPaintingStatistics = createSelector(
   (state: GrecohState) => state.paintingStatistics
 );
 
+export const selectPaintingStatisticsWithCoherence = createSelector(
+  grecohState,
+  (state: GrecohState) => state.paintingStatisticsWithCoherence
+);
+
 export const selectPostScoresResult = createSelector(
   grecohState,
   (state: GrecohState) => state.postScoresResult

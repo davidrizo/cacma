@@ -63,13 +63,20 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       return newState;
     }
     case GrecohActionTypes.GetPaintingStatisticsSuccess: {
-      console.log('X');
       const newState = {...state,
         apiRestServerError: null};
       // sort descending by average
       // slice because the redux store array is inmutable
       newState.paintingStatistics = action.paintingStatistics.slice().sort((a, b): number => b.average - a.average);
-      console.log('Y');
+      return newState;
+    }
+    case GrecohActionTypes.GetPaintingStatisticsWithCoherenceSuccess: {
+      const newState = {...state,
+        apiRestServerError: null};
+      // sort descending by average
+      // slice because the redux store array is inmutable
+      newState.paintingStatisticsWithCoherence =
+        action.paintingStatistics.slice().sort((a, b): number => a.coherence.localeCompare(b.coherence));
       return newState;
     }
     case GrecohActionTypes.ResetScoreResults: {

@@ -4,6 +4,10 @@ img {
   margin: 1rem;
 }
 
+.tableStatistics {
+  font-size: small;
+}
+
 .statistics {
   text-align: center;
 }

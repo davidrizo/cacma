@@ -34,7 +34,7 @@ import {
   GetAnswersExperiment,
   GetAnswersExperimentSuccess,
   ChangeAnswerCoherence,
-  ChangeAnswerCoherenceSuccess
+  ChangeAnswerCoherenceSuccess, GetPaintingStatisticsWithCoherence, GetPaintingStatisticsWithCoherenceSuccess
 } from '../actions/grecoh.actions';
 import {GrecohService} from '../../services/grecoh.service';
 import {Action} from '@ngrx/store';
@@ -107,6 +107,15 @@ export class GrecohEffects {
     switchMap((action: GetPaintingStatistics) =>
       this.grecohService.getPaintingStatistics$(action.paintingID).pipe(
         switchMap((paintingStatistics: PaintingStatistics[]) => of(new GetPaintingStatisticsSuccess(paintingStatistics))),
+        catchError(err => of(new GrecohServerError(err)))
+      )));
+
+  @Effect()
+  getPaintingStatisticsWithCoherence$: Observable<Action> = this.actions$.pipe(
+    ofType<GetPaintingStatisticsWithCoherence>(GrecohActionTypes.GetPaintingStatisticsWithCoherence),
+    switchMap((action: GetPaintingStatisticsWithCoherence) =>
+      this.grecohService.getPaintingStatisticsWithCoherence$(action.paintingID).pipe(
+        switchMap((paintingStatistics: PaintingStatistics[]) => of(new GetPaintingStatisticsWithCoherenceSuccess(paintingStatistics))),
         catchError(err => of(new GrecohServerError(err)))
       )));
 
