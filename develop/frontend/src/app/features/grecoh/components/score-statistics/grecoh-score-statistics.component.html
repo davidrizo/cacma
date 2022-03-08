@@ -88,11 +88,16 @@
     </div> <!-- col-12 -->
   </div> <!-- row -->
 
+  <div class="row" *ngIf="isMarioDavid()">
+    <div class="col text-center pt-5 pb-0">
+      <p><a (click)="reset()">Borra tus valoraciones</a></p>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col text-center pt-5 pb-0">
       <p><a routerLink="/grecoh/paintings">Vuelve al inicio</a></p>
     </div>
-
   </div>
 </section>
 

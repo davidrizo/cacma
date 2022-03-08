@@ -24,6 +24,8 @@ export enum GrecohActionTypes {
   GetPaintingVersionsSuccess = '[Grecoh] Get painting versions success',
   PostPaintingVersionsScores = '[Grecoh] Post painting version scores',
   PostPaintingVersionsScoresSuccess = '[Grecoh] Post painting version scores success',
+  ResetPaintingVersionsScores = '[Grecoh] Reset painting version scores',
+  ResetPaintingVersionsScoresSuccess = '[Grecoh] Reset painting version scores success',
   GetPaintingStatistics = '[Grecoh] Get painting statistics',
   GetPaintingStatisticsSuccess = '[Grecoh] Get painting statistics success',
   GetPaintingStatisticsWithCoherence = '[Grecoh] Get painting with coherence statistics',
@@ -119,6 +121,16 @@ export class PostPaintingVersionsScores implements Action {
 
 export class PostPaintingVersionsScoresSuccess implements Action {
   public readonly type = GrecohActionTypes.PostPaintingVersionsScoresSuccess;
+  constructor(public success: APIRestServerError) {}
+}
+
+export class ResetPaintingVersionsScores implements Action {
+  public readonly type = GrecohActionTypes.ResetPaintingVersionsScores;
+  constructor(public userPaintingVersionScores: UserPaintingVersionScores) {}
+}
+
+export class ResetPaintingVersionsScoresSuccess implements Action {
+  public readonly type = GrecohActionTypes.ResetPaintingVersionsScoresSuccess;
   constructor(public success: APIRestServerError) {}
 }
 
@@ -242,7 +254,6 @@ export class PostExperimentLevelUserCommentSuccess implements Action {
   constructor(public success: APIRestServerError) {}
 }
 
-
 export class GetAnswersExperiment implements Action {
   public readonly type = GrecohActionTypes.GetAnswersExperiment;
   constructor(public experimentID: number) {}
@@ -270,6 +281,7 @@ export type GrecohActions =
   GetPainting | GetPaintingSuccess |
   GetPaintingVersions | GetPaintingVersionsSuccess |
   PostPaintingVersionsScores | PostPaintingVersionsScoresSuccess |
+  ResetPaintingVersionsScores | ResetPaintingVersionsScoresSuccess |
   GetPaintingStatistics | GetPaintingStatisticsSuccess |
   GetPaintingStatisticsWithCoherence | GetPaintingStatisticsWithCoherenceSuccess |
   GetPaintingVersionScores | GetPaintingVersionScoresSuccess | ResetScoreResults |

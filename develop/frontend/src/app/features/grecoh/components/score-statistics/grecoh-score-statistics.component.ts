@@ -3,7 +3,13 @@ import {ActivatedRoute, ParamMap} from '@angular/router';
 import {Store} from '@ngrx/store';
 import {GrecohState} from '../../store/state/grecoh.state';
 import {ShowErrorService} from '../../../../core/services/show-error.service';
-import {GetPainting, GetPaintingStatistics, GetPaintingVersions, GetPaintingVersionScores} from '../../store/actions/grecoh.actions';
+import {
+  GetPainting,
+  GetPaintingStatistics,
+  GetPaintingVersions,
+  GetPaintingVersionScores,
+  ResetPaintingVersionsScores
+} from '../../store/actions/grecoh.actions';
 import {
   selectCurrentLevel,
   selectPaintingStatistics,
@@ -18,6 +24,8 @@ import {PaintingStatistics} from '../../model/painting-statistics';
 import {PaintingVersionScore} from '../../model/painting-version-score';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {Options} from 'ng5-slider';
+import {AuthService} from '../../../../auth/auth.service';
+import {UserPaintingVersionScores} from '../../model/user-painting-version-scores';
 
 @Component({
   selector: 'app-score-statistics',
@@ -41,9 +49,12 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
     hideLimitLabels: true
   };
   onlyImages = false;
+  private authSubscription: Subscription;
+  private userEMail: any;
 
   constructor(private route: ActivatedRoute, private store: Store<GrecohState>,
-              private showErrorService: ShowErrorService, private modalService: NgbModal) { }
+              private showErrorService: ShowErrorService, private modalService: NgbModal,
+              private authService: AuthService) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
@@ -66,6 +77,12 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
     });
 
     this.paintingVersionScores$ = this.store.select(selectPaintingVersionScores);
+
+    this.authSubscription = this.authService.userProfile$.subscribe(next => {
+      if (next) {
+        this.userEMail = next.email;
+      }
+    });
   }
 
   /*trackByPaintingVersion(index, item: PaintingVersion) {
@@ -127,6 +144,7 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.paintingVersionsSubscription.unsubscribe();
+    this.authSubscription.unsubscribe();
   }
 
   getComments(score: PaintingVersionScore): string {
@@ -139,5 +157,18 @@ export class GrecohScoreStatisticsComponent implements OnInit, OnDestroy {
 
   isOriginalVersion(paintingStatisticsItem: PaintingStatistics, painting: Painting) {
     return paintingStatisticsItem.painting_version_id === painting.painting_version_id;
+  }
+
+
+  isMarioDavid() {
+    return this.userEMail.startsWith('mariorodriguez') || this.userEMail.startsWith('david.rizo');
+  }
+
+  reset() {
+    const userPaintingVersionScore: UserPaintingVersionScores = {
+      painting_id: this.paintingID,
+      email: this.userEMail
+    };
+    this.store.dispatch(new ResetPaintingVersionsScores(userPaintingVersionScore));
   }
 }

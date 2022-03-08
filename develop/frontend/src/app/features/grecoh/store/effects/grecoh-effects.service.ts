@@ -34,7 +34,11 @@ import {
   GetAnswersExperiment,
   GetAnswersExperimentSuccess,
   ChangeAnswerCoherence,
-  ChangeAnswerCoherenceSuccess, GetPaintingStatisticsWithCoherence, GetPaintingStatisticsWithCoherenceSuccess
+  ChangeAnswerCoherenceSuccess,
+  GetPaintingStatisticsWithCoherence,
+  GetPaintingStatisticsWithCoherenceSuccess,
+  ResetPaintingVersionsScores,
+  ResetPaintingVersionsScoresSuccess
 } from '../actions/grecoh.actions';
 import {GrecohService} from '../../services/grecoh.service';
 import {Action} from '@ngrx/store';
@@ -98,6 +102,15 @@ export class GrecohEffects {
     switchMap((action: PostPaintingVersionsScores) =>
       this.grecohService.postPaintingVersionsScores$(action.userPaintingVersionScores).pipe(
         switchMap((result: APIRestServerError) => of(new PostPaintingVersionsScoresSuccess(result))),
+        catchError(err => of(new GrecohServerError(err)))
+      )));
+
+  @Effect()
+  resetPaintingVersionsScores$: Observable<Action> = this.actions$.pipe(
+    ofType<ResetPaintingVersionsScores>(GrecohActionTypes.ResetPaintingVersionsScores),
+    switchMap((action: ResetPaintingVersionsScores) =>
+      this.grecohService.resetPaintingVersionsScores$(action.userPaintingVersionScores).pipe(
+        switchMap((result: APIRestServerError) => of(new ResetPaintingVersionsScoresSuccess(result))),
         catchError(err => of(new GrecohServerError(err)))
       )));
 

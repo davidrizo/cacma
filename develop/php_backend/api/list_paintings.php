@@ -11,12 +11,11 @@ $paintings = [];
 if (!isset($email)) {
     $sql = "SELECT p.id as id, p.title as title, p.slug as slug, pp.name as painter, pp.slug as painter_slug FROM grecoh_painting p, grecoh_painter pp where pp.id = p.painter_id and p.level_id = '${level_id}'";
 } else {
-   $sql = "SELECT p.id as id, p.title as title, p.slug as slug, pp.name as painter, pp.slug as painter_slug, count(s.painting_version_id) as scored FROM grecoh_painting p, grecoh_painter pp, grecoh_painting_version v
-left outer join grecoh_user_painting_version_score s on (s.painting_version_id = v.id and s.email = '${email}')
-where v.painting_id = p.id 
-and pp.id = p.painter_id and p.level_id = '${level_id}'  
-group by p.id";
+    $sql = "SELECT p.id as id, p.title as title, p.slug as slug, pp.name as painter, pp.slug as painter_slug, count(s.painting_version_id) as scored FROM grecoh_painting p, grecoh_painter pp, grecoh_painting_version v left outer join grecoh_user_painting_version_score s on (s.painting_version_id = v.id and s.email = '${email}') where v.painting_id = p.id  and pp.id = p.painter_id and p.level_id = '${level_id}'   group by p.id";
 }
+
+error_clear_last();
+error_log($sql);
 
 if($result = mysqli_query($con,$sql) or trigger_error("Cannot exectue query"))
 {

@@ -1,5 +1,5 @@
 import {GrecohState, initialSemanticRepresentationState} from '../state/grecoh.state';
-import {GetPaintingVersionScores, GrecohActions, GrecohActionTypes} from '../actions/grecoh.actions';
+import {GetPaintingVersionScores, GrecohActions, GrecohActionTypes, ResetPaintingVersionsScoresSuccess} from '../actions/grecoh.actions';
 import {Answer, LevelQuestionAnswers, LevelsQuestionAnswers, Question} from '../../components/questions-analysis/question-analysis-model';
 import {selectLevelsQuestionAnswers} from '../selectors/grecoh.selector';
 import {klona} from 'klona';
@@ -56,6 +56,7 @@ export function grecohReducers(state = initialSemanticRepresentationState, actio
       console.log('2');
       return newState;
     }
+    case GrecohActionTypes.ResetPaintingVersionsScoresSuccess:
     case GrecohActionTypes.PostPaintingVersionsScoresSuccess: {
       const newState = {...state,
         apiRestServerError: null};

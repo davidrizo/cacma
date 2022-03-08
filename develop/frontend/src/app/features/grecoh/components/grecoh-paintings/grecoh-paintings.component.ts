@@ -38,7 +38,7 @@ export class GrecohPaintingsComponent implements OnInit, OnDestroy {
   currentExperimentSubscription: Subscription;
   currentExperiment: Experiment;
   currentLevelSubscription: Subscription;
-  currentLevel: Level;
+  currentLevel: Level = null;
   paintings$: Observable<Painting[]>;
   allLevelPaintingsScored$: Observable<boolean>;
   isFirstLevel$: Observable<boolean>;

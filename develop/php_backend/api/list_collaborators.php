@@ -4,7 +4,7 @@ require 'connect.php';
 
 $collaborators = [];
 $sql = "SELECT c.id as id, c.name as name, email FROM grecoh_collaborator c";
-
+//error_log($sql);
 if($result = mysqli_query($con,$sql))
 {
     $cr = 0;

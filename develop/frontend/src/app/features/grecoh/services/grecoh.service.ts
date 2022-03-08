@@ -54,6 +54,15 @@ export class GrecohService {
     return this.apiRestClientService.get$<APIRestServerError>(url);
   }
 
+  resetPaintingVersionsScores$(userPaintingVersionScores: UserPaintingVersionScores): Observable<APIRestServerError> {
+    let url = 'reset_painting_version_scores.php';
+    // console.log(JSON.stringify(userPaintingVersionScores));
+    // return this.apiRestClientService.post$<APIRestServerError>(url, userPaintingVersionScores);
+    // No me funciona, incluso activando CORS
+    url += '?jsondata=' + encodeURIComponent(JSON.stringify(userPaintingVersionScores));
+    return this.apiRestClientService.get$<APIRestServerError>(url);
+  }
+
   getPaintingStatistics$(paintingId: number): Observable<PaintingStatistics[]> {
     const url = 'list_painting_version_statistics.php?painting_id=' + paintingId;
     return this.apiRestClientService.get$<PaintingStatistics[]>(url);
